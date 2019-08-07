@@ -1,8 +1,8 @@
 <template>
   <div id="app" class="flyout">
-    <!-- <mdb-navbar id="main-navbar" dark position="top" color="primary-color" scrolling :scrollingOffset="20">
+    <mdb-navbar id="main-navbar" dark position="top" color="stylish" scrolling :scrollingOffset="20">
       <mdb-navbar-brand to="/" waves class="font-weight-bold">
-        John Robert Ferrer
+        MDB Vue
       </mdb-navbar-brand>
       <mdb-navbar-toggler>
         <mdb-navbar-nav right>
@@ -15,16 +15,15 @@
           <mdb-nav-item to="/tables"><strong>Tables</strong></mdb-nav-item>
           <mdb-nav-item to="/modals"><strong>Modals</strong></mdb-nav-item>
           <mdb-nav-item to="/plugins"><strong>Plugins & addons</strong></mdb-nav-item>
-          <mdb-nav-item to="/homemenu"><strong>Home Page</strong></mdb-nav-item>
         </mdb-navbar-nav>
       </mdb-navbar-toggler>
-    </mdb-navbar> -->
-    <main>
+    </mdb-navbar>
+    <main :style="{marginTop: '60px'}">
       <transition name="fade" mode="out-in">
         <router-view></router-view>
       </transition>
     </main>
-    <mdb-footer color="primary-color">
+    <mdb-footer color="stylish-color">
       <p class="footer-copyright mb-0 py-3 text-center">
         &copy; {{new Date().getFullYear()}} Copyright: <a href="https://mdbootstrap.com/docs/vue/?utm_source=DemoApp&utm_medium=MDBVue"> MDBootstrap.com</a>
       </p>

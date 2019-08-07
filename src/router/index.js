@@ -10,6 +10,7 @@ import FormsMenuPage from '../docs/categories/FormsMenuPage';
 import TablesPage from '../docs/categories/TablesPage';
 import ModalsPage from '../docs/categories/ModalsPage';
 import AddonsPage from '../docs/categories/AddonsPage';
+import HomeMenu from '../docs/categories/HomeMenu';
 
 // FREE
 import AnimationsPage from '../docs/CSS/AnimationsPage';
@@ -129,6 +130,11 @@ export default new Router({
       path: '/modals',
       name: 'ModalsPage',
       component: ModalsPage
+    },
+    {
+      path: '/homemenu',
+      name: 'HomeMenu',
+      component: HomeMenu
     },
     {
       path: '/plugins',
