@@ -26,7 +26,7 @@
     </main>
     <mdb-footer color="primary-color">
       <p class="footer-copyright mb-0 py-3 text-center">
-        &copy; {{new Date().getFullYear()}} Copyright: <a href="https://mdbootstrap.com/docs/vue/?utm_source=DemoApp&utm_medium=MDBVue"> MDBootstrap.com</a>
+        &copy; {{new Date().getFullYear()}} Copyright | John Robert Ferrer
       </p>
     </mdb-footer>
   </div>

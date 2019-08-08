@@ -7,7 +7,7 @@
         <mdb-row>
           <mdb-col md="10" class="mx-auto white z-depth-1 py-2 px-2">
             <mdb-card-body>
-              <h2 class="pb-4"><strong>MDB Vue Demo App</strong></h2>
+              <h2 class="pb-4"><strong>My Projects</strong></h2>
               <mdb-row>
                 <mdb-col md="3">
                   <img src="../assets/logo-mdb-vue-small.png" class="img-fluid"/>
@@ -16,9 +16,6 @@
                   <p class="pb-4">Vue Bootstrap with Material Design.<br>
                   This demo shows the actual use of MDB Vue components in the application.</p>
                 </mdb-col>
-              </mdb-row>
-              <mdb-row class="d-flex flex-row justify-content-center">
-                <a href="https://mdbootstrap.com/docs/vue/?utm_source=DemoApp&utm_medium=MDBVue" class="nav-link border font-weight-bold rounded" target="_blank"><mdb-icon icon="graduation-cap" class="mr-2"/>Official documentation</a>
               </mdb-row>
             </mdb-card-body>
           </mdb-col>
@@ -125,7 +122,7 @@
 import { mdbContainer, mdbCol, mdbRow, mdbIcon, mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbBtn, mdbEdgeHeader, mdbCard, mdbCardImage, mdbCardTitle, mdbCardText, mdbCardBody, animateOnScroll } from 'mdbvue';
 
 export default {
-  name: 'HomePage',
+  name: 'ProjectPage',
   components: {
     mdbContainer,
     mdbCol,

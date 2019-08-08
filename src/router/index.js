@@ -11,6 +11,7 @@ import TablesPage from '../docs/categories/TablesPage';
 import ModalsPage from '../docs/categories/ModalsPage';
 import AddonsPage from '../docs/categories/AddonsPage';
 import HomeMenu from '../docs/categories/HomeMenu';
+import HomePage from '../docs/categories/HomePage';
 
 // FREE
 import AnimationsPage from '../docs/CSS/AnimationsPage';
@@ -37,7 +38,7 @@ import GradientPage from '../docs/CSS/GradientPage';
 import GoogleMapsPage from '../docs/Advanced/GoogleMapsPage';
 import GridPage from '../docs/GridPage';
 import HamburgerMenuPage from '../docs/Navigation/HamburgerMenuPage';
-import HomePage from '../docs/HomePage';
+import ProjectPage from '../docs/ProjectPage';
 import HoverPage from '../docs/CSS/HoverPage';
 import IframePage from '../docs/Plugins/IframePage';
 import InputsPage from '../docs/Forms/InputsPage';
@@ -91,6 +92,11 @@ Vue.use(Router);
 
 export default new Router({
   routes: [
+    {
+      path: '/projects',
+      name: 'Project',
+      component: ProjectPage
+    },
     {
       path: '/',
       name: 'Home',
