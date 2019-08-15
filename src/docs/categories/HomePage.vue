@@ -5,9 +5,9 @@
       <mdb-navbar-toggler>
         <mdb-navbar-nav>
           <mdb-nav-item to="/navigation/navigation-v1" active>Home</mdb-nav-item>
-          <mdb-nav-item to="/navigation/navigation-v2">About Me</mdb-nav-item>
-          <mdb-nav-item to="/navigation/navigation-v3">My Projects</mdb-nav-item>
-          <mdb-nav-item to="/navigation/navigation-v4">Contact Me</mdb-nav-item>
+          <mdb-nav-item to="/navigation/navigation-v2">Projects</mdb-nav-item>
+          <mdb-nav-item to="/navigation/navigation-v3">Resume</mdb-nav-item>
+          <mdb-nav-item to="/navigation/navigation-v4">Contact</mdb-nav-item>
         </mdb-navbar-nav>
       </mdb-navbar-toggler>
     </mdb-navbar>
@@ -18,7 +18,9 @@
           <div class="mask rgba-black-strong flex-center">
             <div class="container">
               <div class="white-text text-center">
-                <h2 class="font-weight-bold">Hi I'm John Ferer</h2>
+                <h1 class="font-weight-bold">Hello, I'm John Ferrer</h1>
+                <!-- <br> -->
+                <mdb-btn outline="warning" darkWaves size="lg">Read More</mdb-btn>
               </div>
             </div>
           </div>
@@ -33,7 +35,7 @@
 </template>
 
 <script>
-import { mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler} from 'mdbvue';
+import { mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbBtn} from 'mdbvue';
 
 export default {
   name: 'HomePage',
@@ -41,7 +43,8 @@ export default {
     mdbNavbar,
     mdbNavItem,
     mdbNavbarNav,
-    mdbNavbarToggler
+    mdbNavbarToggler,
+    mdbBtn
   }
 };
 </script>
