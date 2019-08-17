@@ -24,8 +24,8 @@
         <router-view></router-view>
       </transition>
     </main>
-    <mdb-footer color="primary-color">
-      <p class="footer-copyright mb-0 py-3 text-center">
+    <mdb-footer color="elegant-color-dark" style="margin-top: 0 !important;">
+      <p class="footer-copyright mb-0 py-4 text-center">
         &copy; {{new Date().getFullYear()}} Copyright | John Robert Ferrer
       </p>
     </mdb-footer>
