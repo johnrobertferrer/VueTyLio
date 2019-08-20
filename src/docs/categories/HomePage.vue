@@ -101,7 +101,7 @@
         </section>
         <div class="section">
             <div class="parallax">
-                <h1 class="text-center mb-0 white-text" style="padding: 150px 0">“Be as smart as you can, but remember that it is always better to be wise than to be smart.” – Alan Alda</h1>
+                <h1 class="text-center mb-0 pl-5 pr-5 white-text" style="padding: 150px 0">“Be as smart as you can, but remember that it is always better to be wise than to be smart.” – Alan Alda</h1>
             </div>
         </div>
         <!-- WHO AM I -->
