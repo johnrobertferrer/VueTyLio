@@ -22,8 +22,8 @@
                     <div class="mask rgba-black-strong flex-center">
                         <div class="container">
                             <div class="white-text text-center">
-                                <h1 class="font-weight-bold animated infinite pulse fast" style="font-size: 4em">Hai</h1>
-                                <h1 class="font-weight-bold animated infinite heartBeat" style="font-size: 4em">I'm Star</h1>
+                                <!-- <h1 class="font-weight-bold animated infinite pulse fast" style="font-size: 4em">Hai</h1> -->
+                                <h1 class="font-weight-bold animated infinite heartBeat" style="font-size: 4em">I am Star</h1>
                                 <mdb-icon icon="angle-double-down" size="2x" class="mt-3 mr-6 animated infinite bounce slower" style="position: absolute; bottom: 50px;" />
                             </div>
                         </div>
