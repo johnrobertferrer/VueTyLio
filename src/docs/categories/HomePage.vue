@@ -4,12 +4,13 @@
         <mdb-navbar position="top" transparent dark color="elegant" name="Your Logo" href="#" scrolling>
             <mdb-navbar-toggler>
                 <mdb-navbar-nav center>
-                    <mdb-nav-item to="/navigation/navigation-v1" active>HOME</mdb-nav-item>
-                    <mdb-nav-item to="/navigation/navigation-v2">PROJECTS</mdb-nav-item>
-                    <a href="https://drive.google.com/uc?export=download&id=1SJXkatzMgFnAI70XlpasslxT5skPGw2O">
-                        <mdb-nav-item>RESUME</mdb-nav-item>
-                    </a>
-                    <mdb-nav-item to="/navigation/navigation-v4">CONTACT</mdb-nav-item>
+                    <!-- <mdb-nav-item v-show="!navigation.visible" v-on:mouseenter="openNavigation()" v-on:mouseleave="closeNavigation()">
+                        <mdb-icon icon="star" size="2x" class="mt-3 mr-6" v-on:mouseenter="openNavigation()" v-on:mouseleave="closeNavigation()" />
+                    </mdb-nav-item> -->
+                    <mdb-nav-item to="/navigation/navigation-v1" active v-show="navigation.visible">HOME</mdb-nav-item>
+                    <mdb-nav-item to="/navigation/navigation-v2" v-show="navigation.visible">PROJECTS</mdb-nav-item>
+                    <a href="https://drive.google.com/uc?export=download&id=1SJXkatzMgFnAI70XlpasslxT5skPGw2O" v-show="navigation.visible"><mdb-nav-item>RESUME</mdb-nav-item></a>
+                    <mdb-nav-item to="/navigation/navigation-v4" v-show="navigation.visible">CONTACT</mdb-nav-item>
                 </mdb-navbar-nav>
             </mdb-navbar-toggler>
         </mdb-navbar>
@@ -21,8 +22,9 @@
                     <div class="mask rgba-black-strong flex-center">
                         <div class="container">
                             <div class="white-text text-center">
-                                <h1 class="font-weight-bold">Hello, I'm John Ferrer</h1>
-                                <mdb-icon icon="angle-double-down" size="2x" class="downArrow bounce mt-3 mr-6" style="position: absolute; bottom: 50px;" />
+                                <h1 class="font-weight-bold animated infinite pulse fast" style="font-size: 4em">Hai</h1>
+                                <h1 class="font-weight-bold animated infinite heartBeat" style="font-size: 4em">I'm Star</h1>
+                                <mdb-icon icon="angle-double-down" size="2x" class="mt-3 mr-6 animated infinite bounce slower" style="position: absolute; bottom: 50px;" />
                             </div>
                         </div>
                     </div>
@@ -31,58 +33,90 @@
         </div>
 
         <!-- CURRENT PROJECTS -->
-        <section class="info-color" style="padding: 100px 0;">
+        <section class="red accent-2" style="padding: 100px 0;">
             <mdb-container>
                 <mdb-row>
                     <div class="col-12 col sm-12 col-lg-12">
                         <h2 class="jumbotron text-center font-weight-bold">Current Projects</h2>
                     </div>
-                    <mdb-row>
-                        <mdb-card-group deck>
-                            <mdb-card>
-                                <mdb-view hover>
-                                    <a href="/#/components">
-                                        <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap"></mdb-card-image>
-                                        <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
-                                    </a>
-                                </mdb-view>
-                                <mdb-card-body>
-                                    <mdb-card-title>Card title</mdb-card-title>
-                                    <mdb-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
-                                    <mdb-btn color="primary">Read more</mdb-btn>
-                                </mdb-card-body>
-                            </mdb-card>
-                            <mdb-card>
-                                <mdb-view hover>
-                                    <a href="#!">
-                                        <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg" alt="Card image cap"></mdb-card-image>
-                                        <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
-                                    </a>
-                                </mdb-view>
-                                <mdb-card-body>
-                                    <mdb-card-title>Card title</mdb-card-title>
-                                    <mdb-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
-                                    <mdb-btn color="primary">Read more</mdb-btn>
-                                </mdb-card-body>
-                            </mdb-card>
-                        </mdb-card-group>
-                    </mdb-row>
+                    <mdb-container>
+                        <mdb-row>
+                            <mdb-card-group deck class="pl-3 pr-3">
+                                <mdb-card 
+                                    data-aos="fade-up"
+                                    data-aos-delay="0"
+                                    data-aos-anchor-placement="top-bottom"
+                                >
+                                    <mdb-view hover>
+                                        <a href="/#/components">
+                                            <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap"></mdb-card-image>
+                                            <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
+                                        </a>
+                                    </mdb-view>
+                                    <mdb-card-body>
+                                        <mdb-card-title class="text-center">Card title</mdb-card-title>
+                                        <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
+                                        <center><mdb-btn color="primary">Read more</mdb-btn></center>
+                                    </mdb-card-body>
+                                </mdb-card>
+                                <mdb-card 
+                                    data-aos="fade-up"
+                                    data-aos-delay="150"
+                                    data-aos-anchor-placement="top-bottom"
+                                >
+                                    <mdb-view hover>
+                                        <a href="#!">
+                                            <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg" alt="Card image cap"></mdb-card-image>
+                                            <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
+                                        </a>
+                                    </mdb-view>
+                                    <mdb-card-body>
+                                        <mdb-card-title class="text-center">Card title</mdb-card-title>
+                                        <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
+                                        <center><mdb-btn color="primary">Read more</mdb-btn></center>
+                                    </mdb-card-body>
+                                </mdb-card>
+                                <mdb-card 
+                                    data-aos="fade-up"
+                                    data-aos-delay="300"
+                                    data-aos-anchor-placement="top-bottom"
+                                >
+                                    <mdb-view hover>
+                                        <a href="#!">
+                                            <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/images/11.jpg" alt="Card image cap"></mdb-card-image>
+                                            <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
+                                        </a>
+                                    </mdb-view>
+                                    <mdb-card-body>
+                                        <mdb-card-title class="text-center">Card title</mdb-card-title>
+                                        <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
+                                        <center><mdb-btn color="primary">Read more</mdb-btn></center>
+                                    </mdb-card-body>
+                                </mdb-card>
+                            </mdb-card-group>
+                        </mdb-row>
+                    </mdb-container>
                 </mdb-row>
             </mdb-container>
         </section>
-
+        <div class="section">
+            <div class="parallax">
+                <h1 class="text-center mb-0 white-text" style="padding: 150px 0">“Be as smart as you can, but remember that it is always better to be wise than to be smart.” – Alan Alda</h1>
+            </div>
+        </div>
         <!-- WHO AM I -->
-        <section style="background-color: #212121; padding: 100px 0;">
+        <section class="grey darken-4" style="padding: 100px 0;">
             <mdb-container>
                 <mdb-row>
                     <!-- LEFT -->
-                    <div class="col-12 col-sm-12 col-lg-4 mb-5">
+                    <div class="col-12 col-sm-12 col-lg-4 mb-5" data-aos="zoom-in-down"
+                                data-aos-anchor-placement="top-bottom" data-aos-delay="200">
                         <img src="../../assets/gradpic.jpg" width="100%">
                     </div>
 
                     <!-- RIGHT -->
-                    <div class="col-12 col-sm-12 col-lg-8 white-text">
-                        <h2 class="text-center font-weight-bold">Who Am I?</h2>
+                    <div class="col-12 col-sm-12 col-lg-8 white-text" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
+                        <h2 class="text-center font-weight-bold">Who am I</h2>
                         <div class="text-body text-justify white-text">
                             <p>
                                 Hi, my name is John Robert S. Ferrer and way back on 2018, I am a full-stack Web Developer in Captivate Solutions during my On-the-job Training (OJT) days. Currently, I am working as Software Engineer mainly as PHP, Laravel Developer at V5 of Nelsoft Systems Inc.
@@ -150,6 +184,22 @@ export default {
     mdbView,
     mdbMask,
     mdbCardGroup
+  },
+  data(){
+    return {
+      navigation: {
+        visible: true
+      }
+    };
+  },
+  methods: {
+    openNavigation() {
+      this.navigation.visible = true;
+    },
+
+    closeNavigation() {
+      this.navigation.visible = false;
+    }
   }
 };
 </script>
@@ -161,62 +211,18 @@ export default {
         background-size: cover;
         height: 100%;
     }
-    .downArrow{
-        position: fixed;
-        bottom: 45%;
-        left: 50%;
-    }
-    .bounce {
-        -moz-animation: bounce 3s infinite;
-        -webkit-animation: bounce 3s infinite;
-        animation: bounce 3s infinite;
-    }
-    @-moz-keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        -moz-transform: translateY(0);
-        transform: translateY(0);
-    }
-    40% {
-        -moz-transform: translateY(-30px);
-        transform: translateY(-30px);
-    }
-    60% {
-        -moz-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
-    }
-    @-webkit-keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    40% {
-        -webkit-transform: translateY(-30px);
-        transform: translateY(-30px);
-    }
-    60% {
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
-    }
-    @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    40% {
-        -moz-transform: translateY(-30px);
-        -ms-transform: translateY(-30px);
-        -webkit-transform: translateY(-30px);
-        transform: translateY(-30px);
-    }
-    60% {
-        -moz-transform: translateY(-15px);
-        -ms-transform: translateY(-15px);
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
+
+    .parallax {
+        /* The image used */
+        background-image: url("https://images.unsplash.com/photo-1502685904007-66914fdd9118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+
+        /* Set a specific height */
+        min-height: 400px; 
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 </style>
