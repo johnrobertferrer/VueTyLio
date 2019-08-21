@@ -12,6 +12,10 @@ import ModalsPage from '../docs/categories/ModalsPage';
 import AddonsPage from '../docs/categories/AddonsPage';
 import HomeMenu from '../docs/categories/HomeMenu';
 import HomePage from '../docs/categories/HomePage';
+import AboutPage from '../docs/categories/AboutPage.vue';
+import WorkPage from '../docs/categories/WorkPage';
+import ContactPage from '../docs/categories/ContactPage';
+import BlogPage from '../docs/categories/BlogPage';
 
 // FREE
 import AnimationsPage from '../docs/CSS/AnimationsPage';
@@ -138,6 +142,26 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: HomePage
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: AboutPage
+    },
+    {
+      path: '/work',
+      name: 'Work',
+      component: WorkPage
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: ContactPage
+    },
+    {
+      path: '/blog',
+      name: 'Blog',
+      component: BlogPage
     },
 
     // CATEGORIES
