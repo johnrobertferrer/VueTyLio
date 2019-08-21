@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-show="!processing">
         <!--Navbar-->
         <mdb-navbar position="top" transparent dark color="elegant" name="Your Logo" href="/about" scrolling>
             <mdb-navbar-toggler>
@@ -194,8 +194,13 @@ export default {
     return {
       navigation: {
         visible: true
-      }
+      },
+      processing: true
     };
+  },
+  mounted() {
+    this.processing = false;
+    this.$emit('processingEmit', this.processing);
   },
   methods: {
     openNavigation() {

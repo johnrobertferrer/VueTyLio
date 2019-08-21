@@ -2,15 +2,17 @@
   <div id="app" class="flyout">
     <main>
       <transition name="fade" mode="out-in">
-        <section class="red accent-2" v-if="processing" style="width: 100vw; height: 100vh;">
+        <section class="red accent-2" v-show="processing" style="width: 100vw; height: 100vh;">
           <center>
             <div class="lds-hourglass" style="margin-top: 45vh;"></div>
           </center>
         </section>
-        <router-view></router-view>
+      </transition>
+      <transition v-show="!processing" name="fade" mode="out-in">
+        <router-view @processingEmit="loading"></router-view>
       </transition>
     </main>
-    <mdb-footer color="elegant-color-dark" v-if="!processing" style="margin-top: 0 !important;">
+    <mdb-footer color="elegant-color-dark" v-show="!processing" style="margin-top: 0 !important;">
       <p class="footer-copyright mb-0 py-4 text-center">
         &copy; {{new Date().getFullYear()}} Copyright | John Robert Ferrer
       </p>
@@ -36,10 +38,10 @@ export default {
       processing: true
     };
   },
-  mounted() {
-    setTimeout(() => {
-      this.processing = false;
-    }, 1500);
+  methods: {
+    loading (data) {
+      this.processing = data;
+    }
   }
 };
 

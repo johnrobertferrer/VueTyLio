@@ -6,8 +6,24 @@
 </template>
 
 <script>
-export default {
+import {
+  mdbContainer
+} from 'mdbvue';
 
+export default {
+  name: 'ContactPage',
+  components: {
+    mdbContainer,
+  },
+  data(){
+    return {
+      processing: true
+    };
+  },
+  mounted() {
+    this.processing = false;
+    this.$emit('processingEmit', this.processing);
+  }
 };
 </script>
 
