@@ -200,8 +200,8 @@ export default {
   },
   mounted() {
     setTimeout(() => {
-        this.processing = false;
-        this.$emit('processingEmit', this.processing);
+      this.processing = false;
+      this.$emit('processingEmit', this.processing);
     }, 1000);
   },
   methods: {
