@@ -1,30 +1,16 @@
 <template>
   <div id="app" class="flyout">
-    <!-- <mdb-navbar id="main-navbar" dark position="top" color="primary-color" scrolling :scrollingOffset="20">
-      <mdb-navbar-brand to="/" waves class="font-weight-bold">
-        John Robert Ferrer
-      </mdb-navbar-brand>
-      <mdb-navbar-toggler>
-        <mdb-navbar-nav right>
-          <mdb-nav-item exact to="/"><strong>Home</strong></mdb-nav-item>
-          <mdb-nav-item to="/css"><strong>CSS</strong></mdb-nav-item>
-          <mdb-nav-item to="/components"><strong>Components</strong></mdb-nav-item>
-          <mdb-nav-item to="/advanced"><strong>Advanced</strong></mdb-nav-item>
-          <mdb-nav-item to="/navigation"><strong>Navigation</strong></mdb-nav-item>
-          <mdb-nav-item to="/forms"><strong>Forms</strong></mdb-nav-item>
-          <mdb-nav-item to="/tables"><strong>Tables</strong></mdb-nav-item>
-          <mdb-nav-item to="/modals"><strong>Modals</strong></mdb-nav-item>
-          <mdb-nav-item to="/plugins"><strong>Plugins & addons</strong></mdb-nav-item>
-          <mdb-nav-item to="/homemenu"><strong>Home Page</strong></mdb-nav-item>
-        </mdb-navbar-nav>
-      </mdb-navbar-toggler>
-    </mdb-navbar> -->
     <main>
       <transition name="fade" mode="out-in">
+        <section class="red accent-2" v-if="processing" style="width: 100vw; height: 100vh;">
+          <center>
+            <div class="lds-hourglass" style="margin-top: 45vh;"></div>
+          </center>
+        </section>
         <router-view></router-view>
       </transition>
     </main>
-    <mdb-footer color="elegant-color-dark" style="margin-top: 0 !important;">
+    <mdb-footer color="elegant-color-dark" v-if="!processing" style="margin-top: 0 !important;">
       <p class="footer-copyright mb-0 py-4 text-center">
         &copy; {{new Date().getFullYear()}} Copyright | John Robert Ferrer
       </p>
@@ -44,6 +30,16 @@ export default {
     mdbNavbarToggler,
     mdbNavbarBrand,
     mdbFooter
+  },
+  data() {
+    return {
+      processing: true
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      this.processing = false;
+    }, 1500);
   }
 };
 
@@ -88,4 +84,37 @@ export default {
 .fade-leave-active {
   opacity: 0;
 }
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 6px;
+  box-sizing: border-box;
+  border: 50px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
 </style>
