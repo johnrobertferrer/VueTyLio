@@ -1,16 +1,21 @@
 <template>
     <div>
         <!--Navbar-->
-        <mdb-navbar position="top" transparent dark color="elegant" name="Your Logo" href="#" scrolling>
+        <mdb-navbar position="top" transparent dark color="elegant" name="Your Logo" href="/about" scrolling>
             <mdb-navbar-toggler>
                 <mdb-navbar-nav center>
-                    <!-- <mdb-nav-item v-show="!navigation.visible" v-on:mouseenter="openNavigation()" v-on:mouseleave="closeNavigation()">
-                        <mdb-icon icon="star" size="2x" class="mt-3 mr-6" v-on:mouseenter="openNavigation()" v-on:mouseleave="closeNavigation()" />
-                    </mdb-nav-item> -->
-                    <mdb-nav-item to="/navigation/navigation-v1" active v-show="navigation.visible">HOME</mdb-nav-item>
-                    <mdb-nav-item to="/navigation/navigation-v2" v-show="navigation.visible">PROJECTS</mdb-nav-item>
-                    <a href="https://drive.google.com/uc?export=download&id=1SJXkatzMgFnAI70XlpasslxT5skPGw2O" v-show="navigation.visible"><mdb-nav-item>RESUME</mdb-nav-item></a>
-                    <mdb-nav-item to="/navigation/navigation-v4" v-show="navigation.visible">CONTACT</mdb-nav-item>
+                    <mdb-nav-item to="/" active>HOME</mdb-nav-item>
+                    <mdb-nav-item to="/about">ABOUT</mdb-nav-item>
+                    <mdb-nav-item to="/work">WORK</mdb-nav-item>
+                    <mdb-nav-item to="/contact">CONTACT</mdb-nav-item>
+                    <mdb-nav-item to="/blog">BLOG</mdb-nav-item>
+                </mdb-navbar-nav>
+                <mdb-navbar-nav>
+                    <a href="https://drive.google.com/uc?export=download&id=1SJXkatzMgFnAI70XlpasslxT5skPGw2O" style="position: inline-block">
+                        <mdb-nav-item class="mr-3 font-weight-bold">
+                            <span class="yellow-text">RESUME</span>
+                        </mdb-nav-item>
+                    </a>
                 </mdb-navbar-nav>
             </mdb-navbar-toggler>
         </mdb-navbar>
@@ -44,7 +49,7 @@
                             <mdb-card-group deck class="pl-3 pr-3">
                                 <mdb-card 
                                     data-aos="fade-up"
-                                    data-aos-delay="0"
+                                    data-aos-delay="50"
                                     data-aos-anchor-placement="top-bottom"
                                 >
                                     <mdb-view hover>
@@ -61,7 +66,7 @@
                                 </mdb-card>
                                 <mdb-card 
                                     data-aos="fade-up"
-                                    data-aos-delay="150"
+                                    data-aos-delay="200"
                                     data-aos-anchor-placement="top-bottom"
                                 >
                                     <mdb-view hover>
@@ -78,7 +83,7 @@
                                 </mdb-card>
                                 <mdb-card 
                                     data-aos="fade-up"
-                                    data-aos-delay="300"
+                                    data-aos-delay="350"
                                     data-aos-anchor-placement="top-bottom"
                                 >
                                     <mdb-view hover>
