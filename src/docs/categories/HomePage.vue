@@ -1,5 +1,5 @@
 <template>
-    <div v-show="!processing">
+    <div v-if="!processing">
         <!--Navbar-->
         <mdb-navbar position="top" transparent dark color="elegant" name="Your Logo" href="/about" scrolling>
             <mdb-navbar-toggler>
