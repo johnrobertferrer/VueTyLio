@@ -199,8 +199,10 @@ export default {
     };
   },
   mounted() {
-    this.processing = false;
-    this.$emit('processingEmit', this.processing);
+    setTimeout(() => {
+        this.processing = false;
+        this.$emit('processingEmit', this.processing);
+    }, 1000);
   },
   methods: {
     openNavigation() {
