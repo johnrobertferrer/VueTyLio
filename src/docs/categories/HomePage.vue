@@ -42,7 +42,7 @@
             <mdb-container>
                 <mdb-row>
                     <div class="col-12 col sm-12 col-lg-12">
-                        <h2 class="jumbotron text-center font-weight-bold">Current Projects</h2>
+                        <h2 class="jumbotron text-center font-weight-bold">Recent Projects</h2>
                     </div>
                     <mdb-container>
                         <mdb-row>
@@ -199,6 +199,7 @@ export default {
     };
   },
   mounted() {
+    console.log("TAPOS NA MAG LOAD");
     setTimeout(() => {
       this.processing = false;
       this.$emit('processingEmit', this.processing);
