@@ -220,7 +220,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .view {
-        background: url("../../assets/2.png")no-repeat center center;
+        background: url("../../assets/2.jpg")no-repeat center center;
         background-size: cover;
         height: 100%;
     }
