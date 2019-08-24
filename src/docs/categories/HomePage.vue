@@ -50,7 +50,7 @@
                                 <mdb-card 
                                     data-aos="fade-up"
                                     data-aos-delay="50"
-                                    data-aos-anchor-placement="top-bottom"
+                                    data-aos-anchor-placement="top-center"
                                 >
                                     <mdb-view hover>
                                         <a href="/#/components">
@@ -67,7 +67,7 @@
                                 <mdb-card 
                                     data-aos="fade-up"
                                     data-aos-delay="200"
-                                    data-aos-anchor-placement="top-bottom"
+                                    data-aos-anchor-placement="top-center"
                                 >
                                     <mdb-view hover>
                                         <a href="#!">
@@ -84,7 +84,7 @@
                                 <mdb-card 
                                     data-aos="fade-up"
                                     data-aos-delay="350"
-                                    data-aos-anchor-placement="top-bottom"
+                                    data-aos-anchor-placement="top-center"
                                 >
                                     <mdb-view hover>
                                         <a href="#!">
@@ -114,13 +114,12 @@
             <mdb-container>
                 <mdb-row>
                     <!-- LEFT -->
-                    <div class="col-12 col-sm-12 col-lg-4 mb-5" data-aos="zoom-in-down"
-                                data-aos-anchor-placement="top-bottom" data-aos-delay="200">
-                        <img src="../../assets/gradpic.jpg" width="100%">
+                    <div class="col-12 col-sm-12 col-lg-4 mb-5" data-aos="zoom-in-down" data-aos-anchor-placement="top-center" data-aos-delay="200">
+                        <img src="../../assets/gradpicture.jpg" width="100%">
                     </div>
 
                     <!-- RIGHT -->
-                    <div class="col-12 col-sm-12 col-lg-8 white-text" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
+                    <div class="col-12 col-sm-12 col-lg-8 white-text" data-aos="zoom-in-down" data-aos-anchor-placement="top-center" data-aos-delay="200">
                         <h2 class="text-center font-weight-bold">Who am I</h2>
                         <div class="text-body text-justify white-text">
                             <p>
@@ -220,7 +219,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .view {
-        background: url("../../assets/2.jpg")no-repeat center center;
+        background: url("../../assets/background.jpg")no-repeat center center;
         background-size: cover;
         height: 100%;
     }

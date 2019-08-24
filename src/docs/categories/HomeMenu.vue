@@ -22,7 +22,7 @@ export default {
 
 <style scoped>
 .view {
-  background: url("../../assets/2.png")no-repeat center center;
+  background: url("../../assets/background.jpg")no-repeat center center;
   background-size: cover;
   height: 100%;
 }

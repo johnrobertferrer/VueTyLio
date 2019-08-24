@@ -1,15 +1,15 @@
 <template>
   <div id="app" class="flyout">
     <main>
+      <transition v-show="!processing" name="fade" mode="out-in">
+        <router-view @processingEmit="loading"></router-view>
+      </transition>
       <transition name="fade" mode="out-in">
         <section class="red accent-2" v-show="processing" style="width: 100vw; height: 100vh;">
           <center>
             <div class="lds-hourglass" style="margin-top: 45vh;"></div>
           </center>
         </section>
-      </transition>
-      <transition v-show="!processing" name="fade" mode="out-in">
-        <router-view @processingEmit="loading"></router-view>
       </transition>
     </main>
     <mdb-footer color="elegant-color-dark" v-show="!processing" style="margin-top: 0 !important;">
@@ -37,6 +37,9 @@ export default {
     return {
       processing: true
     };
+  },
+  created() {
+    this.processing = true;
   },
   methods: {
     loading (data) {
