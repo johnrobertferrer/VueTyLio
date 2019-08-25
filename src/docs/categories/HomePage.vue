@@ -1,5 +1,5 @@
 <template>
-    <div v-if="!processing">
+    <div v-if="!isLoading">
         <!--Navbar-->
         <mdb-navbar position="top" transparent dark color="elegant" name="Your Logo" href="/about" scrolling>
             <mdb-navbar-toggler>
@@ -47,11 +47,7 @@
                     <mdb-container>
                         <mdb-row>
                             <mdb-card-group deck class="pl-3 pr-3">
-                                <mdb-card 
-                                    data-aos="fade-up"
-                                    data-aos-delay="50"
-                                    data-aos-anchor-placement="top-center"
-                                >
+                                <mdb-card data-aos="fade-up" data-aos-delay="50" data-aos-anchor-placement="top-center">
                                     <mdb-view hover>
                                         <a href="/#/components">
                                             <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap"></mdb-card-image>
@@ -61,14 +57,12 @@
                                     <mdb-card-body>
                                         <mdb-card-title class="text-center">Card title</mdb-card-title>
                                         <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
-                                        <center><mdb-btn color="primary">Read more</mdb-btn></center>
+                                        <center>
+                                            <mdb-btn color="primary">Read more</mdb-btn>
+                                        </center>
                                     </mdb-card-body>
                                 </mdb-card>
-                                <mdb-card 
-                                    data-aos="fade-up"
-                                    data-aos-delay="200"
-                                    data-aos-anchor-placement="top-center"
-                                >
+                                <mdb-card data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="top-center">
                                     <mdb-view hover>
                                         <a href="#!">
                                             <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg" alt="Card image cap"></mdb-card-image>
@@ -78,14 +72,12 @@
                                     <mdb-card-body>
                                         <mdb-card-title class="text-center">Card title</mdb-card-title>
                                         <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
-                                        <center><mdb-btn color="primary">Read more</mdb-btn></center>
+                                        <center>
+                                            <mdb-btn color="primary">Read more</mdb-btn>
+                                        </center>
                                     </mdb-card-body>
                                 </mdb-card>
-                                <mdb-card 
-                                    data-aos="fade-up"
-                                    data-aos-delay="350"
-                                    data-aos-anchor-placement="top-center"
-                                >
+                                <mdb-card data-aos="fade-up" data-aos-delay="350" data-aos-anchor-placement="top-center">
                                     <mdb-view hover>
                                         <a href="#!">
                                             <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/images/11.jpg" alt="Card image cap"></mdb-card-image>
@@ -95,7 +87,9 @@
                                     <mdb-card-body>
                                         <mdb-card-title class="text-center">Card title</mdb-card-title>
                                         <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
-                                        <center><mdb-btn color="primary">Read more</mdb-btn></center>
+                                        <center>
+                                            <mdb-btn color="primary">Read more</mdb-btn>
+                                        </center>
                                     </mdb-card-body>
                                 </mdb-card>
                             </mdb-card-group>
@@ -146,74 +140,74 @@
 </template>
 
 <script>
-import {
-  mdbNavbar,
-  mdbNavItem,
-  mdbNavbarNav,
-  mdbNavbarToggler,
-  mdbBtn,
-  mdbIcon,
-  mdbContainer,
-  mdbRow,
-  mdbCol,
-  mdbCard,
-  mdbCardImage,
-  mdbCardHeader,
-  mdbCardBody,
-  mdbCardTitle,
-  mdbCardText,
-  mdbView,
-  mdbMask,
-  mdbCardGroup
-} from 'mdbvue';
-
-export default {
-  name: 'HomePage',
-  components: {
-    mdbNavbar,
-    mdbNavItem,
-    mdbNavbarNav,
-    mdbNavbarToggler,
-    mdbBtn,
-    mdbIcon,
-    mdbContainer,
-    mdbRow,
-    mdbCol,
-    mdbCard,
-    mdbCardImage,
-    mdbCardHeader,
-    mdbCardBody,
-    mdbCardTitle,
-    mdbCardText,
-    mdbView,
-    mdbMask,
-    mdbCardGroup
-  },
-  data(){
-    return {
-      navigation: {
-        visible: true
-      },
-      processing: true
-    };
-  },
-  mounted() {
-    console.log("TAPOS NA MAG LOAD");
-    setTimeout(() => {
-      this.processing = false;
-      this.$emit('processingEmit', this.processing);
-    }, 1000);
-  },
-  methods: {
-    openNavigation() {
-      this.navigation.visible = true;
-    },
-
-    closeNavigation() {
-      this.navigation.visible = false;
+    import {
+        mdbNavbar,
+        mdbNavItem,
+        mdbNavbarNav,
+        mdbNavbarToggler,
+        mdbBtn,
+        mdbIcon,
+        mdbContainer,
+        mdbRow,
+        mdbCol,
+        mdbCard,
+        mdbCardImage,
+        mdbCardHeader,
+        mdbCardBody,
+        mdbCardTitle,
+        mdbCardText,
+        mdbView,
+        mdbMask,
+        mdbCardGroup
     }
-  }
-};
+    from 'mdbvue';
+
+    export default {
+        name: 'HomePage',
+        components: {
+            mdbNavbar,
+            mdbNavItem,
+            mdbNavbarNav,
+            mdbNavbarToggler,
+            mdbBtn,
+            mdbIcon,
+            mdbContainer,
+            mdbRow,
+            mdbCol,
+            mdbCard,
+            mdbCardImage,
+            mdbCardHeader,
+            mdbCardBody,
+            mdbCardTitle,
+            mdbCardText,
+            mdbView,
+            mdbMask,
+            mdbCardGroup
+        },
+        mounted() {
+            // setTimeout(() => {
+            //   this.endLoading();
+            // }, 1000);
+
+            this.endLoading;
+        },
+        methods: {
+
+        },
+        computed: {
+            isLoading() {
+                    return this.$store.state.processing;
+                },
+
+                startLoading() {
+                    this.$store.commit('startProcessing');
+                },
+
+                endLoading() {
+                    this.$store.commit('endProcessing');
+                },
+        }
+    };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -223,15 +217,15 @@ export default {
         background-size: cover;
         height: 100%;
     }
-
     .parallax {
         /* The image used */
+        
         background-image: url("https://images.unsplash.com/photo-1502685904007-66914fdd9118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
-
         /* Set a specific height */
-        min-height: 400px; 
-
+        
+        min-height: 400px;
         /* Create the parallax scrolling effect */
+        
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
