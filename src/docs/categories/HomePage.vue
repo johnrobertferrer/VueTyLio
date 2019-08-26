@@ -1,5 +1,5 @@
 <template>
-    <div v-if="!isLoading">
+    <div v-if="!isLoading" >
         <!--Navbar-->
         <mdb-navbar position="top" transparent dark color="elegant" name="Your Logo" href="/about" scrolling>
             <mdb-navbar-toggler>
@@ -21,24 +21,51 @@
         </mdb-navbar>
         <!--/.Navbar-->
 
+
         <div style="height: 100vh;">
-            <div class="view intro-2">
+            <div @load="loadedBackgroundHeader()" class="view intro-2">
                 <div class="full-bg-img">
                     <div class="mask rgba-black-strong flex-center">
                         <div class="container">
-                            <div class="white-text text-center">
-                                <!-- <h1 class="font-weight-bold animated infinite pulse fast" style="font-size: 4em">Hai</h1> -->
-                                <h1 class="font-weight-bold animated infinite heartBeat white-text accent-2" style="font-size: 3.5em">I am <span class="yellow-text">Star</span></h1>
-                                <mdb-icon icon="angle-double-down" size="2x" class="mt-3 mr-6 animated infinite bounce slower" style="position: absolute; bottom: 50px;" />
+                            <div class="text-center white-text">
+                                <h1 class="font-weight-bold" style="font-size: 3.5em">
+                                <span class="mb-5">ATTRACTED ON</span>
+                                <br>
+                                <vue-typer
+                                    :text='["Web Development","Hybrid Mobile Development","Arduino Projects","Photo & Video Editing"]'
+                                    class="mt-5 p-2"
+                                    :repeat='Infinity'
+                                    :shuffle='true'
+                                    initial-action='erasing'
+                                    :pre-type-delay='0'
+                                    :type-delay='100'
+                                    :pre-erase-delay='2000'
+                                    :erase-delay='10'
+                                    erase-style='backspace'
+                                    :erase-on-complete='true'
+                                    caret-animation='expand'
+                                    text-color='#fff'
+                                ></vue-typer>
+
+                                </h1>
+
+                                <mdb-icon v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1000 }" icon="angle-double-down" size="2x" class="mt-3 mr-6 animated infinite bounce slower" style="position: absolute; bottom: 5vh;" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <!-- <div @click="scrollUp()" v-scroll-to="{ el: '#app', offset: scroll_y, duration: 500 }">
+            <mdb-icon icon="angle-up" size="2x" class="red accent-2 pl-2 pr-2" style="position: fixed; right: 3vw; top: 47vh;" />
+        </div>
+        <div @click="scrollDown()" v-scroll-to="{ el: '#app', offset: scroll_y, duration: 500 }">
+            <mdb-icon icon="angle-down" size="2x" class="yellow darken-2 pl-2 pr-2" style="position: fixed; right: 3vw; bottom: 47vh;" />
+        </div> -->
 
         <!-- CURRENT PROJECTS -->
-        <section class="red accent-2" style="padding: 100px 0;">
+        <section id="current-projects" class="red accent-2" style="padding: 100px 0;">
             <mdb-container>
                 <mdb-row>
                     <div class="col-12 col sm-12 col-lg-12">
@@ -131,6 +158,20 @@
                             <p>
                                 I am constantly developing projects, experimenting with new technologies and techniques. And I am very passionate about Web Development, and strive to better myself as a developer, and the development community as a whole.
                             </p>
+
+                            <vue-typer
+                                    :text='["Web Development","Hybrid Mobile Development","Arduino Projects","Photo & Video Editing"]'
+                                    :repeat='Infinity'
+                                    :shuffle='true'
+                                    initial-action='erasing'
+                                    :pre-type-delay='0'
+                                    :type-delay='100'
+                                    :pre-erase-delay='2000'
+                                    :erase-delay='10'
+                                    erase-style='backspace'
+                                    :erase-on-complete='true'
+                                    caret-animation='expand'
+                                ></vue-typer>
                         </div>
                     </div>
                 </mdb-row>
@@ -161,6 +202,8 @@
         mdbCardGroup
     }
     from 'mdbvue';
+    import AOS from 'aos';
+    import 'aos/dist/aos.css';
 
     export default {
         name: 'HomePage',
@@ -184,28 +227,76 @@
             mdbMask,
             mdbCardGroup
         },
+        data() {
+            return {
+                loading_status: {
+                    photo: {
+                        background_header: true
+                    }
+                },
+                scroll_y: 0
+            };
+        },
+        beforeMount() {
+            AOS.refreshHard();
+        },
         mounted() {
-            // setTimeout(() => {
-            //   this.endLoading();
-            // }, 1000);
-
-            this.endLoading;
+            this.startLoading();
+            this.loadChecker();
         },
         methods: {
+            loadChecker() {
+                let that = this;
 
+                // setTimeout(function () {
+                    if (that.loading_status.photo.background_header) {
+                        that.endLoading();  
+                        
+                    }
+                // }, 1500);
+            },
+
+            startLoading() {
+                this.$store.commit('startProcessing');
+            },
+
+            endLoading() {
+                this.$store.commit('endProcessing');
+            },
+
+            loadedBackgroundHeader() {
+                this.loading_status.photo.background_header = false;
+            },
+
+            // updateScrollY() {
+            //     let scroll = this.scroll_y;
+            //     this.scroll_y = scroll + 200;
+            // }
+
+            scrollUp() {
+                let scroll = this.scroll_y;
+                if (scroll <= 500)
+                    this.scroll_y = 0;
+                else
+                    this.scroll_y = scroll - 500;
+            },
+
+            scrollDown() {
+                let scroll = this.scroll_y;
+                this.scroll_y = scroll + 500;
+            }
         },
         computed: {
             isLoading() {
-                    return this.$store.state.processing;
-                },
+                return this.$store.state.processing;
+            },
 
-                startLoading() {
-                    this.$store.commit('startProcessing');
-                },
+            // scrollUp() {
+            //     this.scroll_y + 50;
+            //     return this.scroll_y;
+            // },
 
-                endLoading() {
-                    this.$store.commit('endProcessing');
-                },
+            
         }
     };
 </script>
@@ -213,14 +304,15 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .view {
-        background: url("../../assets/background.jpg")no-repeat center center;
+        background: url("../../assets/background.svg")no-repeat center center;
         background-size: cover;
         height: 100%;
     }
     .parallax {
         /* The image used */
         
-        background-image: url("https://images.unsplash.com/photo-1502685904007-66914fdd9118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+        /* background-image: url("https://images.unsplash.com/photo-1502685904007-66914fdd9118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"); */
+        background-image: url("https://images.unsplash.com/photo-1523278669709-c05da80b6a65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");
         /* Set a specific height */
         
         min-height: 400px;
@@ -231,4 +323,23 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    .vue-typer {
+        font-family: Roboto light, 'Copperplate Gothic Light', fantasy;
+        background: #fff;
+
+    }
+
+.vue-typer .custom.char.typed {
+  color: #66ccff;
+}
+.vue-typer .custom.char.selected {
+  color: #66ccff;
+  background-color: transparent;
+  text-decoration: line-through;
+}
+
+.vue-typer .custom.caret {
+  display: none;
+}
 </style>

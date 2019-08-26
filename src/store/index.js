@@ -9,10 +9,10 @@ export default new Vuex.Store({
     },
     mutations: {
         startProcessing(state) {
-                state.processing = true;
-            },
-            endProcessing(state) {
-                state.processing = false;
-            }
+            state.processing = true;
+        },
+        endProcessing(state) {
+            state.processing = false;
+        }
     }
 });
