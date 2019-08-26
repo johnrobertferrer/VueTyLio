@@ -151,20 +151,6 @@
                             <p>
                                 I am constantly developing projects, experimenting with new technologies and techniques. And I am very passionate about Web Development, and strive to better myself as a developer, and the development community as a whole.
                             </p>
-
-                            <vue-typer
-                                    :text='["Web Development","Hybrid Mobile Development","Arduino Projects","Photo & Video Editing"]'
-                                    :repeat='Infinity'
-                                    :shuffle='true'
-                                    initial-action='erasing'
-                                    :pre-type-delay='0'
-                                    :type-delay='100'
-                                    :pre-erase-delay='2000'
-                                    :erase-delay='10'
-                                    erase-style='backspace'
-                                    :erase-on-complete='true'
-                                    caret-animation='expand'
-                                ></vue-typer>
                         </div>
                     </div>
                 </mdb-row>
@@ -318,7 +304,7 @@
     }
 
     .vue-typer {
-        font-family: 'Century Gothic', 'Copperplate Gothic Light', fantasy;
+        font-family: 'Century Gothic', 'Segoe UI', 'Roboto Light';
         background: #fff;
     }
 </style>
