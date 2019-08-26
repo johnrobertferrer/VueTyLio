@@ -33,7 +33,7 @@
                                 <br>
                                 <vue-typer
                                     :text='["Web Development","Hybrid Mobile Development","Arduino Projects","Photo & Video Editing"]'
-                                    class="mt-5 p-2"
+                                    class="mt-5 pl-2 pr-2 pb-1"
                                     :repeat='Infinity'
                                     :shuffle='true'
                                     initial-action='erasing'
@@ -56,13 +56,6 @@
                 </div>
             </div>
         </div>
-        
-        <!-- <div @click="scrollUp()" v-scroll-to="{ el: '#app', offset: scroll_y, duration: 500 }">
-            <mdb-icon icon="angle-up" size="2x" class="red accent-2 pl-2 pr-2" style="position: fixed; right: 3vw; top: 47vh;" />
-        </div>
-        <div @click="scrollDown()" v-scroll-to="{ el: '#app', offset: scroll_y, duration: 500 }">
-            <mdb-icon icon="angle-down" size="2x" class="yellow darken-2 pl-2 pr-2" style="position: fixed; right: 3vw; bottom: 47vh;" />
-        </div> -->
 
         <!-- CURRENT PROJECTS -->
         <section id="current-projects" class="red accent-2" style="padding: 100px 0;">
@@ -325,21 +318,7 @@
     }
 
     .vue-typer {
-        font-family: Roboto light, 'Copperplate Gothic Light', fantasy;
+        font-family: 'Century Gothic', 'Copperplate Gothic Light', fantasy;
         background: #fff;
-
     }
-
-.vue-typer .custom.char.typed {
-  color: #66ccff;
-}
-.vue-typer .custom.char.selected {
-  color: #66ccff;
-  background-color: transparent;
-  text-decoration: line-through;
-}
-
-.vue-typer .custom.caret {
-  display: none;
-}
 </style>
