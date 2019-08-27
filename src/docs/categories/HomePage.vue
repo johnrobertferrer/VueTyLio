@@ -49,7 +49,7 @@
 
                                 </h1>
 
-                                <mdb-icon v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1200 }" icon="angle-double-down" size="2x" class="mt-3 mr-6 animated infinite bounce slower" style="position: absolute; bottom: 5vh;" />
+                                <mdb-icon v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1200 }" icon="angle-double-down" class="mt-3 mr-6 animated infinite bounce slower" style="font-size: 7vh; position: absolute; bottom: 5vh;" />
                             </div>
                         </div>
                     </div>
@@ -57,17 +57,48 @@
             </div>
         </div>
 
-        <!-- CURRENT PROJECTS -->
+        <section>
+            <mdb-row class="m-0">
+                <div class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
+                    <center>
+                        <img src="../../assets/web.svg" class="w-25 m-3">
+                        <h3 class="text-center mt-2 mb-4">Web Development</h3>
+                    </center>
+                </div>
+                <div class="skill-icon amber lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
+                    <center>
+                        <img src="../../assets/mobile.svg" class="w-25 m-3">
+                        <h3 class="text-center mt-2 mb-4">Mobile Development</h3>
+                    </center>
+                </div>
+                <div class="skill-icon orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
+                    <center>
+                        <img src="../../assets/arduino.svg" class="w-25 m-3">
+                        <h3 class="text-center mt-2 mb-4">Arduino Projects</h3>
+                    </center>
+                </div>
+                <div class="skill-icon deep-orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
+                    <center>
+                        <img src="../../assets/editing.svg" class="w-25 m-3">
+                        <h3 class="text-center mt-2 mb-4">Photo & Video Editing</h3>
+                    </center>
+                </div>
+            </mdb-row>
+        </section>
+
+        <!-- SEMINARS AND MEETUP -->
         <section id="current-projects" class="primary-red" style="padding: 100px 0;">
             <mdb-container>
                 <mdb-row>
-                    <div class="col-12 col sm-12 col-lg-12">
-                        <h2 class="jumbotron text-center font-weight-bold">Recent Projects</h2>
+                    <div class="col-12 col sm-12 col-lg-4 white-text p-2 text-center" style="word-wrap: break-word; font-size: 500%; margin-top: 6%; line-height: 1.75;">
+                        RECENT PROJECT
+                        <!-- <h1 class="text-center font-weight-bold white-text">Recent Projects</h1> -->
                     </div>
-                    <mdb-container>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                    <!-- <mdb-container> -->
                         <mdb-row>
-                            <mdb-card-group deck class="pl-3 pr-3">
-                                <mdb-card data-aos="fade-up" data-aos-delay="50" data-aos-anchor-placement="top-center">
+                            <mdb-card-group deck class="pl-5 pr-5">
+                                <mdb-card class="animated infinite shake slow">
                                     <mdb-view hover>
                                         <a href="/#/components">
                                             <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap"></mdb-card-image>
@@ -75,14 +106,14 @@
                                         </a>
                                     </mdb-view>
                                     <mdb-card-body>
-                                        <mdb-card-title class="text-center">Card title</mdb-card-title>
+                                        <mdb-card-title class="text-center">DEAF Ed</mdb-card-title>
                                         <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
                                         <center>
-                                            <mdb-btn color="primary">Read more</mdb-btn>
+                                            <mdb-btn class="primary-red">Read more</mdb-btn>
                                         </center>
                                     </mdb-card-body>
                                 </mdb-card>
-                                <mdb-card data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="top-center">
+                                <mdb-card class="animated infinite shake slower">
                                     <mdb-view hover>
                                         <a href="#!">
                                             <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg" alt="Card image cap"></mdb-card-image>
@@ -90,22 +121,7 @@
                                         </a>
                                     </mdb-view>
                                     <mdb-card-body>
-                                        <mdb-card-title class="text-center">Card title</mdb-card-title>
-                                        <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
-                                        <center>
-                                            <mdb-btn color="primary">Read more</mdb-btn>
-                                        </center>
-                                    </mdb-card-body>
-                                </mdb-card>
-                                <mdb-card data-aos="fade-up" data-aos-delay="350" data-aos-anchor-placement="top-center">
-                                    <mdb-view hover>
-                                        <a href="#!">
-                                            <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/images/11.jpg" alt="Card image cap"></mdb-card-image>
-                                            <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
-                                        </a>
-                                    </mdb-view>
-                                    <mdb-card-body>
-                                        <mdb-card-title class="text-center">Card title</mdb-card-title>
+                                        <mdb-card-title class="text-center">Ms. Marikina 2018</mdb-card-title>
                                         <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
                                         <center>
                                             <mdb-btn color="primary">Read more</mdb-btn>
@@ -114,25 +130,97 @@
                                 </mdb-card>
                             </mdb-card-group>
                         </mdb-row>
-                    </mdb-container>
+                    </div>
+                    <!-- </mdb-container> -->
                 </mdb-row>
             </mdb-container>
         </section>
+
+        <!-- PARALLAX -->
         <div class="section">
             <div class="parallax">
                 <h1 class="text-center mb-0 pl-5 pr-5 white-text" style="padding: 150px 0">“Be as smart as you can, but remember that it is always better to be wise than to be smart.” – Alan Alda</h1>
             </div>
         </div>
-        <!-- WHO AM I -->
-        <section class="primary-blue" style="padding: 100px 0;">
+
+        <!-- CURRENT PROJECTS -->
+        <section id="current-projects" class="primary-blue" style="padding: 100px 0;">
             <mdb-container>
                 <mdb-row>
-                    <!-- LEFT -->
+                    <div class="col-12 col sm-12 col-lg-4 p-2 white-text text-center" style="word-wrap: break-word; font-size: 500%; margin-top: 6%; line-height: 1.75;">
+                        RECENT PROJECT
+                        <!-- <h1 class="text-center font-weight-bold white-text">Recent Projects</h1> -->
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                    <!-- <mdb-container> -->
+                        <mdb-row>
+                            <mdb-card-group deck class="pl-5 pr-5">
+                                <mdb-card class="animated infinite delay-4s shake slow project-card">
+                                    <mdb-view hover>
+                                        <a href="/#/components">
+                                            <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap"></mdb-card-image>
+                                            <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
+                                        </a>
+                                    </mdb-view>
+                                    <mdb-card-body>
+                                        <mdb-card-title class="text-center">DEAF Ed</mdb-card-title>
+                                        <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
+                                        <center>
+                                            <mdb-btn color="primary">Read more</mdb-btn>
+                                        </center>
+                                    </mdb-card-body>
+                                </mdb-card>
+                                <mdb-card class="animated infinite shake slower project-card">
+                                    <mdb-view hover>
+                                        <a href="#!">
+                                            <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg" alt="Card image cap"></mdb-card-image>
+                                            <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
+                                        </a>
+                                    </mdb-view>
+                                    <mdb-card-body>
+                                        <mdb-card-title class="text-center">Ms. Marikina 2018</mdb-card-title>
+                                        <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
+                                        <center>
+                                            <mdb-btn color="primary">Read more</mdb-btn>
+                                        </center>
+                                    </mdb-card-body>
+                                </mdb-card>
+                            </mdb-card-group>
+                        </mdb-row>
+                    </div>
+                    <!-- </mdb-container> -->
+                </mdb-row>
+            </mdb-container>
+        </section>
+
+        <section class="teal darken-4" style="padding: 100px 0;">
+            <mdb-container>
+                <mdb-row>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <img src="../../assets/web.svg" class="w-100 m-3">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <img src="../../assets/web.svg" class="w-100 m-3">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <img src="../../assets/web.svg" class="w-100 m-3">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <img src="../../assets/web.svg" class="w-100 m-3">
+                    </div>
+                </mdb-row>
+            </mdb-container>
+        </section>
+
+
+        <!-- WHO AM I -->
+        <!-- <section class="primary-blue" style="padding: 100px 0;">
+            <mdb-container>
+                <mdb-row>
                     <div class="col-12 col-sm-12 col-lg-4 mb-5" data-aos="zoom-in-down" data-aos-anchor-placement="top-center" data-aos-delay="200">
                         <img src="../../assets/gradpicture.jpg" width="100%">
                     </div>
 
-                    <!-- RIGHT -->
                     <div class="col-12 col-sm-12 col-lg-8 white-text" data-aos="zoom-in-down" data-aos-anchor-placement="top-center" data-aos-delay="200">
                         <h2 class="text-center font-weight-bold">Who am I</h2>
                         <div class="text-body text-justify white-text">
@@ -155,7 +243,7 @@
                     </div>
                 </mdb-row>
             </mdb-container>
-        </section>
+        </section> -->
     </div>
 </template>
 
@@ -230,9 +318,8 @@
                 setTimeout(function () {
                     if (that.loading_status.photo.background_header) {
                         that.endLoading();  
-                        
                     }
-                }, 4500);
+                }, 0);
             },
 
             startLoading() {
@@ -266,7 +353,8 @@
         /* The image used */
         
         /* background-image: url("https://images.unsplash.com/photo-1502685904007-66914fdd9118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"); */
-        background-image: url("https://images.unsplash.com/photo-1523278669709-c05da80b6a65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");
+        /* background-image: url("https://images.unsplash.com/photo-1523278669709-c05da80b6a65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"); */
+        background-image: url("https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2019/01/20181025_0023_f-h_2019_thr.jpg");
         /* Set a specific height */
         
         min-height: 400px;
@@ -297,5 +385,14 @@
 
     .primary-yellow {
         background-color: #ebad04;
+    }
+    
+    .project-card {
+        animation-duration: 5s;
+    }
+
+    .skill-icon:hover {
+        box-shadow: inset 0 0 0 1vw #0c8b91;
+        transition: 0.2s;
     }
 </style>
