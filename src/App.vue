@@ -4,7 +4,7 @@
             <transition name="fade" mode="out-in">
                 <section class="primary-yellow" v-show="isLoading" style="width: 100vw; height: 100vh;">
                     <center>
-                        <div class="lds-hourglass" style="margin-top: 45vh;"></div>
+                        <div class="lds-hourglass" style="margin-top: 35vh;"></div>
                     </center>
                 </section>
             </transition>
@@ -102,8 +102,8 @@
     .lds-hourglass {
         display: inline-block;
         position: relative;
-        width: 100px;
-        height: 100px;
+        width: 25vh;
+        height: 25vh;
     }
     .lds-hourglass:after {
         content: " ";
@@ -113,7 +113,7 @@
         height: 0;
         margin: 6px;
         box-sizing: border-box;
-        border: 50px solid #fff;
+        border: 12.5vh solid #fff;
         border-color: #fff transparent #fff transparent;
         animation: lds-hourglass 1.2s infinite;
     }
