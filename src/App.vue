@@ -2,7 +2,7 @@
     <div id="app" class="flyout">
         <main>
             <transition name="fade" mode="out-in">
-                <section class="red accent-2" v-show="isLoading" style="width: 100vw; height: 100vh;">
+                <section class="primary-yellow" v-show="isLoading" style="width: 100vw; height: 100vh;">
                     <center>
                         <div class="lds-hourglass" style="margin-top: 45vh;"></div>
                     </center>
@@ -13,7 +13,7 @@
                 <router-view></router-view>
             </transition>
         </main>
-        <mdb-footer color="elegant-color-dark" v-show="!isLoading" style="margin-top: 0 !important;">
+        <mdb-footer color="elegant-color" v-show="!isLoading" style="margin-top: 0 !important;">
             <p class="footer-copyright mb-0 py-4 text-center">
                 &copy; {{new Date().getFullYear()}} Copyright | John Robert Ferrer
             </p>
@@ -47,6 +47,22 @@
 </script>
 
 <style>
+    .elegant-color {
+        background-color: #0c8b91 !important;
+    }
+
+    .primary-red {
+        background-color: #e25247;
+    }
+
+    .primary-blue {
+        background-color: #0c8b91;
+    }
+
+    .primary-yellow {
+        background-color: #ebad04;
+    }
+
     .flyout {
         display: flex;
         flex-direction: column;

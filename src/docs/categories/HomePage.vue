@@ -13,7 +13,7 @@
                 <mdb-navbar-nav>
                     <a href="https://drive.google.com/uc?export=download&id=1SJXkatzMgFnAI70XlpasslxT5skPGw2O" style="position: inline-block">
                         <mdb-nav-item class="mr-3 font-weight-bold">
-                            <span class="yellow-text">RESUME</span>
+                            <span class="font-weight-bold">RESUME</span>
                         </mdb-nav-item>
                     </a>
                 </mdb-navbar-nav>
@@ -49,7 +49,7 @@
 
                                 </h1>
 
-                                <mdb-icon v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1000 }" icon="angle-double-down" size="2x" class="mt-3 mr-6 animated infinite bounce slower" style="position: absolute; bottom: 5vh;" />
+                                <mdb-icon v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1200 }" icon="angle-double-down" size="2x" class="mt-3 mr-6 animated infinite bounce slower" style="position: absolute; bottom: 5vh;" />
                             </div>
                         </div>
                     </div>
@@ -58,7 +58,7 @@
         </div>
 
         <!-- CURRENT PROJECTS -->
-        <section id="current-projects" class="red accent-2" style="padding: 100px 0;">
+        <section id="current-projects" class="primary-red" style="padding: 100px 0;">
             <mdb-container>
                 <mdb-row>
                     <div class="col-12 col sm-12 col-lg-12">
@@ -124,7 +124,7 @@
             </div>
         </div>
         <!-- WHO AM I -->
-        <section class="grey darken-4" style="padding: 100px 0;">
+        <section class="primary-blue" style="padding: 100px 0;">
             <mdb-container>
                 <mdb-row>
                     <!-- LEFT -->
@@ -227,12 +227,12 @@
             loadChecker() {
                 let that = this;
 
-                // setTimeout(function () {
+                setTimeout(function () {
                     if (that.loading_status.photo.background_header) {
                         that.endLoading();  
                         
                     }
-                // }, 1500);
+                }, 1500);
             },
 
             startLoading() {
@@ -245,37 +245,12 @@
 
             loadedBackgroundHeader() {
                 this.loading_status.photo.background_header = false;
-            },
-
-            // updateScrollY() {
-            //     let scroll = this.scroll_y;
-            //     this.scroll_y = scroll + 200;
-            // }
-
-            scrollUp() {
-                let scroll = this.scroll_y;
-                if (scroll <= 500)
-                    this.scroll_y = 0;
-                else
-                    this.scroll_y = scroll - 500;
-            },
-
-            scrollDown() {
-                let scroll = this.scroll_y;
-                this.scroll_y = scroll + 500;
             }
         },
         computed: {
             isLoading() {
                 return this.$store.state.processing;
-            },
-
-            // scrollUp() {
-            //     this.scroll_y + 50;
-            //     return this.scroll_y;
-            // },
-
-            
+            }
         }
     };
 </script>
@@ -306,5 +281,21 @@
     .vue-typer {
         font-family: 'Century Gothic', 'Segoe UI', 'Roboto Light';
         background: #fff;
+    }
+
+    .elegant-color {
+        background-color: #0c8b91 !important;
+    }
+
+    .primary-red {
+        background-color: #e25247;
+    }
+
+    .primary-blue {
+        background-color: #0c8b91;
+    }
+
+    .primary-yellow {
+        background-color: #ebad04;
     }
 </style>
