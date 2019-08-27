@@ -232,7 +232,7 @@
                         that.endLoading();  
                         
                     }
-                }, 1500);
+                }, 4500);
             },
 
             startLoading() {
