@@ -59,7 +59,7 @@
 
         <section>
             <mdb-row class="m-0">
-                <div class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
+                <div data-sal="fade" class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
                         <img src="../../assets/web.svg" class="w-25 m-3">
                         <h3 class="text-center mt-2 mb-4">Web Development</h3>
@@ -196,18 +196,30 @@
         <section class="teal darken-4" style="padding: 100px 0;">
             <mdb-container>
                 <mdb-row>
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <img src="../../assets/web.svg" class="w-100 m-3">
+                    <div class="col-12 col-sm-12 col-lg-6" data-sal="slide-up"
+  data-sal-delay="300"
+  data-sal-easing="ease-out-bounce">
+                        <img src="../../assets/client-luljettas.svg" class="w-100 p-3 pt-4">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <img src="../../assets/web.svg" class="w-100 m-3">
+                        <img src="../../assets/client-plm.svg" class="w-100 p-3">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <img src="../../assets/web.svg" class="w-100 m-3">
+                        <img src="../../assets/client-marikina.svg" class="w-100 p-3">
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <img src="../../assets/web.svg" class="w-100 m-3">
+                    <!-- <div data-sal="zoom-in"
+                        data-sal-duration="2000"
+                        data-sal-delay="500"
+                        data-sal-easing="ease-out-bounce">
+                        Element To Animate
                     </div>
+
+                    <h1
+                    data-sal="slide-up"
+                    data-sal-delay="300"
+                    data-sal-duration="800"
+                    data-sal-easing="ease-out-bounce"
+                    >Lorem</h1> -->
                 </mdb-row>
             </mdb-container>
         </section>
@@ -271,6 +283,7 @@
     from 'mdbvue';
     import AOS from 'aos';
     import 'aos/dist/aos.css';
+    import sal from 'sal.js';
 
     export default {
         name: 'HomePage',
@@ -310,6 +323,7 @@
         mounted() {
             this.startLoading();
             this.loadChecker();
+            sal();
         },
         methods: {
             loadChecker() {
@@ -344,6 +358,9 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    /* @import "(..)/node_modules/sal.js/dist/sal.css"; */
+    /* @import './node_modules/sal.js/dist/sal.css'; */
+
     .view {
         background: url("../../assets/background.svg")no-repeat center center;
         background-size: cover;

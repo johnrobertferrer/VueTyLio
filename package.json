@@ -29,6 +29,7 @@
     "moment": "^2.24.0",
     "popper.js": "^1.15.0",
     "postcss-import": "^12.0.1",
+    "sal.js": "^0.6.1",
     "vue": "^2.6.10",
     "vue-chartjs": "^3.4.2",
     "vue-clickaway": "^2.2.2",

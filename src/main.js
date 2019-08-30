@@ -10,9 +10,6 @@ import Vue2TouchEvents from 'vue2-touch-events';
 import LoadScript from 'vue-plugin-load-script';
 import VueTyperPlugin from 'vue-typer';
 import VueScrollTo from 'vue-scrollto';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 
 Vue.use(VueScrollTo);
 Vue.use(Vue2TouchEvents);
@@ -20,15 +17,11 @@ Vue.use(LoadScript);
 Vue.use(VueTyperPlugin);
 
 Vue.config.productionTip = false;
-
 /* eslint-disable no-new */
 new Vue({
     el: '#app',
     store,
     router,
-    created() {
-      AOS.init();
-    },
     template: '<App/>',
     components: {
         App
