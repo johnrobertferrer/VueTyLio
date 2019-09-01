@@ -324,6 +324,7 @@
         },
         mounted() {
             sal();
+            this.startLoading();
         },
         methods: {
             startLoading() {
@@ -350,13 +351,6 @@
             }
         },
         watch: {
-            // loading_status: function (newValue) {
-            //     console.log("newValue: ", newValue);
-
-            //     if (this.loading_status.photo.background_header) {
-            //         this.endLoading();  
-            //     }
-            // }
             'loading_status.photo.background_header': function (newValue) {
                 if (this.loadingChecker()) {
                     this.endLoading();
@@ -372,14 +366,10 @@
 
             loadingStatus: {
                 get: function() {
-                    console.log("loadingStatus: ", this.$store.state.processing);
-                    
                     return this.$store.state.processing;
                 },
                 set: function() {
-                    // if(this.loading_status.photo.background_header) {
-                        this.endLoading();
-                    // }
+                    this.endLoading();
                 }
             }
         }
