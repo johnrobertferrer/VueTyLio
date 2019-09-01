@@ -1,5 +1,5 @@
 <template>
-    <div v-if="!isLoading" >
+    <div v-show="!isLoading" >
         <!--Navbar-->
         <mdb-navbar position="top" transparent dark color="elegant" name="Your Logo" href="/about" scrolling>
             <mdb-navbar-toggler>
@@ -23,7 +23,8 @@
 
 
         <div style="height: 100vh;">
-            <div @load="loadedBackgroundHeader()" class="view intro-2">
+            <div class="view intro-2">
+                <img @load="loadedBackgroundHeader()" src="../../assets/test1.jpg" class="view">
                 <div class="full-bg-img">
                     <div class="mask rgba-black-strong flex-center">
                         <div class="container">
@@ -49,7 +50,7 @@
 
                                 </h1>
 
-                                <mdb-icon v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1200 }" icon="angle-double-down" class="mt-3 mr-6 animated infinite bounce slower" style="font-size: 7vh; position: absolute; bottom: 5vh;" />
+                                <mdb-icon v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1200 }" icon="angle-double-down" class="mt-3 mr-6 animated infinite bounce slower" style="font-size: 6vh; position: absolute; bottom: 6vh;" />
                             </div>
                         </div>
                     </div>
@@ -311,9 +312,10 @@
             return {
                 loading_status: {
                     photo: {
-                        background_header: true
+                        background_header: false
                     }
                 },
+                status: false,
                 scroll_y: 0
             };
         },
@@ -322,19 +324,10 @@
         },
         mounted() {
             this.startLoading();
-            this.loadChecker();
             sal();
         },
         methods: {
-            loadChecker() {
-                let that = this;
-
-                setTimeout(function () {
-                    if (that.loading_status.photo.background_header) {
-                        that.endLoading();  
-                    }
-                }, 0);
-            },
+            
 
             startLoading() {
                 this.$store.commit('startProcessing');
@@ -345,12 +338,21 @@
             },
 
             loadedBackgroundHeader() {
-                this.loading_status.photo.background_header = false;
+                console.log("IMG LOADED");
+                this.loading_status.photo.background_header = true;
             }
         },
         computed: {
             isLoading() {
                 return this.$store.state.processing;
+            },
+
+            loadChecker() {
+                let that = this;
+
+                if (that.loading_status.photo.background_header) {
+                    that.endLoading();  
+                }
             }
         }
     };
@@ -358,25 +360,19 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    /* @import "(..)/node_modules/sal.js/dist/sal.css"; */
-    /* @import './node_modules/sal.js/dist/sal.css'; */
-
     .view {
-        background: url("../../assets/background.svg")no-repeat center center;
-        background-size: cover;
         height: 100%;
+        width: 100%;
     }
+
+    .view img {
+        object-fit: cover;
+    }
+
     .parallax {
-        /* The image used */
-        
-        /* background-image: url("https://images.unsplash.com/photo-1502685904007-66914fdd9118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"); */
-        /* background-image: url("https://images.unsplash.com/photo-1523278669709-c05da80b6a65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"); */
         background-image: url("https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2019/01/20181025_0023_f-h_2019_thr.jpg");
-        /* Set a specific height */
         
         min-height: 400px;
-        /* Create the parallax scrolling effect */
-        
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
