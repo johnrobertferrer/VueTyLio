@@ -1,5 +1,5 @@
 <template>
-    <div v-show="!isLoading" >
+    <div v-show="!loadingStatus" >
         <!--Navbar-->
         <mdb-navbar position="top" transparent dark color="elegant" name="Your Logo" href="/about" scrolling>
             <mdb-navbar-toggler>
@@ -323,16 +323,9 @@
             AOS.refreshHard();
         },
         mounted() {
-            this.startLoading();
             sal();
         },
         methods: {
-            
-
-            startLoading() {
-                this.$store.commit('startProcessing');
-            },
-
             endLoading() {
                 this.$store.commit('endProcessing');
             },
@@ -340,6 +333,30 @@
             loadedBackgroundHeader() {
                 console.log("IMG LOADED");
                 this.loading_status.photo.background_header = true;
+            },
+
+            loadingChecker() {
+                let validated = true;
+
+                if (!this.loading_status.photo.background_header) {
+                    validated = false;
+                }
+
+                return validated;
+            }
+        },
+        watch: {
+            // loading_status: function (newValue) {
+            //     console.log("newValue: ", newValue);
+
+            //     if (this.loading_status.photo.background_header) {
+            //         this.endLoading();  
+            //     }
+            // }
+            'loading_status.photo.background_header': function (newValue) {
+                if (this.loadingChecker()) {
+                    this.endLoading();
+                }
             }
         },
         computed: {
@@ -347,11 +364,16 @@
                 return this.$store.state.processing;
             },
 
-            loadChecker() {
-                let that = this;
-
-                if (that.loading_status.photo.background_header) {
-                    that.endLoading();  
+            loadingStatus: {
+                get: function() {
+                    console.log("loadingStatus: ", this.$store.state.processing);
+                    
+                    return this.$store.state.processing;
+                },
+                set: function() {
+                    // if(this.loading_status.photo.background_header) {
+                        this.endLoading();
+                    // }
                 }
             }
         }
