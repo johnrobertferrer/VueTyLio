@@ -326,6 +326,10 @@
             sal();
         },
         methods: {
+            startLoading() {
+                this.$store.commit('startProcessing');
+            },
+
             endLoading() {
                 this.$store.commit('endProcessing');
             },
@@ -356,6 +360,8 @@
             'loading_status.photo.background_header': function (newValue) {
                 if (this.loadingChecker()) {
                     this.endLoading();
+                } else {
+                    this.startLoading();
                 }
             }
         },
