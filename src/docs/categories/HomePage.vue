@@ -24,7 +24,7 @@
 
         <div style="height: 100vh;">
             <div class="view intro-2">
-                <img @load="loadedBackgroundHeader()" src="../../assets/test1.jpg" class="view">
+                <img @load="loadedBackgroundHeader()" src="../../assets/background1.svg" class="view">
                 <div class="full-bg-img">
                     <div class="mask rgba-black-strong flex-center">
                         <div class="container">
