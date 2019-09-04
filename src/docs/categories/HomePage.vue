@@ -62,25 +62,25 @@
             <mdb-row class="m-0">
                 <div data-sal="fade" class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img loading="lazy" src="../../assets/web.svg" class="w-25 m-3">
+                        <img @load="loadedSkillWeb()" loading="lazy" src="../../assets/web.svg" class="w-25 m-3">
                         <h3 class="text-center mt-2 mb-4">Web Development</h3>
                     </center>
                 </div>
                 <div class="skill-icon amber lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img loading="lazy" src="../../assets/mobile.svg" class="w-25 m-3">
+                        <img @load="loadedSkillMobile()" loading="lazy" src="../../assets/mobile.svg" class="w-25 m-3">
                         <h3 class="text-center mt-2 mb-4">Mobile Development</h3>
                     </center>
                 </div>
                 <div class="skill-icon orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img loading="lazy" src="../../assets/arduino.svg" class="w-25 m-3">
+                        <img @load="loadedSkillArduino()" loading="lazy" src="../../assets/arduino.svg" class="w-25 m-3">
                         <h3 class="text-center mt-2 mb-4">Arduino Projects</h3>
                     </center>
                 </div>
                 <div class="skill-icon deep-orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img loading="lazy" src="../../assets/editing.svg" class="w-25 m-3">
+                        <img @load="loadedSkillEditing()" loading="lazy" src="../../assets/editing.svg" class="w-25 m-3">
                         <h3 class="text-center mt-2 mb-4">Photo & Video Editing</h3>
                     </center>
                 </div>
@@ -312,7 +312,11 @@
             return {
                 loading_status: {
                     photo: {
-                        background_header: false
+                        background_header: false,
+                        skill_web: false,
+                        skill_mobile: false,
+                        skill_arduino: false,
+                        skill_editing: false
                     }
                 },
                 status: false,
@@ -336,8 +340,23 @@
             },
 
             loadedBackgroundHeader() {
-                console.log("IMG LOADED");
                 this.loading_status.photo.background_header = true;
+            },
+
+            loadedSkillWeb() {
+                this.loading_status.photo.skill_web = true;
+            },
+
+            loadedSkillMobile() {
+                this.loading_status.photo.skill_mobile = true;
+            },
+
+            loadedSkillArduino() {
+                this.loading_status.photo.skill_arduino = true;
+            },
+
+            loadedSkillEditing() {
+                this.loading_status.photo.skill_editing = true;
             },
 
             loadingChecker() {
@@ -347,16 +366,52 @@
                     validated = false;
                 }
 
+                if (!this.loading_status.photo.skill_web) {
+                    validated = false;
+                }
+
+                if (!this.loading_status.photo.skill_mobile) {
+                    validated = false;
+                }
+
+                if (!this.loading_status.photo.skill_arduino) {
+                    validated = false;
+                }
+
+                if (!this.loading_status.photo.skill_editing) {
+                    validated = false;
+                }
+
                 return validated;
-            }
-        },
-        watch: {
-            'loading_status.photo.background_header': function (newValue) {
+            },
+
+            loadChecker() {
                 if (this.loadingChecker()) {
                     this.endLoading();
                 } else {
                     this.startLoading();
                 }
+            }
+        },
+        watch: {
+            'loading_status.photo.background_header': function (newValue) {
+                this.loadChecker();
+            },
+
+            'loading_status.photo.skill_web': function (newValue) {
+                this.loadChecker();
+            },
+
+            'loading_status.photo.skill_mobile': function (newValue) {
+                this.loadChecker();
+            },
+
+            'loading_status.photo.skill_arduino': function (newValue) {
+                this.loadChecker();
+            },
+
+            'loading_status.photo.skill_editing': function (newValue) {
+                this.loadChecker();
             }
         },
         computed: {
