@@ -23,22 +23,22 @@ export default new Router({
     {
       path: '/about',
       name: 'About',
-      component: AboutPage
+      component: lazyLoad('AboutPage.vue')
     },
     {
       path: '/work',
       name: 'Work',
-      component: WorkPage
+      component: lazyLoad('WorkPage.vue')
     },
     {
       path: '/contact',
       name: 'Contact',
-      component: ContactPage
+      component: lazyLoad('ContactPage')
     },
     {
       path: '/blog',
       name: 'Blog',
-      component: BlogPage
+      component: lazyLoad('BlogPage')
     }
   ]
 });
