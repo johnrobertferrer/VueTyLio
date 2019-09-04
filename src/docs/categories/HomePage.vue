@@ -204,7 +204,7 @@
                         <img loading="lazy" src="../../assets/client-plm.svg" class="w-100 p-3">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <img loading="lazy" src="../../assets/test1.jpg" class="w-100 p-3">
+                        <img loading="lazy" src="../../assets/client-marikina.svg" class="w-100 p-3">
                     </div>
                     <!-- <div data-sal="zoom-in"
                         data-sal-duration="2000"
