@@ -8,9 +8,9 @@ import BlogPage from '../docs/categories/BlogPage';
 
 Vue.use(Router);
 
-// function lazyLoad(view){
-//   return() => import(`../docs/categories/${view}Page.vue`)
-// }
+function lazyLoad(view){
+  return() => import(`../docs/categories/${view}`)
+}
 
 export default new Router({
   mode: 'history',
@@ -18,7 +18,7 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: HomePage
+      component: lazyLoad('HomePage.vue')
     },
     {
       path: '/about',
