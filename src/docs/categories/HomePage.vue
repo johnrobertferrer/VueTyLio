@@ -24,7 +24,7 @@
 
         <div style="height: 100vh;">
             <div class="view intro-2">
-                <img @load="loadedBackgroundHeader()" src="../../assets/background.svg" class="view">
+                <img @load="loadedBackgroundHeader()" src="../../assets/background.svg" class="view" loading="lazy">
                 <div class="full-bg-img">
                     <div class="mask rgba-black-strong flex-center">
                         <div class="container">
@@ -62,25 +62,25 @@
             <mdb-row class="m-0">
                 <div data-sal="fade" class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img src="../../assets/web.svg" class="w-25 m-3">
+                        <img loading="lazy" src="../../assets/web.svg" class="w-25 m-3">
                         <h3 class="text-center mt-2 mb-4">Web Development</h3>
                     </center>
                 </div>
                 <div class="skill-icon amber lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img src="../../assets/mobile.svg" class="w-25 m-3">
+                        <img loading="lazy" src="../../assets/mobile.svg" class="w-25 m-3">
                         <h3 class="text-center mt-2 mb-4">Mobile Development</h3>
                     </center>
                 </div>
                 <div class="skill-icon orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img src="../../assets/arduino.svg" class="w-25 m-3">
+                        <img loading="lazy" src="../../assets/arduino.svg" class="w-25 m-3">
                         <h3 class="text-center mt-2 mb-4">Arduino Projects</h3>
                     </center>
                 </div>
                 <div class="skill-icon deep-orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img src="../../assets/editing.svg" class="w-25 m-3">
+                        <img loading="lazy" src="../../assets/editing.svg" class="w-25 m-3">
                         <h3 class="text-center mt-2 mb-4">Photo & Video Editing</h3>
                     </center>
                 </div>
@@ -200,13 +200,13 @@
                     <div class="col-12 col-sm-12 col-lg-6" data-sal="slide-up"
   data-sal-delay="300"
   data-sal-easing="ease-out-bounce">
-                        <img src="../../assets/client-luljettas.svg" class="w-100 p-3 pt-4">
+                        <img loading="lazy" src="../../assets/client-luljettas.svg" class="w-100 p-3 pt-4">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <img src="../../assets/client-plm.svg" class="w-100 p-3">
+                        <img loading="lazy" src="../../assets/client-plm.svg" class="w-100 p-3">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <img src="../../assets/client-marikina.svg" class="w-100 p-3">
+                        <img loading="lazy" src="../../assets/client-marikina.svg" class="w-100 p-3">
                     </div>
                     <!-- <div data-sal="zoom-in"
                         data-sal-duration="2000"
