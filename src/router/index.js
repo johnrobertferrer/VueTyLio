@@ -1,16 +1,11 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HomePage from '../docs/categories/HomePage';
-import AboutPage from '../docs/categories/AboutPage.vue';
-import WorkPage from '../docs/categories/WorkPage';
-import ContactPage from '../docs/categories/ContactPage';
-import BlogPage from '../docs/categories/BlogPage';
 
 Vue.use(Router);
 
-// function lazyLoad(view){
-//   return() => import(`../docs/categories/${view}Page.vue`)
-// }
+function lazyLoad(view){
+  return() => import(`../docs/categories/${view}Page.vue`)
+}
 
 export default new Router({
   mode: 'history',
@@ -18,27 +13,27 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: HomePage
+      component: lazyLoad('Home')
     },
     {
       path: '/about',
       name: 'About',
-      component: AboutPage
+      component: lazyLoad('About')
     },
     {
       path: '/work',
       name: 'Work',
-      component: WorkPage
+      component: lazyLoad('Work')
     },
     {
       path: '/contact',
       name: 'Contact',
-      component: ContactPage
+      component: lazyLoad('Contact')
     },
     {
       path: '/blog',
       name: 'Blog',
-      component: BlogPage
+      component: lazyLoad('Blog')
     }
   ]
 });
