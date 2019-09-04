@@ -337,7 +337,6 @@
 
             loadedIconArrowDownBackgroundHeader() {
                 this.loading_status.icon.arrow_down_background_header = true;
-                console.log("LOADED ARROW DOWN ICON");
             },
 
             loadedBackgroundHeader() {
