@@ -4,7 +4,7 @@ import Router from 'vue-router';
 Vue.use(Router);
 
 function lazyLoad(view){
-  return() => import(`../docs/categories/HomePage.vue`)
+  return() => import(`../docs/categories/${view}Page.vue`)
 }
 
 export default new Router({
