@@ -30,29 +30,27 @@
                         <div class="container">
                             <div class="text-center white-text">
                                 <h1 class="font-weight-bold" style="font-size: 3.5em">
-                                <span class="mb-5">ATTRACTED ON</span>
-                                <br>
-                                <vue-typer
-                                    :text='["Web Development","Hybrid Mobile Development","Arduino Projects","Photo & Video Editing"]'
-                                    class="mt-5 pl-2 pr-2 pb-1"
-                                    :repeat='Infinity'
-                                    :shuffle='true'
-                                    initial-action='erasing'
-                                    :pre-type-delay='0'
-                                    :type-delay='100'
-                                    :pre-erase-delay='2000'
-                                    :erase-delay='10'
-                                    erase-style='backspace'
-                                    :erase-on-complete='true'
-                                    caret-animation='expand'
-                                    text-color='#fff'
-                                ></vue-typer>
-
+                                    <span class="mb-5">ATTRACTED ON</span>
+                                    <br>
+                                    <vue-typer
+                                        :text='["Web Development","Hybrid Mobile Development","Arduino Projects","Photo & Video Editing"]'
+                                        class="mt-5 pl-2 pr-2 pb-1"
+                                        :repeat='Infinity'
+                                        :shuffle='true'
+                                        initial-action='erasing'
+                                        :pre-type-delay='0'
+                                        :type-delay='100'
+                                        :pre-erase-delay='2000'
+                                        :erase-delay='10'
+                                        erase-style='backspace'
+                                        :erase-on-complete='true'
+                                        caret-animation='expand'
+                                        text-color='#fff'
+                                    ></vue-typer>
                                 </h1>
-
-                                <mdb-icon v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1200 }" icon="angle-double-down" class="mt-3 mr-6 animated infinite bounce slower" style="font-size: 6vh; position: absolute; bottom: 6vh;" />
                             </div>
                         </div>
+                        <img @load="loadedIconArrowDownBackgroundHeader()" v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1200 }" src="../../assets/arrow-down.svg" width="100%" class="mt-3 animated infinite bounce slower" style="position: absolute; bottom: 6vh; width: 6vh;" />
                     </div>
                 </div>
             </div>
@@ -206,7 +204,7 @@
                         <img loading="lazy" src="../../assets/client-plm.svg" class="w-100 p-3">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <img loading="lazy" src="../../assets/client-marikina.svg" class="w-100 p-3">
+                        <img loading="lazy" src="../../assets/test1.jpg" class="w-100 p-3">
                     </div>
                     <!-- <div data-sal="zoom-in"
                         data-sal-duration="2000"
@@ -282,9 +280,6 @@
         mdbCardGroup
     }
     from 'mdbvue';
-    import AOS from 'aos';
-    import 'aos/dist/aos.css';
-    import sal from 'sal.js';
 
     export default {
         name: 'HomePage',
@@ -317,18 +312,19 @@
                         skill_mobile: false,
                         skill_arduino: false,
                         skill_editing: false
-                    }
+                    },
+                    icon: {
+                        arrow_down_background_header: false
+                    },
+                    mounted_component: false
                 },
                 status: false,
                 scroll_y: 0
             };
         },
-        beforeMount() {
-            AOS.refreshHard();
-        },
         mounted() {
-            sal();
             this.startLoading();
+            this.loading_status.mounted_component = true;
         },
         methods: {
             startLoading() {
@@ -337,6 +333,11 @@
 
             endLoading() {
                 this.$store.commit('endProcessing');
+            },
+
+            loadedIconArrowDownBackgroundHeader() {
+                this.loading_status.icon.arrow_down_background_header = true;
+                console.log("LOADED ARROW DOWN ICON");
             },
 
             loadedBackgroundHeader() {
@@ -382,6 +383,14 @@
                     validated = false;
                 }
 
+                if (!this.loading_status.icon.arrow_down_background_header) {
+                    validated = false;
+                }
+
+                if (!this.loading_status.mounted_component) {
+                    validated = false;
+                }
+
                 return validated;
             },
 
@@ -411,6 +420,14 @@
             },
 
             'loading_status.photo.skill_editing': function (newValue) {
+                this.loadChecker();
+            },
+
+            'loading_status.icon.arrow_down_background_header': function (newValue) {
+                this.loadChecker();
+            },
+
+            'loading_status.mounted_component': function (newValue) {
                 this.loadChecker();
             }
         },
@@ -443,7 +460,7 @@
     }
 
     .parallax {
-        background-image: url("https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2019/01/20181025_0023_f-h_2019_thr.jpg");
+        background-image: url("../../assets/background.svg");
         
         min-height: 400px;
         background-attachment: fixed;
