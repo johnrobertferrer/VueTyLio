@@ -365,29 +365,17 @@
 
                 if (!this.loading_status.photo.background_header) {
                     validated = false;
-                }
-
-                if (!this.loading_status.photo.skill_web) {
+                } else if (!this.loading_status.photo.skill_web) {
                     validated = false;
-                }
-
-                if (!this.loading_status.photo.skill_mobile) {
+                } else if (!this.loading_status.photo.skill_mobile) {
                     validated = false;
-                }
-
-                if (!this.loading_status.photo.skill_arduino) {
+                } else if (!this.loading_status.photo.skill_arduino) {
                     validated = false;
-                }
-
-                if (!this.loading_status.photo.skill_editing) {
+                } else if (!this.loading_status.photo.skill_editing) {
                     validated = false;
-                }
-
-                if (!this.loading_status.icon.arrow_down_background_header) {
+                } else if (!this.loading_status.icon.arrow_down_background_header) {
                     validated = false;
-                }
-
-                if (!this.loading_status.mounted_component) {
+                } else if (!this.loading_status.mounted_component) {
                     validated = false;
                 }
 
