@@ -1,7 +1,7 @@
 <template>
     <div v-show="!loadingStatus" >
         <!--Navbar-->
-        <mdb-navbar position="top" transparent dark color="elegant" name="Your Logo" href="/about" scrolling>
+        <mdb-navbar position="top" transparent dark color="elegant" name="Your Logo" scrolling>
             <mdb-navbar-toggler>
                 <mdb-navbar-nav center>
                     <mdb-nav-item to="/" active>HOME</mdb-nav-item>
@@ -89,15 +89,72 @@
         <section id="current-projects" class="primary-red p-5">
             <mdb-container>
                 <mdb-row>
-                    <div class="col-12 col sm-12 col-lg-4 white-text pt-3 text-center" style="word-wrap: break-word; font-size: 500%; line-height: 1.75;">
-                        SKILLS
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-8">
-                        <div class="circle">
-                            <div class="tooltip">Hover over me
-                                <span class="tooltiptext">Tooltip text</span>
-                            </div>
-                        </div>
+                    <!-- <div class="col-12 col sm-12 col-lg-4 white-text pt-3 text-center" style="word-wrap: break-word; font-size: 500%; line-height: 1.75;">
+                        
+                    </div> -->
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <span style="padding-top: 3vw; z-index: 0; position: absolute; font-size: 10vw; color: #fff; letter-spacing: 4vw; font-weight: 800; line-height: 11vw;">SKILLS & SEMINARS</span>
+                        <!-- <center>
+                        </center> -->
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <!-- <mdb-tooltip>
+                            <span slot="tip"> Default tooltip </span>
+                            <div class="circle"></div>
+                        </mdb-tooltip> -->
                     </div>
                 </mdb-row>
             </mdb-container>
@@ -133,7 +190,7 @@
                                         <mdb-card-title class="text-center">DEAF Ed</mdb-card-title>
                                         <!-- <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text> -->
                                         <center>
-                                            <mdb-btn color="danger">Read more</mdb-btn>
+                                            <mdb-btn color="elegant">Read more</mdb-btn>
                                         </center>
                                     </mdb-card-body>
                                 </mdb-card>
@@ -148,7 +205,7 @@
                                         <mdb-card-title class="text-center">Ms. Marikina 2018</mdb-card-title>
                                         <!-- <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text> -->
                                         <center>
-                                            <mdb-btn color="danger">Read more</mdb-btn>
+                                            <mdb-btn color="elegant">Read more</mdb-btn>
                                         </center>
                                     </mdb-card-body>
                                 </mdb-card>
@@ -243,7 +300,8 @@
         mdbCardText,
         mdbView,
         mdbMask,
-        mdbCardGroup
+        mdbCardGroup,
+        mdbTooltip
     }
     from 'mdbvue';
 
@@ -267,7 +325,8 @@
             mdbCardText,
             mdbView,
             mdbMask,
-            mdbCardGroup
+            mdbCardGroup,
+            mdbTooltip
         },
         data() {
             return {
@@ -385,36 +444,13 @@
     }
 
     .circle {
-        width: 2.5vw;
-        height: 2.5vw;
+        width: 3vw;
+        height: 3vw;
         border-radius: 100%;
         background: #ebad04;
-    }
-
-    /* Tooltip container */
-    .tooltip {
-        position: relative;
         display: inline-block;
-        border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-    }
-
-    /* Tooltip text */
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 120px;
-        background-color: black;
-        color: #fff;
-        text-align: center;
-        padding: 5px 0;
-        border-radius: 6px;
-        
-        /* Position the tooltip text - see examples below! */
-        position: absolute;
+        margin: 1vw 2vw;
         z-index: 1;
-    }
-
-    /* Show the tooltip text when you mouse over the tooltip container */
-    .tooltip:hover .tooltiptext {
-        visibility: visible;
+        position: relative;
     }
 </style>
