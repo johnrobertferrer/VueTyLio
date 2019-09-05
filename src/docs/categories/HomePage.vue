@@ -86,17 +86,15 @@
         </section>
 
         <!-- SEMINARS AND MEETUP -->
-        <section id="current-projects" class="primary-red" style="padding: 100px 0;">
+        <section id="current-projects" class="primary-red p-5">
             <mdb-container>
                 <mdb-row>
-                    <div class="col-12 col sm-12 col-lg-4 white-text p-2 text-center" style="word-wrap: break-word; font-size: 500%; margin-top: 6%; line-height: 1.75;">
-                        RECENT PROJECT
-                        <!-- <h1 class="text-center font-weight-bold white-text">Recent Projects</h1> -->
+                    <div class="col-12 col sm-12 col-lg-4 white-text pt-3 text-center" style="word-wrap: break-word; font-size: 500%; line-height: 1.75;">
+                        SKILLS
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-8">
-                    <!-- <mdb-container> -->
                         <mdb-row>
-                            <mdb-card-group deck class="pl-5 pr-5">
+                            <!-- <mdb-card-group deck class="pl-5 pr-5">
                                 <mdb-card class="animated infinite shake slow">
                                     <mdb-view hover>
                                         <a href="/#/components">
@@ -106,7 +104,6 @@
                                     </mdb-view>
                                     <mdb-card-body>
                                         <mdb-card-title class="text-center">DEAF Ed</mdb-card-title>
-                                        <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
                                         <center>
                                             <mdb-btn class="primary-red">Read more</mdb-btn>
                                         </center>
@@ -121,16 +118,14 @@
                                     </mdb-view>
                                     <mdb-card-body>
                                         <mdb-card-title class="text-center">Ms. Marikina 2018</mdb-card-title>
-                                        <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
                                         <center>
                                             <mdb-btn color="primary">Read more</mdb-btn>
                                         </center>
                                     </mdb-card-body>
                                 </mdb-card>
-                            </mdb-card-group>
+                            </mdb-card-group> -->
                         </mdb-row>
                     </div>
-                    <!-- </mdb-container> -->
                 </mdb-row>
             </mdb-container>
         </section>
@@ -143,10 +138,10 @@
         </div>
 
         <!-- CURRENT PROJECTS -->
-        <section id="current-projects" class="primary-blue" style="padding: 100px 0;">
+        <section id="current-projects" class="primary-blue p-5">
             <mdb-container>
                 <mdb-row>
-                    <div class="col-12 col sm-12 col-lg-4 p-2 white-text text-center" style="word-wrap: break-word; font-size: 500%; margin-top: 6%; line-height: 1.75;">
+                    <div class="col-12 col sm-12 col-lg-4 pt-4 white-text text-center" style="word-wrap: break-word; font-size: 500%; line-height: 1.75;">
                         RECENT PROJECT
                         <!-- <h1 class="text-center font-weight-bold white-text">Recent Projects</h1> -->
                     </div>
@@ -163,9 +158,9 @@
                                     </mdb-view>
                                     <mdb-card-body>
                                         <mdb-card-title class="text-center">DEAF Ed</mdb-card-title>
-                                        <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
+                                        <!-- <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text> -->
                                         <center>
-                                            <mdb-btn color="primary">Read more</mdb-btn>
+                                            <mdb-btn color="danger">Read more</mdb-btn>
                                         </center>
                                     </mdb-card-body>
                                 </mdb-card>
@@ -178,9 +173,9 @@
                                     </mdb-view>
                                     <mdb-card-body>
                                         <mdb-card-title class="text-center">Ms. Marikina 2018</mdb-card-title>
-                                        <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
+                                        <!-- <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text> -->
                                         <center>
-                                            <mdb-btn color="primary">Read more</mdb-btn>
+                                            <mdb-btn color="danger">Read more</mdb-btn>
                                         </center>
                                     </mdb-card-body>
                                 </mdb-card>
@@ -192,7 +187,7 @@
             </mdb-container>
         </section>
 
-        <section class="teal darken-4" style="padding: 100px 0;">
+        <section class="default-color-dark p-5">
             <mdb-container>
                 <mdb-row>
                     <div class="col-12 col-sm-12 col-lg-6" data-sal="slide-up"
