@@ -58,7 +58,7 @@
 
         <section>
             <mdb-row class="m-0">
-                <div data-sal="fade" class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
+                <div class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
                         <img @load="loadedPhoto($event)" id="skill_web" loading="lazy" src="../../assets/web.svg" class="w-25 m-3">
                         <h3 class="text-center mt-2 mb-4">Web Development</h3>
@@ -93,38 +93,11 @@
                         SKILLS
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-8">
-                        <mdb-row>
-                            <!-- <mdb-card-group deck class="pl-5 pr-5">
-                                <mdb-card class="animated infinite shake slow">
-                                    <mdb-view hover>
-                                        <a href="/#/components">
-                                            <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap"></mdb-card-image>
-                                            <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
-                                        </a>
-                                    </mdb-view>
-                                    <mdb-card-body>
-                                        <mdb-card-title class="text-center">DEAF Ed</mdb-card-title>
-                                        <center>
-                                            <mdb-btn class="primary-red">Read more</mdb-btn>
-                                        </center>
-                                    </mdb-card-body>
-                                </mdb-card>
-                                <mdb-card class="animated infinite shake slower">
-                                    <mdb-view hover>
-                                        <a href="#!">
-                                            <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg" alt="Card image cap"></mdb-card-image>
-                                            <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
-                                        </a>
-                                    </mdb-view>
-                                    <mdb-card-body>
-                                        <mdb-card-title class="text-center">Ms. Marikina 2018</mdb-card-title>
-                                        <center>
-                                            <mdb-btn color="primary">Read more</mdb-btn>
-                                        </center>
-                                    </mdb-card-body>
-                                </mdb-card>
-                            </mdb-card-group> -->
-                        </mdb-row>
+                        <div class="circle">
+                            <div class="tooltip">Hover over me
+                                <span class="tooltiptext">Tooltip text</span>
+                            </div>
+                        </div>
                     </div>
                 </mdb-row>
             </mdb-container>
@@ -314,7 +287,6 @@
         mounted() {
             this.startLoading();
             this.loading_status.mounted_component = true;
-            this.loadChecker();
         },
         methods: {
             startLoading() {
@@ -336,6 +308,9 @@
             }
         },
         watch: {
+            loadChecker(value) {
+                value ? this.endLoading() : this.startLoading();
+            }
         },
         computed: {
             isLoading() {
@@ -343,7 +318,7 @@
             },
 
             loadChecker() {
-                this.validateIfAllAreLoaded() ? this.endLoading() : this.startLoading();
+                return this.validateIfAllAreLoaded();
             },
 
             loadingStatus: {
@@ -407,5 +382,39 @@
     .skill-icon:hover {
         box-shadow: inset 0 0 0 1vw #0c8b91;
         transition: 0.2s;
+    }
+
+    .circle {
+        width: 2.5vw;
+        height: 2.5vw;
+        border-radius: 100%;
+        background: #ebad04;
+    }
+
+    /* Tooltip container */
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    }
+
+    /* Tooltip text */
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;
+    }
+
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
     }
 </style>
