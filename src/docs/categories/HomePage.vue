@@ -190,9 +190,7 @@
         <section class="default-color-dark p-5">
             <mdb-container>
                 <mdb-row>
-                    <div class="col-12 col-sm-12 col-lg-6" data-sal="slide-up"
-  data-sal-delay="300"
-  data-sal-easing="ease-out-bounce">
+                    <div class="col-12 col-sm-12 col-lg-6">
                         <img loading="lazy" src="../../assets/client-luljettas.svg" class="w-100 p-3 pt-4">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
@@ -316,6 +314,7 @@
         mounted() {
             this.startLoading();
             this.loading_status.mounted_component = true;
+            this.loadChecker();
         },
         methods: {
             startLoading() {
