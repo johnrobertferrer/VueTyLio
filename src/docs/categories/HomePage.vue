@@ -24,7 +24,7 @@
 
         <div style="height: 100vh;">
             <div class="view intro-2">
-                <img @load="loadedBackgroundHeader()" src="../../assets/background.svg" class="view" loading="lazy">
+                <img @load="loadedPhoto($event)" id="background_header" src="../../assets/background.svg" class="view" loading="lazy">
                 <div class="full-bg-img">
                     <div class="mask rgba-black-strong flex-center">
                         <div class="container">
@@ -50,7 +50,7 @@
                                 </h1>
                             </div>
                         </div>
-                        <img @load="loadedIconArrowDownBackgroundHeader()" v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1200 }" src="../../assets/arrow-down.svg" width="100%" class="mt-3 animated infinite bounce slower" style="position: absolute; bottom: 6vh; width: 6vh;" />
+                        <img @load="loadedPhoto($event)" id="arrow_down_background_header" v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1200 }" src="../../assets/arrow-down.svg" width="100%" class="mt-3 animated infinite bounce slower" style="position: absolute; bottom: 6vh; width: 6vh;" />
                     </div>
                 </div>
             </div>
@@ -60,25 +60,25 @@
             <mdb-row class="m-0">
                 <div data-sal="fade" class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img @load="loadedSkillWeb()" loading="lazy" src="../../assets/web.svg" class="w-25 m-3">
+                        <img @load="loadedPhoto($event)" id="skill_web" loading="lazy" src="../../assets/web.svg" class="w-25 m-3">
                         <h3 class="text-center mt-2 mb-4">Web Development</h3>
                     </center>
                 </div>
                 <div class="skill-icon amber lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img @load="loadedSkillMobile()" loading="lazy" src="../../assets/mobile.svg" class="w-25 m-3">
+                        <img @load="loadedPhoto($event)" id="skill_mobile" loading="lazy" src="../../assets/mobile.svg" class="w-25 m-3">
                         <h3 class="text-center mt-2 mb-4">Mobile Development</h3>
                     </center>
                 </div>
                 <div class="skill-icon orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img @load="loadedSkillArduino()" loading="lazy" src="../../assets/arduino.svg" class="w-25 m-3">
+                        <img @load="loadedPhoto($event)" id="skill_arduino" loading="lazy" src="../../assets/arduino.svg" class="w-25 m-3">
                         <h3 class="text-center mt-2 mb-4">Arduino Projects</h3>
                     </center>
                 </div>
                 <div class="skill-icon deep-orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img @load="loadedSkillEditing()" loading="lazy" src="../../assets/editing.svg" class="w-25 m-3">
+                        <img @load="loadedPhoto($event)" id="skill_editing" loading="lazy" src="../../assets/editing.svg" class="w-25 m-3">
                         <h3 class="text-center mt-2 mb-4">Photo & Video Editing</h3>
                     </center>
                 </div>
@@ -311,15 +311,11 @@
                         skill_web: false,
                         skill_mobile: false,
                         skill_arduino: false,
-                        skill_editing: false
-                    },
-                    icon: {
+                        skill_editing: false,
                         arrow_down_background_header: false
                     },
                     mounted_component: false
-                },
-                status: false,
-                scroll_y: 0
+                }
             };
         },
         mounted() {
@@ -335,92 +331,25 @@
                 this.$store.commit('endProcessing');
             },
 
-            loadedIconArrowDownBackgroundHeader() {
-                this.loading_status.icon.arrow_down_background_header = true;
+            loadedPhoto(event) {
+                let id = event.path[0].id;
+
+                this.loading_status.photo[id] = true;
             },
 
-            loadedBackgroundHeader() {
-                this.loading_status.photo.background_header = true;
-            },
-
-            loadedSkillWeb() {
-                this.loading_status.photo.skill_web = true;
-            },
-
-            loadedSkillMobile() {
-                this.loading_status.photo.skill_mobile = true;
-            },
-
-            loadedSkillArduino() {
-                this.loading_status.photo.skill_arduino = true;
-            },
-
-            loadedSkillEditing() {
-                this.loading_status.photo.skill_editing = true;
-            },
-
-            loadingChecker() {
-                let validated = true;
-
-                if (!this.loading_status.photo.background_header) {
-                    validated = false;
-                } else if (!this.loading_status.photo.skill_web) {
-                    validated = false;
-                } else if (!this.loading_status.photo.skill_mobile) {
-                    validated = false;
-                } else if (!this.loading_status.photo.skill_arduino) {
-                    validated = false;
-                } else if (!this.loading_status.photo.skill_editing) {
-                    validated = false;
-                } else if (!this.loading_status.icon.arrow_down_background_header) {
-                    validated = false;
-                } else if (!this.loading_status.mounted_component) {
-                    validated = false;
-                }
-
-                return validated;
-            },
-
-            loadChecker() {
-                if (this.loadingChecker()) {
-                    this.endLoading();
-                } else {
-                    this.startLoading();
-                }
+            validateIfAllAreLoaded() {
+                return Object.keys(this.loading_status.photo).every(element => this.loading_status.photo[element]) && this.loading_status.mounted_component;
             }
         },
         watch: {
-            'loading_status.photo.background_header': function (newValue) {
-                this.loadChecker();
-            },
-
-            'loading_status.photo.skill_web': function (newValue) {
-                this.loadChecker();
-            },
-
-            'loading_status.photo.skill_mobile': function (newValue) {
-                this.loadChecker();
-            },
-
-            'loading_status.photo.skill_arduino': function (newValue) {
-                this.loadChecker();
-            },
-
-            'loading_status.photo.skill_editing': function (newValue) {
-                this.loadChecker();
-            },
-
-            'loading_status.icon.arrow_down_background_header': function (newValue) {
-                this.loadChecker();
-            },
-
-            'loading_status.mounted_component': function (newValue) {
-                this.loadChecker();
-            }
         },
         computed: {
             isLoading() {
                 return this.$store.state.processing;
+            },
+
+            loadChecker() {
+                this.validateIfAllAreLoaded() ? this.endLoading() : this.startLoading();
             },
 
             loadingStatus: {
