@@ -221,13 +221,13 @@
             <mdb-container>
                 <mdb-row>
                     <div class="col-12 col-sm-12 col-lg-6">
-                        <img loading="lazy" src="../../assets/client-luljettas.svg" class="w-100 p-3 pt-4">
+                        <img @load="loadedPhoto($event)" id="client_luljettas" loading="lazy" src="../../assets/client-luljettas.svg" class="w-100 p-3 pt-4">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <img loading="lazy" src="../../assets/client-plm.svg" class="w-100 p-3">
+                        <img @load="loadedPhoto($event)" id="client_plm" loading="lazy" src="../../assets/client-plm.svg" class="w-100 p-3">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <img loading="lazy" src="../../assets/client-marikina.svg" class="w-100 p-3">
+                        <img @load="loadedPhoto($event)" id="client_marikina" loading="lazy" src="../../assets/client-marikina.svg" class="w-100 p-3">
                     </div>
                     <!-- <div data-sal="zoom-in"
                         data-sal-duration="2000"
@@ -337,7 +337,10 @@
                         skill_mobile: false,
                         skill_arduino: false,
                         skill_editing: false,
-                        arrow_down_background_header: false
+                        arrow_down_background_header: false,
+                        client_luljettas: false,
+                        client_plm: false,
+                        client_marikina: false,
                     },
                     mounted_component: false
                 }
