@@ -92,70 +92,124 @@
                     <!-- <div class="col-12 col sm-12 col-lg-4 white-text pt-3 text-center" style="word-wrap: break-word; font-size: 500%; line-height: 1.75;">
                         
                     </div> -->
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                            <span style="padding-top: 3vw; z-index: 0; position: absolute; font-size: 10vw; color: #fff; letter-spacing: 4vw; font-weight: 800; line-height: 11vw;">SKILLS & SEMINARS</span>
-                        <!-- <center>
-                        </center> -->
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <!-- <mdb-tooltip>
-                            <span slot="tip"> Default tooltip </span>
-                            <div class="circle"></div>
-                        </mdb-tooltip> -->
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 bg-pattern">
+                        <center>
+                            <span style="padding-top: 3vw; font-size: 12vw; color: #fff; font-weight: 800; line-height: 11vw;">SKILLS &<br>SEMINARS</span>
+                        </center>
                     </div>
+                    <!-- <mdb-row class="wrapper">
+                        <div class="scrolls"> -->
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5">
+                                <mdb-card wide>
+                                    <mdb-view hover cascade>
+                                        <a href="#!">
+                                            <div class="yellow lighten-3 pt-5 pb-3 text-center">
+                                                <mdb-card-title class="black-text"><h3><strong>DEVELOPMENT STUFFS/SKILLS</strong></h3></mdb-card-title>
+                                            </div>
+                                            <!-- <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/photo6.jpg" alt="Card image cap" ></mdb-card-image> -->
+                                            <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
+                                        </a>
+                                    </mdb-view>
+                                    <mdb-card-body class="text-center pb-4" cascade>
+                                        <!-- <mdb-card-title><strong>Alison Belmont</strong></mdb-card-title>
+                                        <h5 class="blue-text"><strong>Graffiti Artist</strong></h5> -->
+                                        <!-- <mdb-card-text></mdb-card-text> -->
+                                        <mdb-card-text>I am familiar with the following stuffs <i>(Frameworks, Libraries, Design Pattern, Applications, Scripting Languages, and other stuffs)</i>.</mdb-card-text>
+                                        <mdb-badge tag="a" href="#" color="primary">Laravel</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Vue.js</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Git</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Github</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Source Tree</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Mantis Bug Tracker</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Trello</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">MySQL</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">MS SQL</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">PHP</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">JavaScript</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">HTML5</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">CSS3</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">SASS</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">AXIOS</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Fetch API</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">JQuery</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">JQuery AJAX</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Media Queries/Responsive Design</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Bootstrap</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Semantic UI</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Material Design</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Kendo UI</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">MVC Pattern</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">AGILE Development</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">REST/RESTFUL API</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">JSON</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Cordova</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Phonegap</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Jquery Mobile</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">C++</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">C</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">COBOL</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Arduino</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Bluetooth Serial Communication</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Cyberlink Powerdirector</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Adobe Photoshop</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Sketch Up</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Adobe Flash</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Microsoft Office</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Linux Ubuntu</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Linux Mint</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Linux Elementary</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Linux Remix</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Windows 10</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Windows 8.1</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Windows 8</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Windows 7</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Windows Vista</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Windows XP</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Windows 98</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">PC Assembly & Disassembly</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">PC Networking</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Wunderlist</mdb-badge>
+
+                                        <mdb-card-footer class="text-muted mt-4">2 days ago</mdb-card-footer>
+                                    </mdb-card-body>
+                                </mdb-card>
+                            </div>
+                            
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5">
+                                <mdb-card wide>
+                                    <mdb-view hover cascade>
+                                        <a href="#!">
+                                            <div class="deep-orange lighten-3 pt-5 pb-3 text-center">
+                                                <mdb-card-title class="black-text"><h3><strong>ATTENDED SEMINAR STUFFS</strong></h3></mdb-card-title>
+                                            </div>
+                                            <!-- <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/photo6.jpg" alt="Card image cap" ></mdb-card-image> -->
+                                            <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
+                                        </a>
+                                    </mdb-view>
+                                    <mdb-card-body class="text-center pb-4" cascade>
+                                        <!-- <mdb-card-title><strong>Alison Belmont</strong></mdb-card-title>
+                                        <h5 class="blue-text"><strong>Graffiti Artist</strong></h5> -->
+                                        <!-- <mdb-card-text></mdb-card-text> -->
+                                        <mdb-card-text>These are the following lists of seminars, meetups, classes, and trainings that I had attended.</mdb-card-text>
+
+                                        <mdb-badge tag="a" href="#" color="primary">Google I/O Extended Manila 2019 (Globe, BGC)</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Vue Manila 4th Meetup (Orange & Bronze Software Lab)</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Programmers Developers Meetup #8(Microsoft PH)</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">2-day Training in Basic Web Development using PHP and Laravel (Ground Gurus: Tycoon Center, Ortigas Pasic City)</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Annual PSITE Student IT Congress (Adamson University)</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">iSITE Regional Student Conference (Colegio de San Juan de Letran, Laguna)</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">eGlobio Seminar (Pasig City)</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Build Reactive Web Components and Real-time Database: VueJS+Node.js+Socket.io+NoSQL Database (Ground Gurus: Tycoon Center, Ortigas Pasic City)</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">ASP.NET: Embedding Foundation of Web App Possibilities (Pamantasan ng Lungsod ng Maynila)</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Shaping the Future Forum 2017 (Maybank, BGC)</mdb-badge>
+                                        <mdb-badge tag="a" href="#" color="primary">Campus Devcon PH (Pamantasan ng Lungsod ng Maynila)</mdb-badge>
+
+                                        <mdb-card-footer class="text-muted mt-4">2 days ago</mdb-card-footer>
+                                    </mdb-card-body>
+                                </mdb-card>
+                            </div>
+                        <!-- </div>
+                    </mdb-row> -->
                 </mdb-row>
             </mdb-container>
         </section>
@@ -219,16 +273,30 @@
 
         <section class="default-color-dark p-5">
             <mdb-container>
+                
+                <!-- <mdb-row class="wrapper">
+                    <div class="scrolls"> -->
                 <mdb-row>
                     <div class="col-12 col-sm-12 col-lg-6">
-                        <img @load="loadedPhoto($event)" id="client_luljettas" loading="lazy" src="../../assets/client-luljettas.svg" class="w-100 p-3 pt-4">
+                        <img @load="loadedPhoto($event)" id="client_luljettas" loading="lazy" src="../../assets/client-luljettas.svg" class="p-3 pt-4 w-100" style="display: inline-block">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <img @load="loadedPhoto($event)" id="client_plm" loading="lazy" src="../../assets/client-plm.svg" class="w-100 p-3">
+                        <img @load="loadedPhoto($event)" id="client_plm" loading="lazy" src="../../assets/client-plm.svg" class="p-3 w-100" style="display: inline-block">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <img @load="loadedPhoto($event)" id="client_marikina" loading="lazy" src="../../assets/client-marikina.svg" class="w-100 p-3">
+                        <img @load="loadedPhoto($event)" id="client_marikina" loading="lazy" src="../../assets/client-marikina.svg" class="p-3 w-100" style="display: inline-block">
                     </div>
+                </mdb-row>
+                    <!-- <div class="col-12 col-sm-12 col-lg-6"> -->
+                        <!-- <img @load="loadedPhoto($event)" id="client_luljettas" loading="lazy" src="../../assets/client-luljettas.svg" class="p-3 pt-4"> -->
+                    <!-- </div> -->
+                    <!-- <div class="col-12 col-sm-6 col-lg-3"> -->
+                        <!-- <img @load="loadedPhoto($event)" id="client_plm" loading="lazy" src="../../assets/client-plm.svg" class="p-3"> -->
+                    <!-- </div> -->
+                    <!-- <div class="col-12 col-sm-6 col-lg-3"> -->
+                        <!-- <img @load="loadedPhoto($event)" id="client_marikina" loading="lazy" src="../../assets/client-marikina.svg" class="p-3"> -->
+                    <!-- </div> -->
+                    <!-- </div> -->
                     <!-- <div data-sal="zoom-in"
                         data-sal-duration="2000"
                         data-sal-delay="500"
@@ -242,7 +310,7 @@
                     data-sal-duration="800"
                     data-sal-easing="ease-out-bounce"
                     >Lorem</h1> -->
-                </mdb-row>
+                <!-- </mdb-row> -->
             </mdb-container>
         </section>
 
@@ -296,12 +364,14 @@
         mdbCardImage,
         mdbCardHeader,
         mdbCardBody,
+        mdbCardFooter,
         mdbCardTitle,
         mdbCardText,
         mdbView,
         mdbMask,
         mdbCardGroup,
-        mdbTooltip
+        mdbTooltip,
+        mdbBadge
     }
     from 'mdbvue';
 
@@ -321,12 +391,14 @@
             mdbCardImage,
             mdbCardHeader,
             mdbCardBody,
+            mdbCardFooter,
             mdbCardTitle,
             mdbCardText,
             mdbView,
             mdbMask,
             mdbCardGroup,
-            mdbTooltip
+            mdbTooltip,
+            mdbBadge,
         },
         data() {
             return {
@@ -446,14 +518,43 @@
         transition: 0.2s;
     }
 
-    .circle {
-        width: 3vw;
-        height: 3vw;
-        border-radius: 100%;
-        background: #ebad04;
-        display: inline-block;
-        margin: 1vw 2vw;
-        z-index: 1;
+    .wrapper { 
+        /* background:#EFEFEF;  */
+        /* box-shadow: 1px 1px 10px #999;  */
+        margin: auto; 
+        text-align: center; 
         position: relative;
+        /* -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px; */
+        /* margin-bottom: 20px !important; */
+        width: 100%;
+        padding-top: 5px;
+    }
+    .scrolls { 
+        overflow-x: scroll;
+        overflow-y: hidden;
+        /* height: 0px; */
+        white-space:nowrap
+    } 
+    .wrapper .scrolls img { 
+        /* box-shadow: 1px 1px 10px #999;  */
+        margin: 2px;
+        max-height: 200px;
+        cursor: pointer;
+        display:inline-block;
+        *display:inline;
+        *zoom:1;
+        vertical-align:top;
+    }
+
+    .bg-pattern {
+        /* e25247 */
+        background: linear-gradient(90deg, #e25247 20px, transparent 10%) center, linear-gradient(#e25247 20px, transparent 10%) center, #ebad04;
+        background-size: 3vh 3vh;
+    }
+
+    .badge {
+        white-space: pre-wrap;
     }
 </style>
