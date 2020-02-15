@@ -1,6 +1,7 @@
 <template>
     <div v-show="!loadingStatus" >
         <!--Navbar-->
+        Test: {{loading_status}}
         <mdb-navbar position="top" transparent dark color="elegant" name="Your Logo" scrolling>
             <mdb-navbar-toggler>
                 <mdb-navbar-nav center>
