@@ -24,7 +24,7 @@
 
         <div style="height: 100vh;">
             <div class="view intro-2">
-                <img @load="loadedPhoto($event)" id="background_header" src="../../assets/background.svg" class="view" loading="lazy">
+                <img @load="loadedPhoto($event)" id="background_header" src="../../assets/background.svg" class="view">
                 <div class="full-bg-img">
                     <div class="mask rgba-black-strong flex-center">
                         <div class="container">
@@ -60,25 +60,25 @@
             <mdb-row class="m-0">
                 <div class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img @load="loadedPhoto($event)" id="skill_web" loading="lazy" src="../../assets/web.svg" class="w-25 m-3">
+                        <img @load="loadedPhoto($event)" id="skill_web" src="../../assets/web.svg" class="w-25 m-3">
                         <h3 class="text-center mt-2 mb-4">Web Development</h3>
                     </center>
                 </div>
                 <div class="skill-icon amber lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img @load="loadedPhoto($event)" id="skill_mobile" loading="lazy" src="../../assets/mobile.svg" class="w-25 m-3">
+                        <img @load="loadedPhoto($event)" id="skill_mobile" src="../../assets/mobile.svg" class="w-25 m-3">
                         <h3 class="text-center mt-2 mb-4">Mobile Development</h3>
                     </center>
                 </div>
                 <div class="skill-icon orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img @load="loadedPhoto($event)" id="skill_arduino" loading="lazy" src="../../assets/arduino.svg" class="w-25 m-3">
+                        <img @load="loadedPhoto($event)" id="skill_arduino" src="../../assets/arduino.svg" class="w-25 m-3">
                         <h3 class="text-center mt-2 mb-4">Arduino Projects</h3>
                     </center>
                 </div>
                 <div class="skill-icon deep-orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img @load="loadedPhoto($event)" id="skill_editing" loading="lazy" src="../../assets/editing.svg" class="w-25 m-3">
+                        <img @load="loadedPhoto($event)" id="skill_editing" src="../../assets/editing.svg" class="w-25 m-3">
                         <h3 class="text-center mt-2 mb-4">Photo & Video Editing</h3>
                     </center>
                 </div>
@@ -278,23 +278,23 @@
                     <div class="scrolls"> -->
                 <mdb-row>
                     <div class="col-12 col-sm-12 col-lg-6">
-                        <img @load="loadedPhoto($event)" id="client_luljettas" loading="lazy" src="../../assets/client-luljettas.svg" class="p-3 pt-4 w-100" style="display: inline-block">
+                        <img @load="loadedPhoto($event)" id="client_luljettas" src="../../assets/client-luljettas.svg" class="p-3 pt-4 w-100" style="display: inline-block">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <img @load="loadedPhoto($event)" id="client_plm" loading="lazy" src="../../assets/client-plm.svg" class="p-3 w-100" style="display: inline-block">
+                        <img @load="loadedPhoto($event)" id="client_plm" src="../../assets/client-plm.svg" class="p-3 w-100" style="display: inline-block">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <img @load="loadedPhoto($event)" id="client_marikina" loading="lazy" src="../../assets/client-marikina.svg" class="p-3 w-100" style="display: inline-block">
+                        <img @load="loadedPhoto($event)" id="client_marikina" src="../../assets/client-marikina.svg" class="p-3 w-100" style="display: inline-block">
                     </div>
                 </mdb-row>
                     <!-- <div class="col-12 col-sm-12 col-lg-6"> -->
-                        <!-- <img @load="loadedPhoto($event)" id="client_luljettas" loading="lazy" src="../../assets/client-luljettas.svg" class="p-3 pt-4"> -->
+                        <!-- <img @load="loadedPhoto($event)" id="client_luljettas" src="../../assets/client-luljettas.svg" class="p-3 pt-4"> -->
                     <!-- </div> -->
                     <!-- <div class="col-12 col-sm-6 col-lg-3"> -->
-                        <!-- <img @load="loadedPhoto($event)" id="client_plm" loading="lazy" src="../../assets/client-plm.svg" class="p-3"> -->
+                        <!-- <img @load="loadedPhoto($event)" id="client_plm" src="../../assets/client-plm.svg" class="p-3"> -->
                     <!-- </div> -->
                     <!-- <div class="col-12 col-sm-6 col-lg-3"> -->
-                        <!-- <img @load="loadedPhoto($event)" id="client_marikina" loading="lazy" src="../../assets/client-marikina.svg" class="p-3"> -->
+                        <!-- <img @load="loadedPhoto($event)" id="client_marikina" src="../../assets/client-marikina.svg" class="p-3"> -->
                     <!-- </div> -->
                     <!-- </div> -->
                     <!-- <div data-sal="zoom-in"
