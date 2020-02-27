@@ -89,127 +89,52 @@
         <section id="current-projects" class="primary-red p-5">
             <mdb-container>
                 <mdb-row>
-                    <!-- <div class="col-12 col sm-12 col-lg-4 white-text pt-3 text-center" style="word-wrap: break-word; font-size: 500%; line-height: 1.75;">
-                        
-                    </div> -->
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 bg-pattern">
-                        <center>
-                            <span style="padding-top: 3vw; font-size: 12vw; color: #fff; font-weight: 800; line-height: 11vw;">SKILLS &<br>SEMINARS</span>
-                        </center>
+                    <div class="col-12 col sm-12 col-lg-4 pt-5 white-text text-center" style="word-wrap: break-word; font-size: 500%; line-height: 1.75;">
+                        RECENT PROJECT
                     </div>
-                    <!-- <mdb-row class="wrapper">
-                        <div class="scrolls"> -->
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5">
-                                <mdb-card wide>
-                                    <mdb-view hover cascade>
-                                        <a href="#!">
-                                            <div class="yellow lighten-3 pt-5 pb-3 text-center">
-                                                <mdb-card-title class="black-text"><h3><strong>DEVELOPMENT STUFFS/SKILLS</strong></h3></mdb-card-title>
-                                            </div>
-                                            <!-- <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/photo6.jpg" alt="Card image cap" ></mdb-card-image> -->
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                        <mdb-row>
+                            <mdb-card-group deck class="pl-5 pr-5">
+                                <mdb-card class="project-card">
+                                    <mdb-view hover>
+                                        <a href="https://myassignmentcalculator.com" target="_blank">
+                                            <img class="card-img-top p-1 pt-4"
+                                                src="../../assets/book.svg" 
+                                                alt="Card image cap">
                                             <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
                                         </a>
                                     </mdb-view>
-                                    <mdb-card-body class="text-center pb-4" cascade>
-                                        <!-- <mdb-card-title><strong>Alison Belmont</strong></mdb-card-title>
-                                        <h5 class="blue-text"><strong>Graffiti Artist</strong></h5> -->
-                                        <!-- <mdb-card-text></mdb-card-text> -->
-                                        <mdb-card-text>I am familiar with the following stuffs <i>(Frameworks, Libraries, Design Pattern, Applications, Scripting Languages, and other stuffs)</i>.</mdb-card-text>
-                                        <mdb-badge tag="a" href="#" color="primary">Laravel</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Vue.js</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Git</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Github</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Source Tree</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Mantis Bug Tracker</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Trello</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">MySQL</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">MS SQL</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">PHP</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">JavaScript</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">HTML5</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">CSS3</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">SASS</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">AXIOS</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Fetch API</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">JQuery</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">JQuery AJAX</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Media Queries/Responsive Design</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Bootstrap</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Semantic UI</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Material Design</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Kendo UI</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">MVC Pattern</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">AGILE Development</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">REST/RESTFUL API</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">JSON</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Cordova</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Phonegap</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Jquery Mobile</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">C++</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">C</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">COBOL</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Arduino</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Bluetooth Serial Communication</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Cyberlink Powerdirector</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Adobe Photoshop</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Sketch Up</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Adobe Flash</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Microsoft Office</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Linux Ubuntu</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Linux Mint</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Linux Elementary</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Linux Remix</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Windows 10</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Windows 8.1</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Windows 8</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Windows 7</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Windows Vista</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Windows XP</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Windows 98</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">PC Assembly & Disassembly</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">PC Networking</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Wunderlist</mdb-badge>
-
-                                        <mdb-card-footer class="text-muted mt-4">2 days ago</mdb-card-footer>
+                                    <mdb-card-body>
+                                        <mdb-card-title class="text-center">My Assignment</mdb-card-title>
+                                        <center>
+                                            <a href="https://myassignmentcalculator.com" target="_blank">
+                                                <mdb-btn color="elegant">Demo</mdb-btn>
+                                            </a>
+                                        </center>
                                     </mdb-card-body>
                                 </mdb-card>
-                            </div>
-                            
-                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5">
-                                <mdb-card wide>
-                                    <mdb-view hover cascade>
-                                        <a href="#!">
-                                            <div class="deep-orange lighten-3 pt-5 pb-3 text-center">
-                                                <mdb-card-title class="black-text"><h3><strong>ATTENDED SEMINAR STUFFS</strong></h3></mdb-card-title>
-                                            </div>
-                                            <!-- <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/photo6.jpg" alt="Card image cap" ></mdb-card-image> -->
+                                <mdb-card class="project-card">
+                                    <mdb-view hover>
+                                        <a href="https://quotetests.com" target="_blank">
+                                            <img class="card-img-top p-1 pt-4"
+                                                src="../../assets/quote-request.svg" 
+                                                alt="Card image cap">
                                             <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
                                         </a>
                                     </mdb-view>
-                                    <mdb-card-body class="text-center pb-4" cascade>
-                                        <!-- <mdb-card-title><strong>Alison Belmont</strong></mdb-card-title>
-                                        <h5 class="blue-text"><strong>Graffiti Artist</strong></h5> -->
-                                        <!-- <mdb-card-text></mdb-card-text> -->
-                                        <mdb-card-text>These are the following lists of seminars, meetups, classes, and trainings that I had attended.</mdb-card-text>
-
-                                        <mdb-badge tag="a" href="#" color="primary">Google I/O Extended Manila 2019 (Globe, BGC)</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Vue Manila 4th Meetup (Orange & Bronze Software Lab)</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Programmers Developers Meetup #8(Microsoft PH)</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">2-day Training in Basic Web Development using PHP and Laravel (Ground Gurus: Tycoon Center, Ortigas Pasic City)</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Annual PSITE Student IT Congress (Adamson University)</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">iSITE Regional Student Conference (Colegio de San Juan de Letran, Laguna)</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">eGlobio Seminar (Pasig City)</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Build Reactive Web Components and Real-time Database: VueJS+Node.js+Socket.io+NoSQL Database (Ground Gurus: Tycoon Center, Ortigas Pasic City)</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">ASP.NET: Embedding Foundation of Web App Possibilities (Pamantasan ng Lungsod ng Maynila)</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Shaping the Future Forum 2017 (Maybank, BGC)</mdb-badge>
-                                        <mdb-badge tag="a" href="#" color="primary">Campus Devcon PH (Pamantasan ng Lungsod ng Maynila)</mdb-badge>
-
-                                        <mdb-card-footer class="text-muted mt-4">2 days ago</mdb-card-footer>
+                                    <mdb-card-body>
+                                        <mdb-card-title class="text-center">Quotetests</mdb-card-title>
+                                        <center>
+                                            <a href="https://quotetests.com" target="_blank">
+                                                <mdb-btn color="elegant">Demo</mdb-btn>
+                                            </a>
+                                        </center>
                                     </mdb-card-body>
                                 </mdb-card>
-                            </div>
-                        <!-- </div>
-                    </mdb-row> -->
+                            </mdb-card-group>
+                        </mdb-row>
+                    </div>
+                    <!-- </mdb-container> -->
                 </mdb-row>
             </mdb-container>
         </section>
@@ -225,48 +150,15 @@
         <section id="current-projects" class="primary-blue p-5">
             <mdb-container>
                 <mdb-row>
-                    <div class="col-12 col sm-12 col-lg-4 pt-4 white-text text-center" style="word-wrap: break-word; font-size: 500%; line-height: 1.75;">
-                        RECENT PROJECT
-                        <!-- <h1 class="text-center font-weight-bold white-text">Recent Projects</h1> -->
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
+                            <mdb-container>
+                                <h2 class="display-4 text-center">ATTENDED SEMINARS</h2>
+                            </mdb-container>
+                        </mdb-jumbotron>
+
+                        <timeline></timeline>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-8">
-                    <!-- <mdb-container> -->
-                        <mdb-row>
-                            <mdb-card-group deck class="pl-5 pr-5">
-                                <mdb-card class="animated infinite delay-4s shake slow project-card">
-                                    <mdb-view hover>
-                                        <a href="/#/components">
-                                            <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap"></mdb-card-image>
-                                            <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
-                                        </a>
-                                    </mdb-view>
-                                    <mdb-card-body>
-                                        <mdb-card-title class="text-center">DEAF Ed</mdb-card-title>
-                                        <!-- <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text> -->
-                                        <center>
-                                            <mdb-btn color="elegant">Read more</mdb-btn>
-                                        </center>
-                                    </mdb-card-body>
-                                </mdb-card>
-                                <mdb-card class="animated infinite shake slower project-card">
-                                    <mdb-view hover>
-                                        <a href="#!">
-                                            <mdb-card-image src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg" alt="Card image cap"></mdb-card-image>
-                                            <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
-                                        </a>
-                                    </mdb-view>
-                                    <mdb-card-body>
-                                        <mdb-card-title class="text-center">Ms. Marikina 2018</mdb-card-title>
-                                        <!-- <mdb-card-text class="text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text> -->
-                                        <center>
-                                            <mdb-btn color="elegant">Read more</mdb-btn>
-                                        </center>
-                                    </mdb-card-body>
-                                </mdb-card>
-                            </mdb-card-group>
-                        </mdb-row>
-                    </div>
-                    <!-- </mdb-container> -->
                 </mdb-row>
             </mdb-container>
         </section>
@@ -371,9 +263,12 @@
         mdbMask,
         mdbCardGroup,
         mdbTooltip,
-        mdbBadge
+        mdbBadge,
+        mdbJumbotron
     }
     from 'mdbvue';
+
+    import Timeline from '../Components/Timeline.vue';
 
     export default {
         name: 'HomePage',
@@ -399,6 +294,8 @@
             mdbCardGroup,
             mdbTooltip,
             mdbBadge,
+            mdbJumbotron,
+            Timeline
         },
         data() {
             return {
