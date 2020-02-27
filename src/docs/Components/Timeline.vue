@@ -58,7 +58,7 @@ export default {
                     address: 'Tanghalang Pasigueño, Pasig City Hall Complex, Caruncho Ave, Pasig, Metro Manila'
                 },
                 {
-                    title: 'Build Reactive Web Components and Real-time Database: VueJS+Node.js+Socket.io+NoSQL Database (Ground Gurus)',
+                    title: 'Build Reactive Web Components and Real-time Database: VueJS+Node.js + Socket.io + NoSQL Database (Ground Gurus)',
                     date: '2019',
                     address: 'Tycoon Center Bldg., Pearl Dr, San Antonio, Pasig, Metro Manila'
                 },
