@@ -90,7 +90,7 @@
             <mdb-container>
                 <mdb-row>
                     <div class="col-12 col sm-12 col-lg-4 pt-5 white-text text-center" style="word-wrap: break-word; font-size: 500%; line-height: 1.75;">
-                        RECENT PROJECT
+                        ONGOING PROJECT
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-8">
                         <mdb-row>
