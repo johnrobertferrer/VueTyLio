@@ -78,8 +78,13 @@ export default {
                     address: 'Fort Bonifacio High School, Dr Jose P. Rizal Ext, Makati, Metro Manila'
                 },
                 {
-                    title: '2nd Place In MTAP, Written Category ',
-                    date: '2013',
+                    title: 'MTAP Division, Written Category Contestant',
+                    date: '2014',
+                    address: 'Benigno "Ninoy" S. Aquino High School, Aguho, Makati, Kalakhang Maynila'
+                },
+                {
+                    title: '2nd Place In MTAP, Written Category',
+                    date: '2014',
                     address: 'Fort Bonifacio High School, Dr Jose P. Rizal Ext, Makati, Metro Manila'
                 },
             ]
