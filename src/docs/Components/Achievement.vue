@@ -1,7 +1,7 @@
 <template>
     <ul class="timeline">
         <li v-for="timeline in timelines">
-            <div class="timeline-badge primary"><i class="glyphicon glyphicon-check"></i></div>
+            <div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading text-center">
                         <h4 class="timeline-title text-break">{{ timeline.title }}</h4>

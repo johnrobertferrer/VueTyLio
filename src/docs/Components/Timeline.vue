@@ -1,7 +1,7 @@
 <template>
     <ul class="timeline">
         <li v-for="timeline in timelines">
-            <div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
+            <div class="timeline-badge primary"><i class="glyphicon glyphicon-check"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading text-center">
                         <h4 class="timeline-title text-break">{{ timeline.title }}</h4>
@@ -192,7 +192,7 @@ export default {
   right: auto;
 }
 .timeline-badge.primary {
-  background-color: #2e6da4 !important;
+  background-color: #0c8b91 !important;
 }
 .timeline-badge.success {
   background-color: #3f903f !important;
