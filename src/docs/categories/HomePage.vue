@@ -102,6 +102,16 @@
                             <mdb-card-group deck class="pl-5 pr-5 w-100">
                                 <mdb-card class="project-card mt-4">
                                     <mdb-card-body>
+                                        <mdb-card-title class="text-center">Cloud Inventory Retail Management System (CIRMS)</mdb-card-title>
+                                        <center>
+                                            <a href="https://demo.cirms.ph" target="_blank">
+                                                <mdb-btn color="elegant">Demo</mdb-btn>
+                                            </a>
+                                        </center>
+                                    </mdb-card-body>
+                                </mdb-card>
+                                <mdb-card class="project-card mt-4">
+                                    <mdb-card-body>
                                         <mdb-card-title class="text-center">My Assignment</mdb-card-title>
                                         <center>
                                             <a href="https://myassignmentcalculator.com" target="_blank">
@@ -115,16 +125,6 @@
                                         <mdb-card-title class="text-center">Quotetests</mdb-card-title>
                                         <center>
                                             <a href="https://quotetests.com" target="_blank">
-                                                <mdb-btn color="elegant">Demo</mdb-btn>
-                                            </a>
-                                        </center>
-                                    </mdb-card-body>
-                                </mdb-card>
-                                <mdb-card class="project-card mt-4">
-                                    <mdb-card-body>
-                                        <mdb-card-title class="text-center">Cirms</mdb-card-title>
-                                        <center>
-                                            <a href="https://demo.cirms.ph" target="_blank">
                                                 <mdb-btn color="elegant">Demo</mdb-btn>
                                             </a>
                                         </center>
