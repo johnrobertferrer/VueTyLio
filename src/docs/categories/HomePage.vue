@@ -11,7 +11,8 @@
                     <mdb-nav-item to="/blog">BLOG</mdb-nav-item>
                 </mdb-navbar-nav>
                 <mdb-navbar-nav>
-                    <a href="https://drive.google.com/uc?export=download&id=1SJXkatzMgFnAI70XlpasslxT5skPGw2O" style="position: inline-block">
+                    <!-- <a href="https://drive.google.com/uc?export=download&id=1SJXkatzMgFnAI70XlpasslxT5skPGw2O" style="position: inline-block"> -->
+                    <a href="https://drive.google.com/open?id=1SJXkatzMgFnAI70XlpasslxT5skPGw2O" style="position: inline-block">
                         <mdb-nav-item class="mr-3 font-weight-bold">
                             <span class="font-weight-bold">RESUME</span>
                         </mdb-nav-item>
