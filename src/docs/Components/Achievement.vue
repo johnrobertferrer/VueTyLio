@@ -23,9 +23,9 @@ export default {
         return {
             timelines: [
                 {
-                    title: 'Freelancer In Fiverr',
+                    title: 'Freelancer (Web Development) In Fiverr',
                     date: '2020',
-                    address: 'https://www.fiverr.com/'
+                    address: 'Fiverr'
                 },
                 {
                     title: 'Hired As Full-time Software Engineer Position In Nelsoft Systems Inc.',
