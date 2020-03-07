@@ -1,7 +1,7 @@
 <template>
     <ul class="timeline">
         <li v-for="timeline in timelines">
-            <div class="timeline-badge danger"><i class="glyphicon glyphicon-check"></i></div>
+            <div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading text-center">
                         <h4 class="timeline-title">{{ timeline.title }}</h4>
@@ -58,24 +58,29 @@ export default {
                     address: 'Tanghalang Pasigueño, Pasig City Hall Complex, Caruncho Ave, Pasig, Metro Manila'
                 },
                 {
-                    title: 'Build Reactive Web Components and Real-time Database: VueJS+Node.js + Socket.io + NoSQL Database (Ground Gurus)',
-                    date: '2019',
-                    address: 'Tycoon Center Bldg., Pearl Dr, San Antonio, Pasig, Metro Manila'
-                },
-                {
                     title: 'Shaping the Future Forum 2017',
                     date: '2019',
                     address: 'Maybank Performing Arts Theater, 26th St, Taguig, Metro Manila'
                 },
                 {
+                    title: 'Build Reactive Web Components and Real-time Database: VueJS+Node.js + Socket.io + NoSQL Database (Ground Gurus)',
+                    date: '2018',
+                    address: 'Tycoon Center Bldg., Pearl Dr, San Antonio, Pasig, Metro Manila'
+                },
+                {
                     title: 'ASP.NET: Embedding Foundation of Web App Possibilities',
-                    date: '2019',
+                    date: '2018',
                     address: 'Pamantasan ng Lungsod ng Maynila, General Luna, corner Muralla St, Intramuros, Manila, 1002 Metro Manila'
                 },
                 {
                     title: 'Campus Devcon PH',
-                    date: '2019',
+                    date: '2018',
                     address: 'Pamantasan ng Lungsod ng Maynila, General Luna, corner Muralla St, Intramuros, Manila, 1002 Metro Manila'
+                },
+                {
+                    title: 'MATHSAYA 12: The Legend of Aryabhata',
+                    date: '2015',
+                    address: 'Ateneo de Manila University, President Carlos P. Garcia Ave, Quezon City, 1108 Metro Manila'
                 }
             ]
         }
@@ -193,7 +198,7 @@ export default {
   background-color: #3f903f !important;
 }
 .timeline-badge.warning {
-  background-color: #f0ad4e !important;
+  background-color: #ebad04 !important;
 }
 .timeline-badge.danger {
   background-color: #d9534f !important;

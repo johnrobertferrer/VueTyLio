@@ -30,10 +30,11 @@
                         <div class="container">
                             <div class="text-center white-text">
                                 <h1 class="font-weight-bold" style="font-size: 3.5em">
-                                    <span class="mb-5">ATTRACTED ON</span>
+                                    <span class="mb-5">Hey, I'm Jobs</span>
                                     <br>
+                                    <div class="mt-2"></div>
                                     <vue-typer
-                                        :text='["Web Development","Hybrid Mobile Development","Arduino Projects","Photo & Video Editing"]'
+                                        :text='["Software Engineer","Web Developer","Github Contributor","Freelancer"]'
                                         class="mt-5 pl-2 pr-2 pb-1"
                                         :repeat='Infinity'
                                         :shuffle='true'
@@ -60,26 +61,26 @@
             <mdb-row class="m-0">
                 <div class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img @load="loadedPhoto($event)" id="skill_web" src="../../assets/web.svg" class="w-25 m-3">
-                        <h3 class="text-center mt-2 mb-4">Web Development</h3>
+                        <img @load="loadedPhoto($event)" id="skill_web" src="../../assets/illustrations/software-engineer.svg" class="w-70 m-3">
+                        <h3 class="text-center mt-2 mb-4">Software Engineer</h3>
                     </center>
                 </div>
                 <div class="skill-icon amber lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img @load="loadedPhoto($event)" id="skill_mobile" src="../../assets/mobile.svg" class="w-25 m-3">
-                        <h3 class="text-center mt-2 mb-4">Mobile Development</h3>
+                        <img @load="loadedPhoto($event)" id="skill_mobile" src="../../assets/illustrations/web-developer.svg" class="w-52 m-3">
+                        <h3 class="text-center mt-2 mb-4">Web Developer</h3>
                     </center>
                 </div>
                 <div class="skill-icon orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img @load="loadedPhoto($event)" id="skill_arduino" src="../../assets/arduino.svg" class="w-25 m-3">
-                        <h3 class="text-center mt-2 mb-4">Arduino Projects</h3>
+                        <img @load="loadedPhoto($event)" id="skill_arduino" src="../../assets/illustrations/github-contributor.svg" class="w-55 m-3">
+                        <h3 class="text-center mt-2 mb-4">Github Contributor</h3>
                     </center>
                 </div>
                 <div class="skill-icon deep-orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img @load="loadedPhoto($event)" id="skill_editing" src="../../assets/editing.svg" class="w-25 m-3">
-                        <h3 class="text-center mt-2 mb-4">Photo & Video Editing</h3>
+                        <img @load="loadedPhoto($event)" id="skill_editing" src="../../assets/illustrations/freelancer.svg" class="w-43 m-3">
+                        <h3 class="text-center mt-2 mb-4">Freelancer</h3>
                     </center>
                 </div>
             </mdb-row>
@@ -87,23 +88,19 @@
 
         <!-- SEMINARS AND MEETUP -->
         <section id="current-projects" class="primary-red p-5">
-            <mdb-container>
+            <mdb-container fluid>
                 <mdb-row>
-                    <div class="col-12 col sm-12 col-lg-4 pt-5 white-text text-center" style="font-size: 500%; line-height: 1.75;">
-                        ONGOING PROJECT
+                    <div class="col-12 col sm-12 col-lg-6">
+                        <center>
+                            <img src="../../assets/illustrations/ongoing-project.svg" class="w-75 mb-5">
+                            <label class="w-100 mb-4 white-text text-center" style="font-size: 250%; line-height: 1.75;"> ONGOING PROJECTS </label>
+                        </center>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        
                         <mdb-row>
-                            <mdb-card-group deck class="pl-5 pr-5">
-                                <mdb-card class="project-card">
-                                    <mdb-view hover>
-                                        <a href="https://myassignmentcalculator.com" target="_blank">
-                                            <img class="card-img-top p-1 pt-4"
-                                                src="../../assets/book.svg" 
-                                                alt="Card image cap">
-                                            <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
-                                        </a>
-                                    </mdb-view>
+                            <mdb-card-group deck class="pl-5 pr-5 w-100">
+                                <mdb-card class="project-card mt-4">
                                     <mdb-card-body>
                                         <mdb-card-title class="text-center">My Assignment</mdb-card-title>
                                         <center>
@@ -113,19 +110,21 @@
                                         </center>
                                     </mdb-card-body>
                                 </mdb-card>
-                                <mdb-card class="project-card">
-                                    <mdb-view hover>
-                                        <a href="https://quotetests.com" target="_blank">
-                                            <img class="card-img-top p-1 pt-4"
-                                                src="../../assets/quote-request.svg" 
-                                                alt="Card image cap">
-                                            <mdb-mask flex-center waves overlay="white-slight"></mdb-mask>
-                                        </a>
-                                    </mdb-view>
+                                <mdb-card class="project-card mt-4">
                                     <mdb-card-body>
                                         <mdb-card-title class="text-center">Quotetests</mdb-card-title>
                                         <center>
                                             <a href="https://quotetests.com" target="_blank">
+                                                <mdb-btn color="elegant">Demo</mdb-btn>
+                                            </a>
+                                        </center>
+                                    </mdb-card-body>
+                                </mdb-card>
+                                <mdb-card class="project-card mt-4">
+                                    <mdb-card-body>
+                                        <mdb-card-title class="text-center">Cirms</mdb-card-title>
+                                        <center>
+                                            <a href="https://demo.cirms.ph" target="_blank">
                                                 <mdb-btn color="elegant">Demo</mdb-btn>
                                             </a>
                                         </center>
@@ -146,14 +145,31 @@
             </div>
         </div>
 
-        <!-- CURRENT PROJECTS -->
+        <!-- achievements -->
         <section id="current-projects" class="primary-blue p-5">
             <mdb-container>
                 <mdb-row>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
                             <mdb-container>
-                                <h2 class="display-4 text-center">ATTENDED SEMINARS</h2>
+                                <h2 class="display-4 text-center">Achievements</h2>
+                            </mdb-container>
+                        </mdb-jumbotron>
+
+                        <achievement></achievement>
+                    </div>
+                </mdb-row>
+            </mdb-container>
+        </section>
+
+        <!-- Attended seminars -->
+        <section id="current-projects" class="primary-yellow p-5">
+            <mdb-container>
+                <mdb-row>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
+                            <mdb-container>
+                                <h2 class="display-4 text-center">Attended Seminars & Workshop</h2>
                             </mdb-container>
                         </mdb-jumbotron>
 
@@ -163,46 +179,19 @@
             </mdb-container>
         </section>
 
-        <section class="default-color-dark p-5">
+        <section class="primary-blue p-5">
             <mdb-container>
-                
-                <!-- <mdb-row class="wrapper">
-                    <div class="scrolls"> -->
                 <mdb-row>
                     <div class="col-12 col-sm-12 col-lg-6">
                         <img @load="loadedPhoto($event)" id="client_luljettas" src="../../assets/client-luljettas.svg" class="p-3 pt-4 w-100" style="display: inline-block">
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="col-6 col-sm-6 col-lg-3">
                         <img @load="loadedPhoto($event)" id="client_plm" src="../../assets/client-plm.svg" class="p-3 w-100" style="display: inline-block">
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="col-6 col-sm-6 col-lg-3">
                         <img @load="loadedPhoto($event)" id="client_marikina" src="../../assets/client-marikina.svg" class="p-3 w-100" style="display: inline-block">
                     </div>
                 </mdb-row>
-                    <!-- <div class="col-12 col-sm-12 col-lg-6"> -->
-                        <!-- <img @load="loadedPhoto($event)" id="client_luljettas" src="../../assets/client-luljettas.svg" class="p-3 pt-4"> -->
-                    <!-- </div> -->
-                    <!-- <div class="col-12 col-sm-6 col-lg-3"> -->
-                        <!-- <img @load="loadedPhoto($event)" id="client_plm" src="../../assets/client-plm.svg" class="p-3"> -->
-                    <!-- </div> -->
-                    <!-- <div class="col-12 col-sm-6 col-lg-3"> -->
-                        <!-- <img @load="loadedPhoto($event)" id="client_marikina" src="../../assets/client-marikina.svg" class="p-3"> -->
-                    <!-- </div> -->
-                    <!-- </div> -->
-                    <!-- <div data-sal="zoom-in"
-                        data-sal-duration="2000"
-                        data-sal-delay="500"
-                        data-sal-easing="ease-out-bounce">
-                        Element To Animate
-                    </div>
-
-                    <h1
-                    data-sal="slide-up"
-                    data-sal-delay="300"
-                    data-sal-duration="800"
-                    data-sal-easing="ease-out-bounce"
-                    >Lorem</h1> -->
-                <!-- </mdb-row> -->
             </mdb-container>
         </section>
 
@@ -269,6 +258,7 @@
     from 'mdbvue';
 
     import Timeline from '../Components/Timeline.vue';
+    import Achievement from '../Components/Achievement.vue';
 
     export default {
         name: 'HomePage',
@@ -295,7 +285,8 @@
             mdbTooltip,
             mdbBadge,
             mdbJumbotron,
-            Timeline
+            Timeline,
+            Achievement,
         },
         data() {
             return {
@@ -415,6 +406,10 @@
         transition: 0.2s;
     }
 
+    .project-card {
+        flex: 0 1 100%;
+    }
+
     .wrapper { 
         /* background:#EFEFEF;  */
         /* box-shadow: 1px 1px 10px #999;  */
@@ -453,5 +448,27 @@
 
     .badge {
         white-space: pre-wrap;
+    }
+
+    .w-43 {
+        width: 43% !important;
+    }
+
+    .w-52 {
+        width: 52% !important;
+    }
+
+    .w-55 {
+        width: 55% !important;
+    }
+
+    .w-70 {
+        width: 70% !important;
+    }
+
+    .display-4 {
+        word-break: break-word;
+        font-size: 2rem;
+        font-weight: bold;
     }
 </style>
