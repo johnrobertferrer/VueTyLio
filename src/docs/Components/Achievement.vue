@@ -93,7 +93,7 @@ export default {
                     address: 'Fort Bonifacio High School, Dr Jose P. Rizal Ext, Makati, Metro Manila'
                 },
                 {
-                    title: 'Elected As Historical Vice President',
+                    title: 'Elected As Vice President For Historical Club',
                     date: '2013',
                     address: 'Fort Bonifacio High School, Dr Jose P. Rizal Ext, Makati, Metro Manila'
                 },
