@@ -78,6 +78,11 @@ export default {
                     address: 'Fort Bonifacio High School, Dr Jose P. Rizal Ext, Makati, Metro Manila'
                 },
                 {
+                    title: 'Elected As M.Y.M President',
+                    date: '2014',
+                    address: 'Fort Bonifacio High School, Dr Jose P. Rizal Ext, Makati, Metro Manila'
+                },
+                {
                     title: 'MTAP Division, Written Category Contestant',
                     date: '2014',
                     address: 'Benigno "Ninoy" S. Aquino High School, Aguho, Makati, Kalakhang Maynila'
@@ -85,6 +90,11 @@ export default {
                 {
                     title: '2nd Place In MTAP, Written Category',
                     date: '2014',
+                    address: 'Fort Bonifacio High School, Dr Jose P. Rizal Ext, Makati, Metro Manila'
+                },
+                {
+                    title: 'Elected As Historical Vice President',
+                    date: '2013',
                     address: 'Fort Bonifacio High School, Dr Jose P. Rizal Ext, Makati, Metro Manila'
                 },
             ]
