@@ -63,7 +63,7 @@ export default {
                     address: 'Maybank Performing Arts Theater, 26th St, Taguig, Metro Manila'
                 },
                 {
-                    title: 'Build Reactive Web Components and Real-time Database: VueJS+Node.js + Socket.io + NoSQL Database (Ground Gurus)',
+                    title: 'Build Reactive Web Components and Real-time Database: VueJS + Node.js + Socket.io + NoSQL Database (Ground Gurus)',
                     date: '2018',
                     address: 'Tycoon Center Bldg., Pearl Dr, San Antonio, Pasig, Metro Manila'
                 },
