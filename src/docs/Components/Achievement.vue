@@ -23,6 +23,11 @@ export default {
         return {
             timelines: [
                 {
+                    title: 'Freelancer In Fiverr',
+                    date: '2020',
+                    address: 'https://www.fiverr.com/'
+                },
+                {
                     title: 'Hired As Full-time Software Engineer Position In Nelsoft Systems Inc.',
                     date: '2020',
                     address: '1518 F T Benitez, Manila, Metro Manila, Manila, 1004 Metro Manila'
