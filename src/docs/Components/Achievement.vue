@@ -4,10 +4,10 @@
             <div class="timeline-badge primary"><i class="glyphicon glyphicon-check"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading text-center">
-                        <h4 class="timeline-title">{{ timeline.title }}</h4>
-                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{ timeline.date }} </small></p>
+                        <h4 class="timeline-title text-break">{{ timeline.title }}</h4>
+                        <p class="text-break"><small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{ timeline.date }} </small></p>
                     </div>
-                    <div class="timeline-body text-center">
+                    <div class="timeline-body text-center text-break">
                         <p>{{ timeline.address }}</p>
                     </div>
                 </div>
