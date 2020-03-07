@@ -44,22 +44,22 @@ export default {
                 },
                 {
                     title: 'Annual PSITE Student IT Congress',
-                    date: '2019',
+                    date: '2018',
                     address: 'Adamson University, 900 San Marcelino St, Ermita, Manila, 1000 Metro Manila'
                 },
                 {
                     title: 'iSITE Regional Student Conference',
-                    date: '2019',
+                    date: '2018',
                     address: 'Colegio de San Juan de Letran Calamba, Bucal Bypass Rd, Calamba, 4027 Laguna'
                 },
                 {
                     title: 'eGlobio Seminar',
-                    date: '2019',
+                    date: '2018',
                     address: 'Tanghalang Pasigueño, Pasig City Hall Complex, Caruncho Ave, Pasig, Metro Manila'
                 },
                 {
                     title: 'Shaping the Future Forum 2017',
-                    date: '2019',
+                    date: '2018',
                     address: 'Maybank Performing Arts Theater, 26th St, Taguig, Metro Manila'
                 },
                 {

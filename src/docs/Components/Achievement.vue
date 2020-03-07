@@ -58,14 +58,14 @@ export default {
                     address: 'Pamantasan ng Lungsod ng Maynila, General Luna, corner Muralla St, Intramuros, Manila, 1002 Metro Manila'
                 },
                 {
-                    title: 'First Place In Web Page Designing, Technolympics, Division Skills Competition',
-                    date: '2015',
-                    address: 'Benigno "Ninoy" S. Aquino High School, Aguho, Makati, Kalakhang Maynila'
-                },
-                {
                     title: 'First Honorable Mention',
                     date: '2015',
                     address: 'Fort Bonifacio High School, Dr Jose P. Rizal Ext, Makati, Metro Manila'
+                },
+                {
+                    title: 'First Place In Web Page Designing, Technolympics, Division Skills Competition',
+                    date: '2015',
+                    address: 'Benigno "Ninoy" S. Aquino High School, Aguho, Makati, Kalakhang Maynila'
                 },
                 {
                     title: 'Layout Artist Of The Year',
