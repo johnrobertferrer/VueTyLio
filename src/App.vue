@@ -47,6 +47,10 @@
 </script>
 
 <style>
+    body {
+        font-family: 'Montserrat' !important;
+    }
+
     .elegant-color {
         background-color: #0c8b91 !important;
     }

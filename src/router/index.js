@@ -1,10 +1,5 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HomePage from '../docs/categories/HomePage';
-import AboutPage from '../docs/categories/AboutPage.vue';
-import WorkPage from '../docs/categories/WorkPage';
-import ContactPage from '../docs/categories/ContactPage';
-import BlogPage from '../docs/categories/BlogPage';
 
 Vue.use(Router);
 
