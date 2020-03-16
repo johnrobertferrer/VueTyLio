@@ -9,7 +9,6 @@
                     <mdb-nav-item to="/work">WORK</mdb-nav-item>
                     <mdb-nav-item to="/contact">CONTACT</mdb-nav-item>
                     <mdb-nav-item to="/blog">BLOG</mdb-nav-item>
-                    <mdb-nav-item to="/blog">TEST</mdb-nav-item>
                 </mdb-navbar-nav>
                 <mdb-navbar-nav>
                     <!-- <a href="https://drive.google.com/uc?export=download&id=1SJXkatzMgFnAI70XlpasslxT5skPGw2O" style="position: inline-block"> -->
@@ -379,7 +378,7 @@
     }
 
     .vue-typer {
-        font-family: 'Century Gothic', 'Segoe UI', 'Roboto Light';
+        font-family: 'Montserrat', 'Segoe UI', 'Roboto Light';
         background: #fff;
     }
 
