@@ -43,17 +43,17 @@ export default {
                     address: '1518 F T Benitez, Manila, Metro Manila, Manila, 1004 Metro Manila'
                 },
                 {
-                    title: 'Top 2 For All Third Year, Information Technology Students',
+                    title: 'Top 2 In All Third Year, Information Technology Students',
                     date: '2018',
                     address: 'Pamantasan ng Lungsod ng Maynila, General Luna, corner Muralla St, Intramuros, Manila, 1002 Metro Manila'
                 },
                 {
-                    title: 'Top 2 For All Second Year, Information Technology Students',
+                    title: 'Top 2 In All Second Year, Information Technology Students',
                     date: '2018',
                     address: 'Pamantasan ng Lungsod ng Maynila, General Luna, corner Muralla St, Intramuros, Manila, 1002 Metro Manila'
                 },
                 {
-                    title: 'Top 2 For All First Year, Information Technology Students',
+                    title: 'Top 2 In All First Year, Information Technology Students',
                     date: '2018',
                     address: 'Pamantasan ng Lungsod ng Maynila, General Luna, corner Muralla St, Intramuros, Manila, 1002 Metro Manila'
                 },
