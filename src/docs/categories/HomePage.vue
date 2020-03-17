@@ -30,13 +30,12 @@
                     <div class="mask rgba-black-strong flex-center">
                         <div class="container">
                             <div class="text-center white-text">
-                                <h1 class="font-weight-bold" style="font-size: 3.5em">
-                                    <span class="mb-5">Hey, I'm Jobs</span>
+                                <h1 class="font-weight-bold" style="font-size: 3rem">
+                                    <span>Hey, I'm Jobs</span>
                                     <br>
-                                    <div class="mt-2"></div>
                                     <vue-typer
                                         :text='["Software Engineer","Web Developer","Github Contributor","Freelancer"]'
-                                        class="mt-5 pl-2 pr-2 pb-1"
+                                        class="pl-2 pr-2 pb-1 vue-typer-font"
                                         :repeat='Infinity'
                                         :shuffle='true'
                                         initial-action='erasing'
@@ -52,7 +51,7 @@
                                 </h1>
                             </div>
                         </div>
-                        <img @load="loadedPhoto($event)" id="arrow_down_background_header" v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1200 }" src="../../assets/arrow-down.svg" width="100%" class="mt-3 animated infinite bounce slower" style="position: absolute; bottom: 6vh; width: 6vh;" />
+                        <img @load="loadedPhoto($event)" id="arrow_down_background_header" v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1200 }" src="../../assets/arrow-down.svg" width="100%" class="mt-3" style="position: absolute; bottom: 6vh; width: 6vh;" />
                     </div>
                 </div>
             </div>

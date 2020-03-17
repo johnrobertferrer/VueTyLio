@@ -208,11 +208,14 @@ export default {
 }
 .timeline-title {
   margin-top: 0;
+  font-size: 1rem;
+  font-weight: bold;
   color: inherit;
 }
 .timeline-body > p,
 .timeline-body > ul {
   margin-bottom: 0;
+  font-size: 0.8rem;
 }
 .timeline-body > p + p {
   margin-top: 5px;
