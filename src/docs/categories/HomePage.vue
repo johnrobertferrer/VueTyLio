@@ -1,5 +1,5 @@
 <template>
-    <div v-show="!loadingStatus" >
+    <div v-show="loadChecker">
         <!--Navbar-->
         <mdb-navbar position="top" transparent dark color="elegant" name="Your Logo" scrolling>
             <mdb-navbar-toggler>
@@ -22,10 +22,9 @@
         </mdb-navbar>
         <!--/.Navbar-->
 
-
         <div style="height: 100vh;">
             <div class="view intro-2">
-                <img @load="loadedPhoto($event)" id="background_header" src="../../assets/background.svg" class="view">
+                <img ref="background_header" src="../../assets/background.svg" class="view">
                 <div class="full-bg-img">
                     <div class="mask rgba-black-strong flex-center">
                         <div class="container">
@@ -51,7 +50,7 @@
                                 </h1>
                             </div>
                         </div>
-                        <img @load="loadedPhoto($event)" id="arrow_down_background_header" v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1200 }" src="../../assets/arrow-down.svg" width="100%" class="mt-3" style="position: absolute; bottom: 6vh; width: 6vh;" />
+                        <img ref="arrow_down_background_header" v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1200 }" src="../../assets/arrow-down.svg" width="100%" class="mt-3" style="position: absolute; bottom: 6vh; width: 6vh;" />
                     </div>
                 </div>
             </div>
@@ -61,25 +60,25 @@
             <mdb-row class="m-0">
                 <div class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img @load="loadedPhoto($event)" id="skill_web" src="../../assets/illustrations/software-engineer.svg" class="w-70 m-3">
+                        <img ref="skill_web" src="../../assets/illustrations/software-engineer.svg" class="w-70 m-3">
                         <h3 class="text-center mt-2 mb-4">Software Engineer</h3>
                     </center>
                 </div>
                 <div class="skill-icon amber lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img @load="loadedPhoto($event)" id="skill_mobile" src="../../assets/illustrations/web-developer.svg" class="w-52 m-3">
+                        <img ref="skill_mobile" src="../../assets/illustrations/web-developer.svg" class="w-52 m-3">
                         <h3 class="text-center mt-2 mb-4">Web Developer</h3>
                     </center>
                 </div>
                 <div class="skill-icon orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img @load="loadedPhoto($event)" id="skill_arduino" src="../../assets/illustrations/github-contributor.svg" class="w-55 m-3">
+                        <img ref="skill_arduino" src="../../assets/illustrations/github-contributor.svg" class="w-55 m-3">
                         <h3 class="text-center mt-2 mb-4">Github Contributor</h3>
                     </center>
                 </div>
                 <div class="skill-icon deep-orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
                     <center>
-                        <img @load="loadedPhoto($event)" id="skill_editing" src="../../assets/illustrations/freelancer.svg" class="w-43 m-3">
+                        <img ref="skill_editing" src="../../assets/illustrations/freelancer.svg" class="w-43 m-3">
                         <h3 class="text-center mt-2 mb-4">Freelancer</h3>
                     </center>
                 </div>
@@ -90,19 +89,18 @@
         <section id="current-projects" class="primary-red p-5">
             <mdb-container fluid>
                 <mdb-row>
-                    <div class="col-12 col sm-12 col-lg-6">
+                    <div class="col-12 col sm-12 col-lg-8">
                         <center>
-                            <img src="../../assets/illustrations/ongoing-project.svg" class="w-75 mb-5">
-                            <label class="w-100 mb-4 white-text text-center" style="font-size: 250%; line-height: 1.75;"> ONGOING PROJECTS </label>
+                            <img src="../../assets/illustrations/ongoing-project.svg" class="w-70 mb-5">
+                            <label class="w-100 mb-4 white-text text-center" style="font-size: 2rem; line-height: 1.75;"> ONGOING PROJECTS </label>
                         </center>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                        
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
                         <mdb-row>
-                            <mdb-card-group deck class="pl-5 pr-5 w-100">
-                                <mdb-card class="project-card mt-4">
+                            <mdb-card-group deck class="w-100">
+                                <mdb-card class="project-card col-lg-12 col-12">
                                     <mdb-card-body>
-                                        <mdb-card-title class="text-center">Cloud Inventory Retail Management System (CIRMS)</mdb-card-title>
+                                        <mdb-card-title class="text-center">C.I.R.M.S.</mdb-card-title>
                                         <center>
                                             <a href="https://demo.cirms.ph" target="_blank">
                                                 <mdb-btn color="elegant">Demo</mdb-btn>
@@ -110,7 +108,7 @@
                                         </center>
                                     </mdb-card-body>
                                 </mdb-card>
-                                <mdb-card class="project-card mt-4">
+                                <mdb-card class="project-card mt-4 col-lg-12 col-12">
                                     <mdb-card-body>
                                         <mdb-card-title class="text-center">My Assignment</mdb-card-title>
                                         <center>
@@ -120,11 +118,21 @@
                                         </center>
                                     </mdb-card-body>
                                 </mdb-card>
-                                <mdb-card class="project-card mt-4">
+                                <mdb-card class="project-card mt-4 col-lg-12 col-12">
                                     <mdb-card-body>
                                         <mdb-card-title class="text-center">Quotetests</mdb-card-title>
                                         <center>
                                             <a href="https://quotetests.com" target="_blank">
+                                                <mdb-btn color="elegant">Demo</mdb-btn>
+                                            </a>
+                                        </center>
+                                    </mdb-card-body>
+                                </mdb-card>
+                                <mdb-card class="project-card mt-4 col-lg-12 col-12">
+                                    <mdb-card-body>
+                                        <mdb-card-title class="text-center">ZipInfo</mdb-card-title>
+                                        <center>
+                                            <a href="https://infozip.johnferrer.xyz/" target="_blank">
                                                 <mdb-btn color="elegant">Demo</mdb-btn>
                                             </a>
                                         </center>
@@ -152,7 +160,7 @@
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
                             <mdb-container>
-                                <h2 class="display-4 text-center">Achievements</h2>
+                                <h2 class="display-4 text-center" style="font-size: 1.5rem;">Achievements</h2>
                             </mdb-container>
                         </mdb-jumbotron>
 
@@ -169,7 +177,7 @@
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
                             <mdb-container>
-                                <h2 class="display-4 text-center">Attended Seminars & Workshop</h2>
+                                <h2 class="display-4 text-center" style="font-size: 1.5rem;">Attended Seminars & Workshop</h2>
                             </mdb-container>
                         </mdb-jumbotron>
 
@@ -183,13 +191,13 @@
             <mdb-container>
                 <mdb-row>
                     <div class="col-12 col-sm-12 col-lg-6">
-                        <img @load="loadedPhoto($event)" id="client_luljettas" src="../../assets/client-luljettas.svg" class="p-3 pt-4 w-100" style="display: inline-block">
+                        <img ref="client_luljettas" src="../../assets/client-luljettas.svg" class="p-3 pt-4 w-100" style="display: inline-block">
                     </div>
                     <div class="col-6 col-sm-6 col-lg-3">
-                        <img @load="loadedPhoto($event)" id="client_plm" src="../../assets/client-plm.svg" class="p-3 w-100" style="display: inline-block">
+                        <img ref="client_plm" src="../../assets/client-plm.svg" class="p-3 w-100" style="display: inline-block">
                     </div>
                     <div class="col-6 col-sm-6 col-lg-3">
-                        <img @load="loadedPhoto($event)" id="client_marikina" src="../../assets/client-marikina.svg" class="p-3 w-100" style="display: inline-block">
+                        <img ref="client_marikina" src="../../assets/client-marikina.svg" class="p-3 w-100" style="display: inline-block">
                     </div>
                 </mdb-row>
             </mdb-container>
@@ -309,8 +317,15 @@
         mounted() {
             this.startLoading();
             this.loading_status.mounted_component = true;
+            this.setImageChecker();
         },
         methods: {
+            setImageChecker() {
+                let that = this;
+
+                setTimeout(() => { that.imageChecker() }, 2750);
+            },
+
             startLoading() {
                 this.$store.commit('startProcessing');
             },
@@ -319,14 +334,18 @@
                 this.$store.commit('endProcessing');
             },
 
-            loadedPhoto(event) {
-                let id = event.path[0].id;
-
-                this.loading_status.photo[id] = true;
-            },
-
             validateIfAllAreLoaded() {
                 return Object.keys(this.loading_status.photo).every(element => this.loading_status.photo[element]) && this.loading_status.mounted_component;
+            },
+
+            imageChecker() {
+                let that = this;
+
+                Object.keys(this.loading_status.photo).forEach(function(element) {
+                    if(that.$refs[element] != null) {
+                        that.loading_status.photo[element] = true;
+                    }
+                });
             }
         },
         watch: {
@@ -378,6 +397,7 @@
 
     .vue-typer {
         font-family: 'Montserrat', 'Segoe UI', 'Roboto Light';
+        font-size: 1.8rem;
         background: #fff;
     }
 
@@ -396,18 +416,22 @@
     .primary-yellow {
         background-color: #ebad04;
     }
-    
-    .project-card {
-        animation-duration: 5s;
-    }
 
     .skill-icon:hover {
         box-shadow: inset 0 0 0 1vw #0c8b91;
         transition: 0.2s;
     }
 
+    .skill-icon h3 {
+        font-size: 1.5rem;
+    }
+
     .project-card {
         flex: 0 1 100%;
+    }
+
+    .project-card .card-body h4, .project-card .card-body a {
+        font-size: 1rem;
     }
 
     .wrapper { 
