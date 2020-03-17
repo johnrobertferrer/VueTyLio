@@ -58,25 +58,25 @@
 
         <section>
             <mdb-row class="m-0">
-                <div class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
+                <div class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" ref="skill-1" @mouseenter="addHoverEffects('skill-1')" @mouseleave="removeHoverEffects('skill-1')">
                     <center>
                         <img ref="skill_web" src="../../assets/illustrations/software-engineer.svg" class="w-70 m-3">
                         <h3 class="text-center mt-2 mb-4">Software Engineer</h3>
                     </center>
                 </div>
-                <div class="skill-icon amber lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
+                <div class="skill-icon amber lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" ref="skill-2" @mouseenter="addHoverEffects('skill-2')" @mouseleave="removeHoverEffects('skill-2')">
                     <center>
                         <img ref="skill_mobile" src="../../assets/illustrations/web-developer.svg" class="w-52 m-3">
                         <h3 class="text-center mt-2 mb-4">Web Developer</h3>
                     </center>
                 </div>
-                <div class="skill-icon orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
+                <div class="skill-icon orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" ref="skill-3" @mouseenter="addHoverEffects('skill-3')" @mouseleave="removeHoverEffects('skill-3')">
                     <center>
                         <img ref="skill_arduino" src="../../assets/illustrations/github-contributor.svg" class="w-55 m-3">
                         <h3 class="text-center mt-2 mb-4">Github Contributor</h3>
                     </center>
                 </div>
-                <div class="skill-icon deep-orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3">
+                <div class="skill-icon deep-orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" ref="skill-4" @mouseenter="addHoverEffects('skill-4')" @mouseleave="removeHoverEffects('skill-4')">
                     <center>
                         <img ref="skill_editing" src="../../assets/illustrations/freelancer.svg" class="w-43 m-3">
                         <h3 class="text-center mt-2 mb-4">Freelancer</h3>
@@ -86,59 +86,57 @@
         </section>
 
         <!-- SEMINARS AND MEETUP -->
-        <section id="current-projects" class="primary-red p-5">
+        <section id="current-projects" class="primary-red">
             <mdb-container fluid>
-                <mdb-row>
-                    <div class="col-12 col sm-12 col-lg-8">
+                <mdb-row class="pt-2 pb-2">
+                    <div class="col-12 col sm-12 col-lg-6 animated delay-1s slideInLeft">
                         <center>
-                            <img src="../../assets/illustrations/ongoing-project.svg" class="w-70 mb-5">
+                            <img src="../../assets/illustrations/ongoing-project.svg" class="w-75 mb-5 mt-5">
                             <label class="w-100 mb-4 white-text text-center" style="font-size: 2rem; line-height: 1.75;"> ONGOING PROJECTS </label>
                         </center>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
-                        <mdb-row>
-                            <mdb-card-group deck class="w-100">
-                                <mdb-card class="project-card col-lg-12 col-12">
-                                    <mdb-card-body>
-                                        <mdb-card-title class="text-center">C.I.R.M.S.</mdb-card-title>
-                                        <center>
-                                            <a href="https://demo.cirms.ph" target="_blank">
-                                                <mdb-btn color="elegant">Demo</mdb-btn>
-                                            </a>
-                                        </center>
-                                    </mdb-card-body>
-                                </mdb-card>
-                                <mdb-card class="project-card mt-4 col-lg-12 col-12">
-                                    <mdb-card-body>
-                                        <mdb-card-title class="text-center">My Assignment</mdb-card-title>
-                                        <center>
-                                            <a href="https://myassignmentcalculator.com" target="_blank">
-                                                <mdb-btn color="elegant">Demo</mdb-btn>
-                                            </a>
-                                        </center>
-                                    </mdb-card-body>
-                                </mdb-card>
-                                <mdb-card class="project-card mt-4 col-lg-12 col-12">
-                                    <mdb-card-body>
-                                        <mdb-card-title class="text-center">Quotetests</mdb-card-title>
-                                        <center>
-                                            <a href="https://quotetests.com" target="_blank">
-                                                <mdb-btn color="elegant">Demo</mdb-btn>
-                                            </a>
-                                        </center>
-                                    </mdb-card-body>
-                                </mdb-card>
-                                <mdb-card class="project-card mt-4 col-lg-12 col-12">
-                                    <mdb-card-body>
-                                        <mdb-card-title class="text-center">ZipInfo</mdb-card-title>
-                                        <center>
-                                            <a href="https://infozip.johnferrer.xyz/" target="_blank">
-                                                <mdb-btn color="elegant">Demo</mdb-btn>
-                                            </a>
-                                        </center>
-                                    </mdb-card-body>
-                                </mdb-card>
-                            </mdb-card-group>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-5 animated delay-1s slideInRight">
+                        <mdb-row class="h-100">
+                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-1">
+                                <div>
+                                    <mdb-card-title class="text-center">C.I.R.M.S.</mdb-card-title>
+                                    <center>
+                                        <a href="https://demo.cirms.ph" target="_blank">
+                                            <mdb-btn color="elegant">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
+                                        </a>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-lighten-1">
+                                <div>
+                                    <mdb-card-title class="text-center text-white">My Assignment</mdb-card-title>
+                                    <center>
+                                        <a href="https://myassignmentcalculator.com" target="_blank">
+                                            <mdb-btn color="light">Demo <i class="ml-1 fas fa-external-link-square-alt"></i> </mdb-btn>
+                                        </a>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-2">
+                                <div>
+                                    <mdb-card-title class="text-center">Quotetests</mdb-card-title>
+                                    <center>
+                                        <a href="https://quotetests.com" target="_blank">
+                                            <mdb-btn color="elegant">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
+                                        </a>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-darken-1">
+                                <div>
+                                    <mdb-card-title class="text-center text-white">Zip Info</mdb-card-title>
+                                    <center>
+                                        <a href="https://infozip.johnferrer.xyz/" target="_blank">
+                                            <mdb-btn color="light">Demo <i class="ml-1 fas fa-external-link-square-alt"></i> </mdb-btn>
+                                        </a>
+                                    </center>
+                                </div>
+                            </div>
                         </mdb-row>
                     </div>
                     <!-- </mdb-container> -->
@@ -149,7 +147,11 @@
         <!-- PARALLAX -->
         <div class="section">
             <div class="parallax">
-                <h1 class="text-center mb-0 pl-5 pr-5 white-text" style="padding: 150px 0">“Be as smart as you can, but remember that it is always better to be wise than to be smart.” – Alan Alda</h1>
+                <h1 class="text-center mb-0 pl-5 pr-5 white-text" style="padding: 150px 0">
+                    <span style="background: rgba(235, 173, 4, 0.5); font-size: 2.5rem;" class="pl-3 pr-3">
+                        “Contented with little but wishing for more”
+                    </span>
+                </h1>
             </div>
         </div>
 
@@ -320,6 +322,22 @@
             this.setImageChecker();
         },
         methods: {
+            addHoverEffects(target, type = "fadeIn") {
+                let className = this.$refs[target].className;
+
+                let effects = " animated duration-0pt5s " + type;
+
+                this.$refs[target].className = className + effects;
+            },
+
+            removeHoverEffects(target, type = "fadeIn") {
+                let className = this.$refs[target].className;
+
+                let effects = " animated duration-0pt5s " + type;
+
+                this.$refs[target].className = className.replace(effects, "");
+            },
+
             setImageChecker() {
                 let that = this;
 
@@ -417,6 +435,22 @@
         background-color: #ebad04;
     }
 
+    .c-violet-darken-1 {
+        background-color: #434175;
+    }
+
+    .c-violet-lighten-1 {
+        background-color: #565387;
+    }
+
+    .c-grey-lighten-1 {
+        background-color: #E3E8F4;
+    }
+
+    .c-grey-lighten-2 {
+        background-color: #AFC0E0;
+    }
+
     .skill-icon:hover {
         box-shadow: inset 0 0 0 1vw #0c8b91;
         transition: 0.2s;
@@ -428,9 +462,21 @@
 
     .project-card {
         flex: 0 1 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 
-    .project-card .card-body h4, .project-card .card-body a {
+    .project-card:hover {
+        box-shadow: inset 0 0 0 1vw #2e2e2e;
+        transition: 0.2s;
+    }
+
+    .project-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .project-card a {
         font-size: 1rem;
     }
 
@@ -494,5 +540,13 @@
         word-break: break-word;
         font-size: 2rem;
         font-weight: bold;
+    }
+
+    .delay-1s {
+        animation-delay: 1s;
+    }
+
+    .duration-0pt5s {
+        animation-duration: 0.5s;
     }
 </style>
