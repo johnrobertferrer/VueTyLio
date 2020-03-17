@@ -95,7 +95,7 @@
                             <label class="w-100 mb-4 white-text text-center" style="font-size: 2rem; line-height: 1.75;"> ONGOING PROJECTS </label>
                         </center>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-5 animated delay-1s slideInRight">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-5 animated delay-1s slideInLeft">
                         <mdb-row class="h-100">
                             <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-1">
                                 <div>
