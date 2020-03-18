@@ -350,7 +350,7 @@
 
             setImageChecker() {
                 let that = this;
-                let ms = that.session ? 50 : 2750;
+                let ms = that.session ? 100 : 3000;
 
                 setTimeout(() => { that.imageChecker() }, ms);
             },
