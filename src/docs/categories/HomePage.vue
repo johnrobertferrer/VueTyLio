@@ -50,7 +50,7 @@
                                 </h1>
                             </div>
                         </div>
-                        <img ref="arrow_down_background_header" v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1200 }" src="../../assets/arrow-down.svg" width="100%" class="mt-3" style="position: absolute; bottom: 6vh; width: 6vh;" />
+                        <img ref="arrow_down_background_header" v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1200 }" src="../../assets/arrow-down.svg" width="100%" class="mt-3" style="position: absolute; bottom: 12vh; width: 5vh;" />
                     </div>
                 </div>
             </div>
@@ -313,15 +313,25 @@
                         client_marikina: false,
                     },
                     mounted_component: false
-                }
+                },
+                session: false
             };
         },
         mounted() {
+            this.setSession();
             this.startLoading();
             this.loading_status.mounted_component = true;
             this.setImageChecker();
         },
         methods: {
+            setSession() {
+                if(typeof sessionStorage.getItem("hasSessionStorage") == "undefined") {
+                    sessionStorage.setItem("hasSessionStorage", true);
+                } else {
+                    this.session = true;
+                }
+            },
+
             addHoverEffects(target, type = "fadeIn") {
                 let className = this.$refs[target].className;
 
@@ -340,8 +350,9 @@
 
             setImageChecker() {
                 let that = this;
+                let ms = that.session ? 50 : 2750;
 
-                setTimeout(() => { that.imageChecker() }, 2750);
+                setTimeout(() => { that.imageChecker() }, ms);
             },
 
             startLoading() {
