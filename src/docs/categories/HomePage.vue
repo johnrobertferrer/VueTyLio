@@ -359,6 +359,7 @@
         },
         methods: {
             refreshHard() {
+                AOS.refresh();
                 AOS.refreshHard();
             },
 
@@ -374,7 +375,10 @@
                 let that = this;
                 let ms = that.session ? 200 : 3000;
 
-                setTimeout(() => { that.imageChecker() }, ms);
+                setTimeout(function() {
+                    that.imageChecker();
+                    that.refreshHard();
+                }, ms);
             },
 
             startLoading() {
