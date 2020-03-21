@@ -1,6 +1,6 @@
 <template>
     <ul class="timeline">
-        <li v-for="timeline in timelines">
+        <li v-for="timeline in timelines" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="350" data-aos-anchor-placement="center-bottom">
             <div class="timeline-badge primary"><i class="glyphicon glyphicon-check"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading text-center">
@@ -18,69 +18,24 @@
 
 <script>
 export default {
-    name: 'Timeline',
+    name: 'Experience',
     data() {
         return {
             timelines: [
                 {
-                    title: 'Google I/O Extended Manila',
-                    date: '2019',
-                    address: 'The Globe Tower, 32th Street corner 7th Avenue, Bonifacio Global City, Taguig City 1633 Metro Manila'
+                    title: 'Freelancer (Web Development) In Fiverr',
+                    date: '2020',
+                    address: 'Fiverr'
                 },
                 {
-                    title: 'Vue Manila 4th Meetup',
-                    date: '2019',
-                    address: 'Orange & Bronze Software Lab, Carlos J. Valdes Building, 108 Aguirre, Legazpi Village, Makati, Metro Manila'
+                    title: 'Hired As Full-time Software Engineer Position In Nelsoft Systems Inc.',
+                    date: '2020',
+                    address: '1518 F T Benitez, Manila, Metro Manila, Manila, 1004 Metro Manila'
                 },
                 {
-                    title: 'Programmers Developers Meetup #8',
-                    date: '2019',
-                    address: '6750 Ayala Avenue, 6750, Makati, Metro Manila'
-                },
-                {
-                    title: '2-day Training in Basic Web Development using PHP and Laravel (Ground Gurus)',
-                    date: '2019',
-                    address: 'Tycoon Center Bldg., Pearl Dr, San Antonio, Pasig, Metro Manila'
-                },
-                {
-                    title: 'Annual PSITE Student IT Congress',
+                    title: 'Hired as Intern Full Stack Web Developer Position In Captivate Solutions',
                     date: '2018',
-                    address: 'Adamson University, 900 San Marcelino St, Ermita, Manila, 1000 Metro Manila'
-                },
-                {
-                    title: 'iSITE Regional Student Conference',
-                    date: '2018',
-                    address: 'Colegio de San Juan de Letran Calamba, Bucal Bypass Rd, Calamba, 4027 Laguna'
-                },
-                {
-                    title: 'eGlobio Seminar',
-                    date: '2018',
-                    address: 'Tanghalang Pasigueño, Pasig City Hall Complex, Caruncho Ave, Pasig, Metro Manila'
-                },
-                {
-                    title: 'Shaping the Future Forum 2017',
-                    date: '2018',
-                    address: 'Maybank Performing Arts Theater, 26th St, Taguig, Metro Manila'
-                },
-                {
-                    title: 'Build Reactive Web Components and Real-time Database: VueJS + Node.js + Socket.io + NoSQL Database (Ground Gurus)',
-                    date: '2018',
-                    address: 'Tycoon Center Bldg., Pearl Dr, San Antonio, Pasig, Metro Manila'
-                },
-                {
-                    title: 'ASP.NET: Embedding Foundation of Web App Possibilities',
-                    date: '2018',
-                    address: 'Pamantasan ng Lungsod ng Maynila, General Luna, corner Muralla St, Intramuros, Manila, 1002 Metro Manila'
-                },
-                {
-                    title: 'Campus Devcon PH',
-                    date: '2018',
-                    address: 'Pamantasan ng Lungsod ng Maynila, General Luna, corner Muralla St, Intramuros, Manila, 1002 Metro Manila'
-                },
-                {
-                    title: 'MATHSAYA 12: The Legend of Aryabhata',
-                    date: '2015',
-                    address: 'Ateneo de Manila University, President Carlos P. Garcia Ave, Quezon City, 1108 Metro Manila'
+                    address: '1518 F T Benitez, Manila, Metro Manila, Manila, 1004 Metro Manila'
                 }
             ]
         }

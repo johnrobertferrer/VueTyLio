@@ -50,33 +50,39 @@
                                 </h1>
                             </div>
                         </div>
-                        <img ref="arrow_down_background_header" v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1200 }" src="../../assets/arrow-down.svg" width="100%" class="mt-3" style="position: absolute; bottom: 12vh; width: 5vh;" />
+                        <img ref="arrow_down_background_header" 
+                            v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1200 }"
+                            src="../../assets/arrow-down.svg" 
+                            width="100%" 
+                            class="mt-3 animated pulse infinite" 
+                            style="position: absolute; bottom: 12vh; width: 5vh;" 
+                        />
                     </div>
                 </div>
             </div>
         </div>
 
         <section>
-            <mdb-row class="m-0">
-                <div class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" ref="skill-1" @mouseenter="addHoverEffects('skill-1')" @mouseleave="removeHoverEffects('skill-1')">
+            <mdb-row class="m-0 primary-blue">
+                <div class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-duration="400">
                     <center>
                         <img ref="skill_web" src="../../assets/illustrations/software-engineer.svg" class="w-70 m-3">
                         <h3 class="text-center mt-2 mb-4">Software Engineer</h3>
                     </center>
                 </div>
-                <div class="skill-icon amber lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" ref="skill-2" @mouseenter="addHoverEffects('skill-2')" @mouseleave="removeHoverEffects('skill-2')">
+                <div class="skill-icon amber lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="flip-right" data-aos-anchor-placement="center-bottom" data-aos-duration="500">
                     <center>
                         <img ref="skill_mobile" src="../../assets/illustrations/web-developer.svg" class="w-52 m-3">
                         <h3 class="text-center mt-2 mb-4">Web Developer</h3>
                     </center>
                 </div>
-                <div class="skill-icon orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" ref="skill-3" @mouseenter="addHoverEffects('skill-3')" @mouseleave="removeHoverEffects('skill-3')">
+                <div class="skill-icon orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="flip-left" data-aos-anchor-placement="center-bottom" data-aos-duration="600">
                     <center>
                         <img ref="skill_arduino" src="../../assets/illustrations/github-contributor.svg" class="w-55 m-3">
                         <h3 class="text-center mt-2 mb-4">Github Contributor</h3>
                     </center>
                 </div>
-                <div class="skill-icon deep-orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" ref="skill-4" @mouseenter="addHoverEffects('skill-4')" @mouseleave="removeHoverEffects('skill-4')">
+                <div class="skill-icon deep-orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="zoom-in-down" data-aos-anchor-placement="center-bottom" data-aos-duration="300">
                     <center>
                         <img ref="skill_editing" src="../../assets/illustrations/freelancer.svg" class="w-43 m-3">
                         <h3 class="text-center mt-2 mb-4">Freelancer</h3>
@@ -86,18 +92,18 @@
         </section>
 
         <!-- SEMINARS AND MEETUP -->
-        <section id="current-projects" class="primary-red">
+        <section id="current-projects" class="primary-red pt-4 pb-4">
             <mdb-container fluid>
                 <mdb-row class="pt-2 pb-2">
-                    <div class="col-12 col sm-12 col-lg-6 animated delay-1s slideInLeft">
+                    <div class="col-12 col sm-12 col-lg-6">
                         <center>
                             <img src="../../assets/illustrations/ongoing-project.svg" class="w-75 mb-5 mt-5">
                             <label class="w-100 mb-4 white-text text-center" style="font-size: 2rem; line-height: 1.75;"> ONGOING PROJECTS </label>
                         </center>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-5 animated delay-1s slideInLeft">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-5">
                         <mdb-row class="h-100">
-                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-1">
+                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-1" data-aos="flip-left" data-aos-duration="250" data-aos-anchor-placement="center-bottom">
                                 <div>
                                     <mdb-card-title class="text-center">C.I.R.M.S.</mdb-card-title>
                                     <center>
@@ -107,7 +113,7 @@
                                     </center>
                                 </div>
                             </div>
-                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-lighten-1">
+                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-lighten-1" data-aos="flip-left" data-aos-duration="700" data-aos-anchor-placement="center-bottom">
                                 <div>
                                     <mdb-card-title class="text-center text-white">My Assignment</mdb-card-title>
                                     <center>
@@ -117,7 +123,7 @@
                                     </center>
                                 </div>
                             </div>
-                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-2">
+                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-2" data-aos="flip-down" data-aos-duration="200" data-aos-anchor-placement="center-bottom">
                                 <div>
                                     <mdb-card-title class="text-center">Quotetests</mdb-card-title>
                                     <center>
@@ -127,7 +133,7 @@
                                     </center>
                                 </div>
                             </div>
-                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-darken-1">
+                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-darken-1" data-aos="flip-down" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
                                 <div>
                                     <mdb-card-title class="text-center text-white">Zip Info</mdb-card-title>
                                     <center>
@@ -148,58 +154,44 @@
         <div class="section">
             <div class="parallax">
                 <h1 class="text-center mb-0 pl-5 pr-5 white-text" style="padding: 150px 0">
-                    <span style="background: rgba(235, 173, 4, 0.5); font-size: 2.5rem;" class="pl-3 pr-3">
-                        “Contented with little but wishing for more”
+                    <span style="background: rgba(235, 173, 4, 0.5); font-size: 2rem;" class="pl-3 pr-3">
+                        “Everything visible has a flip side, like a coin.” <br> ― Sunday Adelaja
                     </span>
                 </h1>
             </div>
         </div>
 
         <!-- achievements -->
-        <section id="current-projects" class="primary-blue p-5">
+        <section id="current-projects" class="primary-yellow pt-6 pb-6">
             <mdb-container>
                 <mdb-row>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
                             <mdb-container>
-                                <h2 class="display-4 text-center" style="font-size: 1.5rem;">Achievements</h2>
+                                <h2 class="display-4 text-center" style="font-size: 1.5rem;">Experiences</h2>
                             </mdb-container>
                         </mdb-jumbotron>
 
-                        <achievement></achievement>
+                        <experience></experience>
                     </div>
                 </mdb-row>
             </mdb-container>
         </section>
 
-        <!-- Attended seminars -->
-        <section id="current-projects" class="primary-yellow p-5">
+        <section class="primary-blue pt-6 pb-6">
             <mdb-container>
                 <mdb-row>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                        <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
-                            <mdb-container>
-                                <h2 class="display-4 text-center" style="font-size: 1.5rem;">Attended Seminars & Workshop</h2>
-                            </mdb-container>
-                        </mdb-jumbotron>
-
-                        <timeline></timeline>
-                    </div>
-                </mdb-row>
-            </mdb-container>
-        </section>
-
-        <section class="primary-blue p-5">
-            <mdb-container>
-                <mdb-row>
-                    <div class="col-12 col-sm-12 col-lg-6">
+                    <div class="col-12 col-sm-12 col-lg-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="200" data-aos-delay="100">
                         <img ref="client_luljettas" src="../../assets/client-luljettas.svg" class="p-3 pt-4 w-100" style="display: inline-block">
                     </div>
-                    <div class="col-6 col-sm-6 col-lg-3">
+                    <div class="col-6 col-sm-6 col-lg-2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="200" data-aos-delay="300">
                         <img ref="client_plm" src="../../assets/client-plm.svg" class="p-3 w-100" style="display: inline-block">
                     </div>
-                    <div class="col-6 col-sm-6 col-lg-3">
+                    <div class="col-6 col-sm-6 col-lg-2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="200" data-aos-delay="500">
                         <img ref="client_marikina" src="../../assets/client-marikina.svg" class="p-3 w-100" style="display: inline-block">
+                    </div>
+                    <div class="col-12 col-sm-12 col-lg-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="250" data-aos-delay="650">
+                        <img ref="client_fiverr" src="../../assets/client-fiverr.svg" class="p-3 pt-4 w-100" style="display: inline-block">
                     </div>
                 </mdb-row>
             </mdb-container>
@@ -237,6 +229,40 @@
                 </mdb-row>
             </mdb-container>
         </section> -->
+
+        <!-- achievements -->
+        <!-- <section id="current-projects" class="primary-blue p-5">
+            <mdb-container>
+                <mdb-row>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
+                            <mdb-container>
+                                <h2 class="display-4 text-center" style="font-size: 1.5rem;">Achievements</h2>
+                            </mdb-container>
+                        </mdb-jumbotron>
+
+                        <achievement></achievement>
+                    </div>
+                </mdb-row>
+            </mdb-container>
+        </section> -->
+
+        <!-- Attended seminars -->
+        <!-- <section id="current-projects" class="primary-yellow p-5">
+            <mdb-container>
+                <mdb-row>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
+                            <mdb-container>
+                                <h2 class="display-4 text-center" style="font-size: 1.5rem;">Attended Seminars & Workshop</h2>
+                            </mdb-container>
+                        </mdb-jumbotron>
+
+                        <timeline></timeline>
+                    </div>
+                </mdb-row>
+            </mdb-container>
+        </section> -->
     </div>
 </template>
 
@@ -269,6 +295,10 @@
 
     import Timeline from '../Components/Timeline.vue';
     import Achievement from '../Components/Achievement.vue';
+    import Experience from '../Components/Experience.vue';
+
+    import AOS from 'aos';
+    import 'aos/dist/aos.css';
 
     export default {
         name: 'HomePage',
@@ -297,6 +327,7 @@
             mdbJumbotron,
             Timeline,
             Achievement,
+            Experience
         },
         data() {
             return {
@@ -317,6 +348,9 @@
                 session: false
             };
         },
+        created() {
+            AOS.init();
+        },
         mounted() {
             this.setSession();
             this.startLoading();
@@ -324,6 +358,10 @@
             this.setImageChecker();
         },
         methods: {
+            refreshHard() {
+                AOS.refreshHard();
+            },
+
             setSession() {
                 if(typeof sessionStorage.getItem("hasSessionStorage") == "undefined") {
                     sessionStorage.setItem("hasSessionStorage", true);
@@ -332,25 +370,9 @@
                 }
             },
 
-            addHoverEffects(target, type = "fadeIn") {
-                let className = this.$refs[target].className;
-
-                let effects = " animated duration-0pt5s " + type;
-
-                this.$refs[target].className = className + effects;
-            },
-
-            removeHoverEffects(target, type = "fadeIn") {
-                let className = this.$refs[target].className;
-
-                let effects = " animated duration-0pt5s " + type;
-
-                this.$refs[target].className = className.replace(effects, "");
-            },
-
             setImageChecker() {
                 let that = this;
-                let ms = that.session ? 100 : 3000;
+                let ms = that.session ? 200 : 3000;
 
                 setTimeout(() => { that.imageChecker() }, ms);
             },
@@ -379,7 +401,14 @@
         },
         watch: {
             loadChecker(value) {
-                value ? this.endLoading() : this.startLoading();
+                let that = this;
+
+                if(value) {
+                    this.endLoading();
+                    setTimeout(() => { that.refreshHard(); }, 500);
+                } else {
+                    this.startLoading();
+                }
             }
         },
         computed: {
@@ -412,6 +441,14 @@
 
     .view img {
         object-fit: cover;
+    }
+
+    .pt-6 {
+        padding-top: 4rem !important;
+    }
+
+    .pb-6 {
+        padding-bottom: 4rem !important;
     }
 
     .parallax {
