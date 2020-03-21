@@ -64,25 +64,25 @@
 
         <section>
             <mdb-row class="m-0 primary-blue">
-                <div class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="zoom-in-up" data-aos-duration="400">
+                <div class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="zoom-in-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="400">
                     <center>
                         <img ref="skill_web" src="../../assets/illustrations/software-engineer.svg" class="w-70 m-3">
                         <h3 class="text-center mt-2 mb-4">Software Engineer</h3>
                     </center>
                 </div>
-                <div class="skill-icon amber lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="flip-right" data-aos-duration="500">
+                <div class="skill-icon amber lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="flip-right" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
                     <center>
                         <img ref="skill_mobile" src="../../assets/illustrations/web-developer.svg" class="w-52 m-3">
                         <h3 class="text-center mt-2 mb-4">Web Developer</h3>
                     </center>
                 </div>
-                <div class="skill-icon orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="flip-left" data-aos-duration="600">
+                <div class="skill-icon orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="flip-left" data-aos-anchor-placement="bottom-bottom" data-aos-duration="600">
                     <center>
                         <img ref="skill_arduino" src="../../assets/illustrations/github-contributor.svg" class="w-55 m-3">
                         <h3 class="text-center mt-2 mb-4">Github Contributor</h3>
                     </center>
                 </div>
-                <div class="skill-icon deep-orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="zoom-in-down" data-aos-duration="300">
+                <div class="skill-icon deep-orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="zoom-in-down" data-aos-anchor-placement="bottom-bottom" data-aos-duration="300">
                     <center>
                         <img ref="skill_editing" src="../../assets/illustrations/freelancer.svg" class="w-43 m-3">
                         <h3 class="text-center mt-2 mb-4">Freelancer</h3>
@@ -103,7 +103,7 @@
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-5">
                         <mdb-row class="h-100">
-                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-1" data-aos="flip-left" data-aos-duration="250">
+                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-1" data-aos="flip-left" data-aos-duration="250" data-aos-anchor-placement="bottom-bottom">
                                 <div>
                                     <mdb-card-title class="text-center">C.I.R.M.S.</mdb-card-title>
                                     <center>
@@ -113,7 +113,7 @@
                                     </center>
                                 </div>
                             </div>
-                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-lighten-1" data-aos="flip-left" data-aos-duration="700">
+                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-lighten-1" data-aos="flip-left" data-aos-duration="700" data-aos-anchor-placement="bottom-bottom">
                                 <div>
                                     <mdb-card-title class="text-center text-white">My Assignment</mdb-card-title>
                                     <center>
@@ -123,7 +123,7 @@
                                     </center>
                                 </div>
                             </div>
-                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-2" data-aos="flip-down" data-aos-duration="200">
+                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-2" data-aos="flip-down" data-aos-duration="200" data-aos-anchor-placement="bottom-bottom">
                                 <div>
                                     <mdb-card-title class="text-center">Quotetests</mdb-card-title>
                                     <center>
@@ -133,7 +133,7 @@
                                     </center>
                                 </div>
                             </div>
-                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-darken-1" data-aos="flip-down" data-aos-duration="600">
+                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-darken-1" data-aos="flip-down" data-aos-duration="600" data-aos-anchor-placement="bottom-bottom">
                                 <div>
                                     <mdb-card-title class="text-center text-white">Zip Info</mdb-card-title>
                                     <center>
