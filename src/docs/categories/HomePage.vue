@@ -184,13 +184,13 @@
                     <div class="col-12 col-sm-12 col-lg-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="200" data-aos-delay="100">
                         <img ref="client_luljettas" src="../../assets/client-luljettas.svg" class="p-3 pt-4 w-100" style="display: inline-block">
                     </div>
-                    <div class="col-6 col-sm-6 col-lg-2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="200" data-aos-delay="300">
+                    <div class="col-6 col-sm-6 col-lg-2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="200" data-aos-delay="250">
                         <img ref="client_plm" src="../../assets/client-plm.svg" class="p-3 w-100" style="display: inline-block">
                     </div>
-                    <div class="col-6 col-sm-6 col-lg-2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="200" data-aos-delay="500">
+                    <div class="col-6 col-sm-6 col-lg-2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="200" data-aos-delay="400">
                         <img ref="client_marikina" src="../../assets/client-marikina.svg" class="p-3 w-100" style="display: inline-block">
                     </div>
-                    <div class="col-12 col-sm-12 col-lg-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="250" data-aos-delay="650">
+                    <div class="col-12 col-sm-12 col-lg-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="250" data-aos-delay="500">
                         <img ref="client_fiverr" src="../../assets/client-fiverr.svg" class="p-3 pt-4 w-100" style="display: inline-block">
                     </div>
                 </mdb-row>
