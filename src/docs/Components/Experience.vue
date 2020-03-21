@@ -1,6 +1,6 @@
 <template>
     <ul class="timeline">
-        <li v-for="(timeline, index) in timelines" data-aos="zoom-in-up" data-aos-duration="300" :data-aos-delay="200 * index" data-aos-anchor-placement="center-bottom">
+        <li v-for="(timeline, index) in timelines" data-aos="zoom-in-up" data-aos-duration="300" :data-aos-delay="200 * index">
             <div class="timeline-badge primary"><i class="glyphicon glyphicon-check"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading text-center">
