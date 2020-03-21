@@ -1,7 +1,7 @@
 <template>
     <div v-show="loadChecker">
         <!--Navbar-->
-        <mdb-navbar position="top" transparent dark color="elegant" name="Your Logo" scrolling>
+        <mdb-navbar position="top" transparent dark color="elegant" name="Your Logo" scrolling class="z-9999">
             <mdb-navbar-toggler>
                 <mdb-navbar-nav center>
                     <mdb-nav-item to="/" active>HOME</mdb-nav-item>
@@ -373,7 +373,7 @@
 
             setImageChecker() {
                 let that = this;
-                let ms = that.session ? 200 : 3000;
+                let ms = that.session ? 250 : 3250;
 
                 setTimeout(function() {
                     that.imageChecker();
@@ -600,5 +600,9 @@
 
     .duration-0pt5s {
         animation-duration: 0.5s;
+    }
+
+    .z-9999 {
+        z-index: 9999 !important;
     }
 </style>
