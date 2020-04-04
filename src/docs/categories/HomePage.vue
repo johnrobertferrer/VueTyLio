@@ -157,9 +157,9 @@
                                 <div>
                                     <mdb-card-title class="text-center text-white">DadJokes</mdb-card-title>
                                     <center>
-                                        <a href="https://johnferrer.xyz/" target="_blank">
-                                            <mdb-btn color="light">Demo <i class="ml-1 fas fa-external-link-square-alt"></i> </mdb-btn>
-                                        </a>
+                                        <!-- <a href="https://johnferrer.xyz/" target="_blank"> -->
+                                            <mdb-btn color="light" disabled>Demo <i class="ml-1 fas fa-external-link-square-alt"></i> </mdb-btn>
+                                        <!-- </a> -->
                                     </center>
                                 </div>
                             </div>
