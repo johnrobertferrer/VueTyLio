@@ -147,7 +147,7 @@
                                 <div>
                                     <mdb-card-title class="text-center">Tackling NCOV</mdb-card-title>
                                     <center>
-                                        <a href="https://tackling-ncov.netlify.com" target="_blank">
+                                        <a href="https://tackling-ncov.johnferrer.xyz" target="_blank">
                                             <mdb-btn color="elegant">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
                                         </a>
                                     </center>
