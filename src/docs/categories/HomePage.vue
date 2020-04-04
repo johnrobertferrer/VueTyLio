@@ -143,6 +143,26 @@
                                     </center>
                                 </div>
                             </div>
+                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-3" data-aos="flip-down" data-aos-duration="200" data-aos-anchor-placement="center-bottom">
+                                <div>
+                                    <mdb-card-title class="text-center">Tackling NCOV</mdb-card-title>
+                                    <center>
+                                        <a href="https://tackling-ncov.netlify.com" target="_blank">
+                                            <mdb-btn color="elegant">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
+                                        </a>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-darken-2" data-aos="flip-down" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
+                                <div>
+                                    <mdb-card-title class="text-center text-white">DadJokes</mdb-card-title>
+                                    <center>
+                                        <a href="https://johnferrer.xyz/" target="_blank">
+                                            <mdb-btn color="light">Demo <i class="ml-1 fas fa-external-link-square-alt"></i> </mdb-btn>
+                                        </a>
+                                    </center>
+                                </div>
+                            </div>
                         </mdb-row>
                     </div>
                     <!-- </mdb-container> -->
@@ -162,7 +182,7 @@
         </div>
 
         <!-- achievements -->
-        <section id="current-projects" class="primary-yellow pt-6 pb-6">
+        <!-- <section id="current-projects" class="primary-yellow pt-6 pb-6">
             <mdb-container>
                 <mdb-row>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -173,6 +193,40 @@
                         </mdb-jumbotron>
 
                         <experience></experience>
+                    </div>
+                </mdb-row>
+            </mdb-container>
+        </section> -->
+
+        <!-- achievements -->
+        <section id="current-projects" class="primary-blue pt-6 pb-6">
+            <mdb-container>
+                <mdb-row>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
+                            <mdb-container>
+                                <h2 class="display-4 text-center" style="font-size: 1.5rem;">Achievements</h2>
+                            </mdb-container>
+                        </mdb-jumbotron>
+
+                        <achievement></achievement>
+                    </div>
+                </mdb-row>
+            </mdb-container>
+        </section>
+
+        <!-- Attended seminars -->
+        <section id="current-projects" class="primary-yellow pt-6 pb-6">
+            <mdb-container>
+                <mdb-row>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
+                            <mdb-container>
+                                <h2 class="display-4 text-center" style="font-size: 1.5rem;">Attended Seminars & Workshop</h2>
+                            </mdb-container>
+                        </mdb-jumbotron>
+
+                        <timeline></timeline>
                     </div>
                 </mdb-row>
             </mdb-container>
@@ -491,6 +545,10 @@
         background-color: #434175;
     }
 
+    .c-violet-darken-2 {
+        background-color: #333364;
+    }
+
     .c-violet-lighten-1 {
         background-color: #565387;
     }
@@ -501,6 +559,10 @@
 
     .c-grey-lighten-2 {
         background-color: #AFC0E0;
+    }
+
+    .c-grey-lighten-3 {
+        background-color: rgb(129, 150, 189);
     }
 
     .skill-icon:hover {
