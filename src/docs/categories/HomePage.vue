@@ -155,11 +155,11 @@
                             </div>
                             <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-darken-2" data-aos="flip-down" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
                                 <div>
-                                    <mdb-card-title class="text-center text-white">DadJokes</mdb-card-title>
+                                    <mdb-card-title class="text-center text-white">Portfolio</mdb-card-title>
                                     <center>
-                                        <!-- <a href="https://johnferrer.xyz/" target="_blank"> -->
-                                            <mdb-btn color="light" disabled>Demo <i class="ml-1 fas fa-external-link-square-alt"></i> </mdb-btn>
-                                        <!-- </a> -->
+                                        <a href="https://johnferrer.xyz/" target="_blank">
+                                            <mdb-btn color="light">Demo <i class="ml-1 fas fa-external-link-square-alt"></i> </mdb-btn>
+                                        </a>
                                     </center>
                                 </div>
                             </div>
