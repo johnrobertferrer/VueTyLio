@@ -23,6 +23,11 @@ export default {
         return {
             timelines: [
                 {
+                    title: 'Web Developer Consultant In Xiklab Digital',
+                    date: '2020',
+                    address: 'Unit 301M HatchAsia 3F Bonifacio Technology Center 31st Street corner 2nd Avenue Bonifacio Global City, Taguig, Philippines'
+                },
+                {
                     title: 'Freelancer (Web Development) In Fiverr',
                     date: '2020',
                     address: 'Fiverr'

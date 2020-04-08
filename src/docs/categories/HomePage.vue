@@ -33,7 +33,7 @@
                                     <span>Hey, I'm Jobs</span>
                                     <br>
                                     <vue-typer
-                                        :text='["Software Engineer","Web Developer","Github Contributor","Freelancer"]'
+                                        :text='["Software Engineer","Web Developer", "Web Developer Consultant","Github Contributor","Freelancer"]'
                                         class="pl-2 pr-2 pb-1 vue-typer-font"
                                         :repeat='Infinity'
                                         :shuffle='true'
