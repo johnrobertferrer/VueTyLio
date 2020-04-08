@@ -143,7 +143,7 @@
                                     </center>
                                 </div>
                             </div>
-                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-3" data-aos="flip-down" data-aos-duration="200" data-aos-anchor-placement="center-bottom">
+                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-3" data-aos="flip-left" data-aos-duration="200" data-aos-anchor-placement="center-bottom">
                                 <div>
                                     <mdb-card-title class="text-center">Tackling NCOV</mdb-card-title>
                                     <center>
@@ -153,7 +153,7 @@
                                     </center>
                                 </div>
                             </div>
-                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-darken-2" data-aos="flip-down" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
+                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-darken-2" data-aos="flip-left" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
                                 <div>
                                     <mdb-card-title class="text-center text-white">Portfolio</mdb-card-title>
                                     <center>
@@ -413,12 +413,14 @@
         },
         methods: {
             refreshHard() {
+                console.log("refreshHard");
+                window.scrollTo(0,0);
                 AOS.refresh();
                 AOS.refreshHard();
             },
 
             setSession() {
-                if(typeof sessionStorage.getItem("hasSessionStorage") == "undefined") {
+                if(typeof sessionStorage.getItem("hasSessionStorage") == "object") {
                     sessionStorage.setItem("hasSessionStorage", true);
                 } else {
                     this.session = true;
@@ -427,12 +429,17 @@
 
             setImageChecker() {
                 let that = this;
-                let ms = that.session ? 250 : 3250;
+                let ms = that.session ? 300 : 3250;
 
                 setTimeout(function() {
-                    that.imageChecker();
-                    that.refreshHard();
+                    if(that.checkImageChecker()) {
+                        that.refreshHard();
+                    } else {
+                        that.setImageChecker();
+                    }
                 }, ms);
+
+                setTimeout(() => { that.refreshHard(); }, 700);
             },
 
             startLoading() {
@@ -447,7 +454,7 @@
                 return Object.keys(this.loading_status.photo).every(element => this.loading_status.photo[element]) && this.loading_status.mounted_component;
             },
 
-            imageChecker() {
+            checkImageChecker() {
                 let that = this;
 
                 Object.keys(this.loading_status.photo).forEach(function(element) {
@@ -455,6 +462,8 @@
                         that.loading_status.photo[element] = true;
                     }
                 });
+
+                return that.validateIfAllAreLoaded();
             }
         },
         watch: {
@@ -466,14 +475,6 @@
                     setTimeout(() => { that.refreshHard(); }, 500);
                 } else {
                     this.startLoading();
-                }
-            },
-
-            session(value) {
-                let that = this;
-
-                if (value) {
-                    setTimeout(() => { that.refreshHard(); }, 500);
                 }
             }
         },
