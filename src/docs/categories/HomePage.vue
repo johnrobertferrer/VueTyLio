@@ -467,6 +467,14 @@
                 } else {
                     this.startLoading();
                 }
+            },
+
+            session(value) {
+                let that = this;
+
+                if (value) {
+                    setTimeout(() => { that.refreshHard(); }, 500);
+                }
             }
         },
         computed: {
