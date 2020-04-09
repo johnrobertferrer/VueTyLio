@@ -413,7 +413,6 @@
         },
         methods: {
             refreshHard() {
-                console.log("refreshHard");
                 window.scrollTo(0,0);
                 AOS.refresh();
                 AOS.refreshHard();
