@@ -125,9 +125,9 @@
                             </div>
                             <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-2" data-aos="flip-down" data-aos-duration="200" data-aos-anchor-placement="center-bottom">
                                 <div>
-                                    <mdb-card-title class="text-center">Quotetests</mdb-card-title>
+                                    <mdb-card-title class="text-center">Text2Sign</mdb-card-title>
                                     <center>
-                                        <a href="https://quotetests.com" target="_blank">
+                                        <a href="https://text2sign.johnferrer.xyz" target="_blank">
                                             <mdb-btn color="elegant">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
                                         </a>
                                     </center>
@@ -135,10 +135,10 @@
                             </div>
                             <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-darken-1" data-aos="flip-down" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
                                 <div>
-                                    <mdb-card-title class="text-center text-white">Zip Info</mdb-card-title>
+                                    <mdb-card-title class="text-center">Quotetests</mdb-card-title>
                                     <center>
-                                        <a href="https://infozip.johnferrer.xyz/" target="_blank">
-                                            <mdb-btn color="light">Demo <i class="ml-1 fas fa-external-link-square-alt"></i> </mdb-btn>
+                                        <a href="https://quotetests.com" target="_blank">
+                                            <mdb-btn color="elegant">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
                                         </a>
                                     </center>
                                 </div>
@@ -155,9 +155,9 @@
                             </div>
                             <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-darken-2" data-aos="flip-left" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
                                 <div>
-                                    <mdb-card-title class="text-center text-white">Portfolio</mdb-card-title>
+                                    <mdb-card-title class="text-center text-white">Zip Info</mdb-card-title>
                                     <center>
-                                        <a href="https://johnferrer.xyz/" target="_blank">
+                                        <a href="https://infozip.johnferrer.xyz/" target="_blank">
                                             <mdb-btn color="light">Demo <i class="ml-1 fas fa-external-link-square-alt"></i> </mdb-btn>
                                         </a>
                                     </center>
