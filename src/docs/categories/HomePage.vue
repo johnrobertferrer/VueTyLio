@@ -22,7 +22,7 @@
         </mdb-navbar>
         <!--/.Navbar-->
 
-        <div style="height: 100vh;">
+        <div class="h-screen">
             <div class="view intro-2">
                 <img ref="background_header" src="../../assets/background.svg" class="view">
                 <div class="full-bg-img">
@@ -135,10 +135,10 @@
                             </div>
                             <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-darken-1" data-aos="flip-down" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
                                 <div>
-                                    <mdb-card-title class="text-center">Quotetests</mdb-card-title>
+                                    <mdb-card-title class="text-center text-white">Quotetests</mdb-card-title>
                                     <center>
                                         <a href="https://quotetests.com" target="_blank">
-                                            <mdb-btn color="elegant">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
+                                            <mdb-btn color="light">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
                                         </a>
                                     </center>
                                 </div>
@@ -399,17 +399,24 @@
                     },
                     mounted_component: false
                 },
-                session: false
+                session: false,
+                window: {
+                    width: 0,
+                    height: 0
+                }
             };
         },
         created() {
             AOS.init();
+            window.addEventListener('resize', this.handleResize);
+            this.handleResize();
         },
         mounted() {
             this.setSession();
             this.startLoading();
             this.loading_status.mounted_component = true;
             this.setImageChecker();
+            this.handleResize();
         },
         methods: {
             refreshHard() {
@@ -463,6 +470,17 @@
                 });
 
                 return that.validateIfAllAreLoaded();
+            },
+
+            handleResize() {
+                this.window.width = window.innerWidth;
+                this.window.height = window.innerHeight;
+
+                let children = document.getElementsByClassName('h-screen');
+
+                for (let i = 0; i < children.length; i++) {
+                    children[i].style.height = this.window.height + 'px';
+                }
             }
         },
         watch: {
@@ -674,5 +692,9 @@
 
     .z-9999 {
         z-index: 9999 !important;
+    }
+
+    .h-screen {
+        height: 100vh;
     }
 </style>

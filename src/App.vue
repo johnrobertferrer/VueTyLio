@@ -2,7 +2,7 @@
     <div id="app" class="flyout">
         <main>
             <transition name="fade" mode="out-in">
-                <section class="primary-yellow" v-show="isLoading" style="width: 100vw; height: 100vh;">
+                <section class="primary-yellow h-screen w-screen" v-show="isLoading">
                     <center>
                         <div class="lds-hourglass" style="margin-top: 35vh;"></div>
                     </center>
@@ -29,6 +29,7 @@
 
     export default {
         name: 'app',
+
         components: {
             mdbNavbar,
             mdbNavItem,
@@ -36,6 +37,37 @@
             mdbNavbarToggler,
             mdbNavbarBrand,
             mdbFooter
+        },
+
+        data() {
+            return {
+                window: {
+                    width: 0,
+                    height: 0
+                }
+            }
+        },
+
+        created() {
+            window.addEventListener('resize', this.handleResize);
+            this.handleResize();
+        },
+
+        mounted() {
+            this.handleResize();
+        },
+
+        methods: {
+            handleResize() {
+                this.window.width = window.innerWidth;
+                this.window.height = window.innerHeight;
+
+                let children = document.getElementsByClassName('h-screen');
+
+                for (let i = 0; i < children.length; i++) {
+                    children[i].style.height = this.window.height + 'px';
+                }
+            }
         },
 
         computed: {
@@ -49,6 +81,10 @@
 <style>
     body {
         font-family: 'Montserrat' !important;
+    }
+
+    .w-screen {
+        width: 100vw;
     }
 
     .elegant-color {
