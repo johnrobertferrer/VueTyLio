@@ -16,6 +16,8 @@ Vue.use(Vue2TouchEvents);
 Vue.use(LoadScript);
 Vue.use(VueTyperPlugin);
 
+window.VueScrollTo = VueScrollTo;
+
 Vue.config.productionTip = false;
 /* eslint-disable no-new */
 new Vue({

@@ -50,273 +50,275 @@
                                 </h1>
                             </div>
                         </div>
-                        <img ref="arrow_down_background_header" 
-                            v-scroll-to="{ el: '#current-projects', easing: [0.9, .40, .70, 2.0], duration: 1200 }"
-                            src="../../assets/arrow-down.svg" 
-                            width="100%" 
-                            class="mt-3 animated pulse infinite" 
-                            style="position: absolute; bottom: 12vh; width: 5vh;" 
-                        />
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <section>
-            <mdb-row class="m-0 primary-blue">
-                <div class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-duration="400">
-                    <center>
-                        <img ref="skill_web" src="../../assets/illustrations/software-engineer.svg" class="w-70 m-3">
-                        <h3 class="text-center mt-2 mb-4">Software Engineer</h3>
-                    </center>
-                </div>
-                <div class="skill-icon amber lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="flip-right" data-aos-anchor-placement="center-bottom" data-aos-duration="500">
-                    <center>
-                        <img ref="skill_mobile" src="../../assets/illustrations/web-developer.svg" class="w-52 m-3">
-                        <h3 class="text-center mt-2 mb-4">Web Developer</h3>
-                    </center>
-                </div>
-                <div class="skill-icon orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="flip-left" data-aos-anchor-placement="center-bottom" data-aos-duration="600">
-                    <center>
-                        <img ref="skill_arduino" src="../../assets/illustrations/github-contributor.svg" class="w-55 m-3">
-                        <h3 class="text-center mt-2 mb-4">Github Contributor</h3>
-                    </center>
-                </div>
-                <div class="skill-icon deep-orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="zoom-in-down" data-aos-anchor-placement="center-bottom" data-aos-duration="300">
-                    <center>
-                        <img ref="skill_editing" src="../../assets/illustrations/freelancer.svg" class="w-43 m-3">
-                        <h3 class="text-center mt-2 mb-4">Freelancer</h3>
-                    </center>
-                </div>
-            </mdb-row>
-        </section>
-
-        <!-- SEMINARS AND MEETUP -->
-        <section id="current-projects" class="primary-red pt-4 pb-4">
-            <mdb-container fluid>
-                <mdb-row class="pt-2 pb-2">
-                    <div class="col-12 col sm-12 col-lg-6">
-                        <center>
-                            <img src="../../assets/illustrations/ongoing-project.svg" class="w-75 mb-5 mt-5">
-                            <label class="w-100 mb-4 white-text text-center" style="font-size: 2rem; line-height: 1.75;"> ONGOING PROJECTS </label>
-                        </center>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-5">
-                        <mdb-row class="h-100">
-                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-1" data-aos="flip-left" data-aos-duration="250" data-aos-anchor-placement="center-bottom">
-                                <div>
-                                    <mdb-card-title class="text-center">C.I.R.M.S.</mdb-card-title>
-                                    <center>
-                                        <a href="https://demo.cirms.ph" target="_blank">
-                                            <mdb-btn color="elegant">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
-                                        </a>
-                                    </center>
-                                </div>
-                            </div>
-                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-lighten-1" data-aos="flip-left" data-aos-duration="700" data-aos-anchor-placement="center-bottom">
-                                <div>
-                                    <mdb-card-title class="text-center text-white">My Assignment</mdb-card-title>
-                                    <center>
-                                        <a href="https://myassignmentcalculator.com" target="_blank">
-                                            <mdb-btn color="light">Demo <i class="ml-1 fas fa-external-link-square-alt"></i> </mdb-btn>
-                                        </a>
-                                    </center>
-                                </div>
-                            </div>
-                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-2" data-aos="flip-down" data-aos-duration="200" data-aos-anchor-placement="center-bottom">
-                                <div>
-                                    <mdb-card-title class="text-center">Text2Sign</mdb-card-title>
-                                    <center>
-                                        <a href="https://text2sign.johnferrer.xyz" target="_blank">
-                                            <mdb-btn color="elegant">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
-                                        </a>
-                                    </center>
-                                </div>
-                            </div>
-                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-darken-1" data-aos="flip-down" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
-                                <div>
-                                    <mdb-card-title class="text-center text-white">Quotetests</mdb-card-title>
-                                    <center>
-                                        <a href="https://quotetests.com" target="_blank">
-                                            <mdb-btn color="light">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
-                                        </a>
-                                    </center>
-                                </div>
-                            </div>
-                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-3" data-aos="flip-left" data-aos-duration="200" data-aos-anchor-placement="center-bottom">
-                                <div>
-                                    <mdb-card-title class="text-center">Tackling NCOV</mdb-card-title>
-                                    <center>
-                                        <a href="https://tackling-ncov.johnferrer.xyz" target="_blank">
-                                            <mdb-btn color="elegant">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
-                                        </a>
-                                    </center>
-                                </div>
-                            </div>
-                            <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-darken-2" data-aos="flip-left" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
-                                <div>
-                                    <mdb-card-title class="text-center text-white">Zip Info</mdb-card-title>
-                                    <center>
-                                        <a href="https://infozip.johnferrer.xyz/" target="_blank">
-                                            <mdb-btn color="light">Demo <i class="ml-1 fas fa-external-link-square-alt"></i> </mdb-btn>
-                                        </a>
-                                    </center>
-                                </div>
-                            </div>
-                        </mdb-row>
-                    </div>
-                    <!-- </mdb-container> -->
-                </mdb-row>
-            </mdb-container>
-        </section>
-
-        <!-- PARALLAX -->
-        <div class="section">
-            <div class="parallax">
-                <h1 class="text-center mb-0 pl-5 pr-5 white-text" style="padding: 150px 0">
-                    <span style="background: rgba(235, 173, 4, 0.5); font-size: 2rem;" class="pl-3 pr-3">
-                        “Everything visible has a flip side, like a coin.” <br> ― Sunday Adelaja
-                    </span>
-                </h1>
-            </div>
-        </div>
-
-        <!-- achievements -->
-        <!-- <section id="current-projects" class="primary-yellow pt-6 pb-6">
-            <mdb-container>
-                <mdb-row>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                        <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
-                            <mdb-container>
-                                <h2 class="display-4 text-center" style="font-size: 1.5rem;">Experiences</h2>
-                            </mdb-container>
-                        </mdb-jumbotron>
-
-                        <experience></experience>
-                    </div>
-                </mdb-row>
-            </mdb-container>
-        </section> -->
-
-        <!-- achievements -->
-        <section id="current-projects" class="primary-blue pt-6 pb-6">
-            <mdb-container>
-                <mdb-row>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                        <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
-                            <mdb-container>
-                                <h2 class="display-4 text-center" style="font-size: 1.5rem;">Achievements</h2>
-                            </mdb-container>
-                        </mdb-jumbotron>
-
-                        <achievement></achievement>
-                    </div>
-                </mdb-row>
-            </mdb-container>
-        </section>
-
-        <!-- Attended seminars -->
-        <section id="current-projects" class="primary-yellow pt-6 pb-6">
-            <mdb-container>
-                <mdb-row>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                        <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
-                            <mdb-container>
-                                <h2 class="display-4 text-center" style="font-size: 1.5rem;">Attended Seminars & Workshop</h2>
-                            </mdb-container>
-                        </mdb-jumbotron>
-
-                        <timeline></timeline>
-                    </div>
-                </mdb-row>
-            </mdb-container>
-        </section>
-
-        <section class="primary-blue pt-6 pb-6">
-            <mdb-container>
-                <mdb-row>
-                    <div class="col-12 col-sm-12 col-lg-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="200" data-aos-delay="100">
-                        <img ref="client_luljettas" src="../../assets/client-luljettas.svg" class="p-3 pt-4 w-100" style="display: inline-block">
-                    </div>
-                    <div class="col-6 col-sm-6 col-lg-2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="200" data-aos-delay="250">
-                        <img ref="client_plm" src="../../assets/client-plm.svg" class="p-3 w-100" style="display: inline-block">
-                    </div>
-                    <div class="col-6 col-sm-6 col-lg-2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="200" data-aos-delay="400">
-                        <img ref="client_marikina" src="../../assets/client-marikina.svg" class="p-3 w-100" style="display: inline-block">
-                    </div>
-                    <div class="col-12 col-sm-12 col-lg-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="250" data-aos-delay="500">
-                        <img ref="client_fiverr" src="../../assets/client-fiverr.svg" class="p-3 pt-4 w-100" style="display: inline-block">
-                    </div>
-                </mdb-row>
-            </mdb-container>
-        </section>
-
-
-        <!-- WHO AM I -->
-        <!-- <section class="primary-blue" style="padding: 100px 0;">
-            <mdb-container>
-                <mdb-row>
-                    <div class="col-12 col-sm-12 col-lg-4 mb-5" data-aos="zoom-in-down" data-aos-anchor-placement="top-center" data-aos-delay="200">
-                        <img src="../../assets/gradpicture.jpg" width="100%">
-                    </div>
-
-                    <div class="col-12 col-sm-12 col-lg-8 white-text" data-aos="zoom-in-down" data-aos-anchor-placement="top-center" data-aos-delay="200">
-                        <h2 class="text-center font-weight-bold">Who am I</h2>
-                        <div class="text-body text-justify white-text">
-                            <p>
-                                Hi, my name is John Robert S. Ferrer and way back on 2018, I am a full-stack Web Developer in Captivate Solutions during my On-the-job Training (OJT) days. Currently, I am working as Software Engineer mainly as PHP, Laravel Developer at V5 of Nelsoft Systems Inc.
-                            </p>
-                            <p>
-                                I have a Bachelor of Science in Computer Studies - Major in Information Technology from Pamantasan ng Lungsod ng Maynila, and my primary focus and inspiration for my studies is Web Development.
-                            </p>
-                            <p>
-                                I love also the sides on both Hybrid Mobile Application Development and the innovations of Internet Of Things (IOT) Projects.
-                            </p>
-                            <p>
-                                For me, I believe, I can almost develop any platform using these web technologies. In my free time, I study any crash course in web development or any topic that looks cool on Youtube. Traversy Media, Dev Tips, CodeEmporium, The Net Ninja are the channels in Youtube that I subscribed because of their Passion in Programming and also their life as a Programmer/Developer.
-                            </p>
-                            <p>
-                                I am constantly developing projects, experimenting with new technologies and techniques. And I am very passionate about Web Development, and strive to better myself as a developer, and the development community as a whole.
-                            </p>
+                        <div @click="enableProceed()" style="position: absolute; bottom: 12vh; width: 7vh;" >
+                            <img ref="arrow_down_background_header" 
+                                src="../../assets/arrow-down.svg" 
+                                width="100%" 
+                                class="mt-3 animated pulse infinite" 
+                            />
                         </div>
                     </div>
-                </mdb-row>
-            </mdb-container>
-        </section> -->
+                </div>
+            </div>
+        </div>
 
-        <!-- achievements -->
-        <!-- <section id="current-projects" class="primary-blue p-5">
-            <mdb-container>
-                <mdb-row>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                        <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
-                            <mdb-container>
-                                <h2 class="display-4 text-center" style="font-size: 1.5rem;">Achievements</h2>
-                            </mdb-container>
-                        </mdb-jumbotron>
-
-                        <achievement></achievement>
+        <div v-show="proceed">
+            <section>
+                <mdb-row class="m-0 primary-blue">
+                    <div class="skill-icon yellow lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-duration="400">
+                        <center>
+                            <img ref="skill_web" src="../../assets/illustrations/software-engineer.svg" class="w-70 m-3">
+                            <h3 class="text-center mt-2 mb-4">Software Engineer</h3>
+                        </center>
+                    </div>
+                    <div class="skill-icon amber lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="flip-right" data-aos-anchor-placement="center-bottom" data-aos-duration="500">
+                        <center>
+                            <img ref="skill_mobile" src="../../assets/illustrations/web-developer.svg" class="w-52 m-3">
+                            <h3 class="text-center mt-2 mb-4">Web Developer</h3>
+                        </center>
+                    </div>
+                    <div class="skill-icon orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="flip-left" data-aos-anchor-placement="center-bottom" data-aos-duration="600">
+                        <center>
+                            <img ref="skill_arduino" src="../../assets/illustrations/github-contributor.svg" class="w-55 m-3">
+                            <h3 class="text-center mt-2 mb-4">Github Contributor</h3>
+                        </center>
+                    </div>
+                    <div class="skill-icon deep-orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="zoom-in-down" data-aos-anchor-placement="center-bottom" data-aos-duration="300">
+                        <center>
+                            <img ref="skill_editing" src="../../assets/illustrations/freelancer.svg" class="w-43 m-3">
+                            <h3 class="text-center mt-2 mb-4">Freelancer</h3>
+                        </center>
                     </div>
                 </mdb-row>
-            </mdb-container>
-        </section> -->
+            </section>
 
-        <!-- Attended seminars -->
-        <!-- <section id="current-projects" class="primary-yellow p-5">
-            <mdb-container>
-                <mdb-row>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                        <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
-                            <mdb-container>
-                                <h2 class="display-4 text-center" style="font-size: 1.5rem;">Attended Seminars & Workshop</h2>
-                            </mdb-container>
-                        </mdb-jumbotron>
+            <!-- SEMINARS AND MEETUP -->
+            <section id="current-projects" class="primary-red pt-4 pb-4">
+                <mdb-container fluid>
+                    <mdb-row class="pt-2 pb-2">
+                        <div class="col-12 col sm-12 col-lg-6">
+                            <center style="height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; ">
+                                <img src="../../assets/illustrations/ongoing-project.svg" class="w-75 mb-5 mt-5">
+                                <label class="w-100 mb-4 white-text text-center" style="font-size: 2rem; line-height: 1.75;"> ONGOING PROJECTS </label>
+                            </center>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-5">
+                            <mdb-row class="h-100">
+                                <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-1" data-aos="flip-left" data-aos-duration="250" data-aos-anchor-placement="center-bottom">
+                                    <div>
+                                        <mdb-card-title class="text-center">C.I.R.M.S.</mdb-card-title>
+                                        <center>
+                                            <a href="https://demo.cirms.ph" target="_blank">
+                                                <mdb-btn color="elegant">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
+                                            </a>
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-lighten-1" data-aos="flip-left" data-aos-duration="700" data-aos-anchor-placement="center-bottom">
+                                    <div>
+                                        <mdb-card-title class="text-center text-white">My Assignment</mdb-card-title>
+                                        <center>
+                                            <a href="https://myassignmentcalculator.com" target="_blank">
+                                                <mdb-btn color="light">Demo <i class="ml-1 fas fa-external-link-square-alt"></i> </mdb-btn>
+                                            </a>
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-2" data-aos="flip-down" data-aos-duration="200" data-aos-anchor-placement="center-bottom">
+                                    <div>
+                                        <mdb-card-title class="text-center">Text2Sign</mdb-card-title>
+                                        <center>
+                                            <a href="https://text2sign.johnferrer.xyz" target="_blank">
+                                                <mdb-btn color="elegant">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
+                                            </a>
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-darken-1" data-aos="flip-down" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
+                                    <div>
+                                        <mdb-card-title class="text-center text-white">Quotetests</mdb-card-title>
+                                        <center>
+                                            <a href="https://quotetests.com" target="_blank">
+                                                <mdb-btn color="light">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
+                                            </a>
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-3" data-aos="flip-left" data-aos-duration="200" data-aos-anchor-placement="center-bottom">
+                                    <div>
+                                        <mdb-card-title class="text-center">Tackling NCOV</mdb-card-title>
+                                        <center>
+                                            <a href="https://tackling-ncov.johnferrer.xyz" target="_blank">
+                                                <mdb-btn color="elegant">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
+                                            </a>
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-darken-2" data-aos="flip-left" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
+                                    <div>
+                                        <mdb-card-title class="text-center text-white">Zip Info</mdb-card-title>
+                                        <center>
+                                            <a href="https://infozip.johnferrer.xyz/" target="_blank">
+                                                <mdb-btn color="light">Demo <i class="ml-1 fas fa-external-link-square-alt"></i> </mdb-btn>
+                                            </a>
+                                        </center>
+                                    </div>
+                                </div>
+                            </mdb-row>
+                        </div>
+                        <!-- </mdb-container> -->
+                    </mdb-row>
+                </mdb-container>
+            </section>
 
-                        <timeline></timeline>
-                    </div>
-                </mdb-row>
-            </mdb-container>
-        </section> -->
+            <!-- PARALLAX -->
+            <div class="section">
+                <div class="parallax">
+                    <h1 class="text-center mb-0 pl-5 pr-5 white-text" style="padding: 150px 0">
+                        <span style="background: rgba(235, 173, 4, 0.5); font-size: 2rem;" class="pl-3 pr-3">
+                            “Everything visible has a flip side, like a coin.” <br> ― Sunday Adelaja
+                        </span>
+                    </h1>
+                </div>
+            </div>
+
+            <!-- achievements -->
+            <!-- <section id="current-projects" class="primary-yellow pt-6 pb-6">
+                <mdb-container>
+                    <mdb-row>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
+                                <mdb-container>
+                                    <h2 class="display-4 text-center" style="font-size: 1.5rem;">Experiences</h2>
+                                </mdb-container>
+                            </mdb-jumbotron>
+
+                            <experience></experience>
+                        </div>
+                    </mdb-row>
+                </mdb-container>
+            </section> -->
+
+            <!-- achievements -->
+            <section id="current-projects" class="primary-blue pt-6 pb-6">
+                <mdb-container>
+                    <mdb-row>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
+                                <mdb-container>
+                                    <h2 class="display-4 text-center" style="font-size: 1.5rem;">Achievements</h2>
+                                </mdb-container>
+                            </mdb-jumbotron>
+
+                            <achievement></achievement>
+                        </div>
+                    </mdb-row>
+                </mdb-container>
+            </section>
+
+            <!-- Attended seminars -->
+            <section id="current-projects" class="primary-yellow pt-6 pb-6">
+                <mdb-container>
+                    <mdb-row>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
+                                <mdb-container>
+                                    <h2 class="display-4 text-center" style="font-size: 1.5rem;">Attended Seminars & Workshop</h2>
+                                </mdb-container>
+                            </mdb-jumbotron>
+
+                            <timeline></timeline>
+                        </div>
+                    </mdb-row>
+                </mdb-container>
+            </section>
+
+            <section class="primary-blue pt-6 pb-6">
+                <mdb-container>
+                    <mdb-row>
+                        <div class="col-12 col-sm-12 col-lg-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="200" data-aos-delay="100">
+                            <img ref="client_luljettas" src="../../assets/client-luljettas.svg" class="p-3 pt-4 w-100" style="display: inline-block">
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="200" data-aos-delay="250">
+                            <img ref="client_plm" src="../../assets/client-plm.svg" class="p-3 w-100" style="display: inline-block">
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="200" data-aos-delay="400">
+                            <img ref="client_marikina" src="../../assets/client-marikina.svg" class="p-3 w-100" style="display: inline-block">
+                        </div>
+                        <div class="col-12 col-sm-12 col-lg-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="250" data-aos-delay="500">
+                            <img ref="client_fiverr" src="../../assets/client-fiverr.svg" class="p-3 pt-4 w-100" style="display: inline-block">
+                        </div>
+                    </mdb-row>
+                </mdb-container>
+            </section>
+
+
+            <!-- WHO AM I -->
+            <!-- <section class="primary-blue" style="padding: 100px 0;">
+                <mdb-container>
+                    <mdb-row>
+                        <div class="col-12 col-sm-12 col-lg-4 mb-5" data-aos="zoom-in-down" data-aos-anchor-placement="top-center" data-aos-delay="200">
+                            <img src="../../assets/gradpicture.jpg" width="100%">
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-lg-8 white-text" data-aos="zoom-in-down" data-aos-anchor-placement="top-center" data-aos-delay="200">
+                            <h2 class="text-center font-weight-bold">Who am I</h2>
+                            <div class="text-body text-justify white-text">
+                                <p>
+                                    Hi, my name is John Robert S. Ferrer and way back on 2018, I am a full-stack Web Developer in Captivate Solutions during my On-the-job Training (OJT) days. Currently, I am working as Software Engineer mainly as PHP, Laravel Developer at V5 of Nelsoft Systems Inc.
+                                </p>
+                                <p>
+                                    I have a Bachelor of Science in Computer Studies - Major in Information Technology from Pamantasan ng Lungsod ng Maynila, and my primary focus and inspiration for my studies is Web Development.
+                                </p>
+                                <p>
+                                    I love also the sides on both Hybrid Mobile Application Development and the innovations of Internet Of Things (IOT) Projects.
+                                </p>
+                                <p>
+                                    For me, I believe, I can almost develop any platform using these web technologies. In my free time, I study any crash course in web development or any topic that looks cool on Youtube. Traversy Media, Dev Tips, CodeEmporium, The Net Ninja are the channels in Youtube that I subscribed because of their Passion in Programming and also their life as a Programmer/Developer.
+                                </p>
+                                <p>
+                                    I am constantly developing projects, experimenting with new technologies and techniques. And I am very passionate about Web Development, and strive to better myself as a developer, and the development community as a whole.
+                                </p>
+                            </div>
+                        </div>
+                    </mdb-row>
+                </mdb-container>
+            </section> -->
+
+            <!-- achievements -->
+            <!-- <section id="current-projects" class="primary-blue p-5">
+                <mdb-container>
+                    <mdb-row>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
+                                <mdb-container>
+                                    <h2 class="display-4 text-center" style="font-size: 1.5rem;">Achievements</h2>
+                                </mdb-container>
+                            </mdb-jumbotron>
+
+                            <achievement></achievement>
+                        </div>
+                    </mdb-row>
+                </mdb-container>
+            </section> -->
+
+            <!-- Attended seminars -->
+            <!-- <section id="current-projects" class="primary-yellow p-5">
+                <mdb-container>
+                    <mdb-row>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <mdb-jumbotron fluid class="mb-5 pt-4 pb-4">
+                                <mdb-container>
+                                    <h2 class="display-4 text-center" style="font-size: 1.5rem;">Attended Seminars & Workshop</h2>
+                                </mdb-container>
+                            </mdb-jumbotron>
+
+                            <timeline></timeline>
+                        </div>
+                    </mdb-row>
+                </mdb-container>
+            </section> -->
+        </div>
     </div>
 </template>
 
@@ -400,6 +402,7 @@
                     mounted_component: false
                 },
                 session: false,
+                proceed: false,
                 window: {
                     width: 0,
                     height: 0
@@ -481,6 +484,16 @@
                 for (let i = 0; i < children.length; i++) {
                     children[i].style.height = this.window.height + 'px';
                 }
+            },
+
+            enableProceed() {
+                this.proceed = true;
+                let that = this;
+
+                setTimeout(() => {
+                    VueScrollTo.scrollTo('#current-projects', 1200, { easing: [0.9, .40, .70, 2.0] });
+                    that.refreshHard();
+                }, 200);
             }
         },
         watch: {
