@@ -75,7 +75,7 @@
             },
 
             showFooter() {
-                return this.$store.state.nextButton;
+                return false;
             }
         }
     };
