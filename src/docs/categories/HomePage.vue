@@ -50,7 +50,7 @@
                                 </h1>
                             </div>
                         </div>
-                        <div @click="enableProceed()" style="position: absolute; bottom: 12vh; width: 7vh;" >
+                        <div @click="enableProceed()" style="position: absolute; bottom: 12vh; width: 7vh; cursor: pointer;" >
                             <img ref="arrow_down_background_header" 
                                 src="../../assets/arrow-down.svg" 
                                 width="100%" 
@@ -459,6 +459,10 @@
                 this.$store.commit('endProcessing');
             },
 
+            clickedNextButton() {
+                this.$store.commit('clickedNextButton');
+            },
+
             validateIfAllAreLoaded() {
                 return Object.keys(this.loading_status.photo).every(element => this.loading_status.photo[element]) && this.loading_status.mounted_component;
             },
@@ -493,6 +497,7 @@
                 setTimeout(() => {
                     VueScrollTo.scrollTo('#current-projects', 1200, { easing: [0.9, .40, .70, 2.0] });
                     that.refreshHard();
+                    that.clickedNextButton();
                 }, 200);
             }
         },

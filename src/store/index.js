@@ -5,7 +5,8 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
     state: {
-        processing: true
+        processing: true,
+        nextButton: false
     },
     mutations: {
         startProcessing(state) {
@@ -13,6 +14,9 @@ export default new Vuex.Store({
         },
         endProcessing(state) {
             state.processing = false;
+        },
+        clickedNextButton(state) {
+            state.nextButton = true;
         }
     }
 });

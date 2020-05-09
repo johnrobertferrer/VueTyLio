@@ -13,7 +13,7 @@
                 <router-view></router-view>
             </transition>
         </main>
-        <mdb-footer color="elegant-color" v-show="!isLoading" style="margin-top: 0 !important;">
+        <mdb-footer color="elegant-color" v-if="showFooter" v-show="!isLoading" style="margin-top: 0 !important;">
             <p class="footer-copyright mb-0 py-4 text-center">
                 &copy; {{new Date().getFullYear()}} Copyright | John Robert Ferrer
             </p>
@@ -73,6 +73,10 @@
         computed: {
             isLoading() {
                 return this.$store.state.processing;
+            },
+
+            showFooter() {
+                return this.$store.state.nextButton;
             }
         }
     };
