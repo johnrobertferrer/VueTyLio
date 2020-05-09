@@ -50,7 +50,6 @@
 
         created() {
             window.addEventListener('resize', this.handleResize);
-            this.handleResize();
         },
 
         mounted() {
