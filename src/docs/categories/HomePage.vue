@@ -319,6 +319,12 @@
                 </mdb-container>
             </section> -->
         </div>
+
+        <mdb-footer color="elegant-color" v-show="proceed" style="margin-top: 0 !important;">
+            <p class="footer-copyright mb-0 py-4 text-center">
+                &copy; {{new Date().getFullYear()}} Copyright | John Robert Ferrer
+            </p>
+        </mdb-footer>
     </div>
 </template>
 
@@ -328,6 +334,7 @@
         mdbNavItem,
         mdbNavbarNav,
         mdbNavbarToggler,
+        mdbFooter,
         mdbBtn,
         mdbIcon,
         mdbContainer,
@@ -363,6 +370,7 @@
             mdbNavItem,
             mdbNavbarNav,
             mdbNavbarToggler,
+            mdbFooter,
             mdbBtn,
             mdbIcon,
             mdbContainer,
@@ -459,10 +467,6 @@
                 this.$store.commit('endProcessing');
             },
 
-            clickedNextButton() {
-                this.$store.commit('clickedNextButton');
-            },
-
             validateIfAllAreLoaded() {
                 return Object.keys(this.loading_status.photo).every(element => this.loading_status.photo[element]) && this.loading_status.mounted_component;
             },
@@ -497,7 +501,6 @@
                 setTimeout(() => {
                     VueScrollTo.scrollTo('#current-projects', 1200, { easing: [0.9, .40, .70, 2.0] });
                     that.refreshHard();
-                    that.clickedNextButton();
                 }, 200);
             }
         },
