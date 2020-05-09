@@ -320,7 +320,7 @@
             </section> -->
         </div>
 
-        <mdb-footer color="elegant-color" v-show="proceed" style="margin-top: 0 !important;">
+        <mdb-footer color="elegant-color" v-if="proceed" style="margin-top: 0 !important;">
             <p class="footer-copyright mb-0 py-4 text-center">
                 &copy; {{new Date().getFullYear()}} Copyright | John Robert Ferrer
             </p>
