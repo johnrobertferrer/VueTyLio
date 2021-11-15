@@ -23,12 +23,22 @@ export default {
         return {
             timelines: [
                 {
-                    title: 'Hired as Part Time Web Developer Consultant In Xiklab Digital',
+                    title: 'Certification: AWS Certified Developer - Associate',
+                    date: 'September 19, 2021',
+                    address: 'Amazon Web Services (AWS). Validation Number: Z8W417DBMF1EQ6SM'
+                },
+                {
+                    title: 'Certification: AWS Certified Cloud Practitioner',
+                    date: 'May 07, 2021',
+                    address: 'Amazon Web Services (AWS). Validation Number: DHQXY40JK2VE1C30'
+                },
+                {
+                    title: 'Hired as Part Time Software Developer Consultant In Xiklab Digital',
                     date: '2020',
                     address: 'Unit 301M HatchAsia 3F Bonifacio Technology Center 31st Street corner 2nd Avenue Bonifacio Global City, Taguig, Philippines'
                 },
                 {
-                    title: 'Freelancer (Web Development) In Fiverr',
+                    title: 'Freelance Web Developer In Fiverr',
                     date: '2020',
                     address: 'Fiverr'
                 },

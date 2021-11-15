@@ -22,66 +22,91 @@ export default {
     data() {
         return {
             timelines: [
-                {
-                    title: 'Google I/O Extended Manila',
-                    date: '2019',
-                    address: 'The Globe Tower, 32th Street corner 7th Avenue, Bonifacio Global City, Taguig City 1633 Metro Manila'
-                },
-                {
-                    title: 'Vue Manila 4th Meetup',
-                    date: '2019',
-                    address: 'Orange & Bronze Software Lab, Carlos J. Valdes Building, 108 Aguirre, Legazpi Village, Makati, Metro Manila'
-                },
-                {
-                    title: 'Programmers Developers Meetup #8',
-                    date: '2019',
-                    address: '6750 Ayala Avenue, 6750, Makati, Metro Manila'
-                },
-                {
-                    title: '2-day Training in Basic Web Development using PHP and Laravel (Ground Gurus)',
-                    date: '2019',
-                    address: 'Tycoon Center Bldg., Pearl Dr, San Antonio, Pasig, Metro Manila'
-                },
-                {
-                    title: 'Annual PSITE Student IT Congress',
-                    date: '2018',
-                    address: 'Adamson University, 900 San Marcelino St, Ermita, Manila, 1000 Metro Manila'
-                },
-                {
-                    title: 'iSITE Regional Student Conference',
-                    date: '2018',
-                    address: 'Colegio de San Juan de Letran Calamba, Bucal Bypass Rd, Calamba, 4027 Laguna'
-                },
-                {
-                    title: 'eGlobio Seminar',
-                    date: '2018',
-                    address: 'Tanghalang Pasigueño, Pasig City Hall Complex, Caruncho Ave, Pasig, Metro Manila'
-                },
-                {
-                    title: 'Shaping the Future Forum 2017',
-                    date: '2018',
-                    address: 'Maybank Performing Arts Theater, 26th St, Taguig, Metro Manila'
-                },
-                {
-                    title: 'Build Reactive Web Components and Real-time Database: VueJS + Node.js + Socket.io + NoSQL Database (Ground Gurus)',
-                    date: '2018',
-                    address: 'Tycoon Center Bldg., Pearl Dr, San Antonio, Pasig, Metro Manila'
-                },
-                {
-                    title: 'ASP.NET: Embedding Foundation of Web App Possibilities',
-                    date: '2018',
-                    address: 'Pamantasan ng Lungsod ng Maynila, General Luna, corner Muralla St, Intramuros, Manila, 1002 Metro Manila'
-                },
-                {
-                    title: 'Campus Devcon PH',
-                    date: '2018',
-                    address: 'Pamantasan ng Lungsod ng Maynila, General Luna, corner Muralla St, Intramuros, Manila, 1002 Metro Manila'
-                },
-                {
-                    title: 'MATHSAYA 12: The Legend of Aryabhata',
-                    date: '2015',
-                    address: 'Ateneo de Manila University, President Carlos P. Garcia Ave, Quezon City, 1108 Metro Manila'
-                }
+              {
+                  title: 'AWS Innovate - Modern Apps Edition',
+                  date: '10/27/2021 to 10/28/2021',
+                  address: 'Amazon Web Services (AWS)'
+              },
+              {
+                  title: 'AWS User Group PH - Monthly Meetup For October',
+                  date: '10/21/2021 to 10/21/2021',
+                  address: 'AWS User Group Philippines'
+              },
+              {
+                  title: 'AWS CloudFormation Master Class v2',
+                  date: '10/15/2021 to 10/17/2021',
+                  address: 'Udemy Course'
+              },
+              {
+                  title: 'AWS User Group PH - Monthly Meetup For September',
+                  date: '09/23/2021 to 09/23/2021',
+                  address: 'AWS User Group Philippines'
+              },
+              {
+                  title: 'Ultimate AWS Certified Developer Associate 2021 - NEW!',
+                  date: '08/15/2021 to 08/31/2021',
+                  address: 'Udemy Course'
+              },
+              {
+                  title: 'Laravel with Vue.js - Fullstack Web Development (2020)',
+                  date: '06/05/2021 to 06/20/2021',
+                  address: 'Udemy Course'
+              },
+              {
+                  title: '[NEW] Ultimate AWS Certified Cloud Practitioner - 2021',
+                  date: '04/04/2021 to 04/11/2021',
+                  address: 'Udemy Course'
+              },
+              {
+                  title: 'Google I/O Extended Manila',
+                  date: '08/10/2019 to 08/10/2019',
+                  address: 'The Globe Tower, 32th Street corner 7th Avenue, Bonifacio Global City, Taguig City 1633 Metro Manila'
+              },
+              {
+                  title: 'Programmers Developers Meetup #8',
+                  date: '05/02/2019 to 05/02/2019',
+                  address: '6750 Ayala Avenue, 6750, Makati, Metro Manila'
+              },
+              {
+                  title: 'Vue Manila 3rd Meetup',
+                  date: '03/17/2019 to 03/17/2019',
+                  address: 'Orange & Bronze Software Lab, Carlos J. Valdes Building, 108 Aguirre, Legazpi Village, Makati, Metro Manila'
+              },
+              {
+                  title: '7th PSITE-NCR Student IT Congress',
+                  date: '01/23/2019 to 01/23/2019',
+                  address: 'Adamson University, 900 San Marcelino St, Ermita, Manila, 1000 Metro Manila'
+              },
+              {
+                  title: '11th Information Technology Innovations Congress 2018 (eGlobio)',
+                  date: '08/27/2018 to 08/27/2018',
+                  address: 'Tanghalang Pasigueño, Pasig City Hall Complex, Caruncho Ave, Pasig, Metro Manila'
+              },
+              {
+                  title: 'iSITE Regional Student Conference',
+                  date: '08/01/2018 to 08/01/2018',
+                  address: 'Colegio de San Juan de Letran Calamba, Bucal Bypass Rd, Calamba, 4027 Laguna'
+              },
+              {
+                  title: '2-day Training in Basic Web Development using PHP and Laravel',
+                  date: '06/23/2018 to 06/24/2018',
+                  address: 'Tycoon Center Bldg., Pearl Dr, San Antonio, Pasig, Metro Manila'
+              },
+              {
+                  title: 'Campus DEVCON PH',
+                  date: '09/22/2017 to 09/22/2017',
+                  address: 'Pamantasan ng Lungsod ng Maynila, General Luna, corner Muralla St, Intramuros, Manila, 1002 Metro Manila'
+              },
+              {
+                  title: 'Accenture: Shaping the Future Forum',
+                  date: '07/29/2017 to 07/29/2017',
+                  address: 'Maybank Performing Arts Theater, 26th St, Taguig, Metro Manila'
+              },
+              {
+                  title: 'Build Reactive Web Components and Real-time Database: VueJS + Node.js + Socket.io + NoSQL Database',
+                  date: '05/06/2017 to 05/06/2017',
+                  address: 'Tycoon Center Bldg., Pearl Dr, San Antonio, Pasig, Metro Manila'
+              }
             ]
         }
     }

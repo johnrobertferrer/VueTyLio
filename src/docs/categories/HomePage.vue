@@ -12,7 +12,7 @@
                 </mdb-navbar-nav>
                 <mdb-navbar-nav>
                     <!-- <a href="https://drive.google.com/uc?export=download&id=1SJXkatzMgFnAI70XlpasslxT5skPGw2O" style="position: inline-block"> -->
-                    <a href="https://drive.google.com/open?id=1zZkG-AluEYcjs8V07w0cyf9g-_HuqMWE" target="_blank" style="position: inline-block">
+                    <a href="https://drive.google.com/file/d/1KOdOdgxJTIun79wgbJ9yDm76xxUhS3G0/view?usp=sharing" target="_blank" style="position: inline-block">
                         <mdb-nav-item class="mr-3 font-weight-bold">
                             <span class="font-weight-bold">RESUME</span>
                         </mdb-nav-item>
@@ -33,7 +33,7 @@
                                     <span>Hey, I'm Jobs</span>
                                     <br>
                                     <vue-typer
-                                        :text='["Software Engineer","Web Developer", "Web Developer Consultant","Github Contributor","Freelancer"]'
+                                        :text='["Software Engineer","Web Developer", "Software Developer Consultant", "AWS Certified Developer - Associate", "AWS Certified Cloud Practitioner", "Freelancer"]'
                                         class="pl-2 pr-2 pb-1 vue-typer-font"
                                         :repeat='Infinity'
                                         :shuffle='true'
@@ -80,7 +80,7 @@
                     <div class="skill-icon orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="flip-left" data-aos-anchor-placement="center-bottom" data-aos-duration="600">
                         <center>
                             <img ref="skill_arduino" src="../../assets/illustrations/github-contributor.svg" class="w-55 m-3">
-                            <h3 class="text-center mt-2 mb-4">Github Contributor</h3>
+                            <h3 class="text-center mt-2 mb-4">AWS Cloud Engineer</h3>
                         </center>
                     </div>
                     <div class="skill-icon deep-orange lighten-3 col-12 col-sm-12 col-md-6 col-lg-3 pt-3 pb-3" data-aos="zoom-in-down" data-aos-anchor-placement="center-bottom" data-aos-duration="300">
@@ -116,9 +116,9 @@
                                 </div>
                                 <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-lighten-1" data-aos="flip-left" data-aos-duration="700" data-aos-anchor-placement="center-bottom">
                                     <div>
-                                        <mdb-card-title class="text-center text-white">My Assignment</mdb-card-title>
+                                        <mdb-card-title class="text-center text-white">Hygienix Official Website</mdb-card-title>
                                         <center>
-                                            <a href="https://myassignmentcalculator.com" target="_blank">
+                                            <a href="http://hygienix.ph" target="_blank">
                                                 <mdb-btn color="light">Demo <i class="ml-1 fas fa-external-link-square-alt"></i> </mdb-btn>
                                             </a>
                                         </center>
@@ -126,9 +126,9 @@
                                 </div>
                                 <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-2" data-aos="flip-down" data-aos-duration="200" data-aos-anchor-placement="center-bottom">
                                     <div>
-                                        <mdb-card-title class="text-center">Text2Sign</mdb-card-title>
+                                        <mdb-card-title class="text-center">Kolours Official Website</mdb-card-title>
                                         <center>
-                                            <a href="https://text2sign.johnferrer.xyz" target="_blank">
+                                            <a href="http://kolours.ph" target="_blank">
                                                 <mdb-btn color="elegant">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
                                             </a>
                                         </center>
@@ -136,9 +136,9 @@
                                 </div>
                                 <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-violet-darken-1" data-aos="flip-down" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
                                     <div>
-                                        <mdb-card-title class="text-center text-white">Quotetests</mdb-card-title>
+                                        <mdb-card-title class="text-center text-white">Text To Sign</mdb-card-title>
                                         <center>
-                                            <a href="https://quotetests.com" target="_blank">
+                                            <a href="https://text2sign.netlify.app" target="_blank">
                                                 <mdb-btn color="light">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
                                             </a>
                                         </center>
@@ -146,9 +146,9 @@
                                 </div>
                                 <div class="project-card col-lg-6 col-md-6 col-12 p-5 c-grey-lighten-3" data-aos="flip-left" data-aos-duration="200" data-aos-anchor-placement="center-bottom">
                                     <div>
-                                        <mdb-card-title class="text-center">Tackling NCOV</mdb-card-title>
+                                        <mdb-card-title class="text-center">Fresh Coat San Antonio - Quote Calculator</mdb-card-title>
                                         <center>
-                                            <a href="https://tackling-ncov.johnferrer.xyz" target="_blank">
+                                            <a href="https://fresh-coat-san-antonio.netlify.app" target="_blank">
                                                 <mdb-btn color="elegant">Demo <i class="ml-1 fas fa-external-link-square-alt"></i></mdb-btn>
                                             </a>
                                         </center>
@@ -158,7 +158,7 @@
                                     <div>
                                         <mdb-card-title class="text-center text-white">Zip Info</mdb-card-title>
                                         <center>
-                                            <a href="https://infozip.johnferrer.xyz/" target="_blank">
+                                            <a href="https://infozip.netlify.app" target="_blank">
                                                 <mdb-btn color="light">Demo <i class="ml-1 fas fa-external-link-square-alt"></i> </mdb-btn>
                                             </a>
                                         </center>
@@ -175,8 +175,8 @@
             <div class="section">
                 <div class="parallax">
                     <h1 class="text-center mb-0 pl-5 pr-5 white-text" style="padding: 150px 0">
-                        <span style="background: rgba(235, 173, 4, 0.5); font-size: 2rem;" class="pl-3 pr-3">
-                            “Everything visible has a flip side, like a coin.” <br> ― Sunday Adelaja
+                        <span style="background: rgba(33, 33, 33, 0.7); font-size: 2rem;" class="pl-3 pr-3">
+                            “You can’t connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future. You have to trust in something – your gut, destiny, life, karma, whatever. This approach has never let me down, and it has made all the difference in my life.” <br> — Steve Jobs
                         </span>
                     </h1>
                 </div>
@@ -557,7 +557,7 @@
     }
 
     .parallax {
-        background-image: url("../../assets/background.svg");
+        background-image: url("../../assets/steve-jobs.jpg");
         
         min-height: 400px;
         background-attachment: fixed;
