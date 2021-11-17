@@ -1,8 +1,8 @@
 <template>
-    <mdb-container>
+    <mdb-container v-show="!isLoading">
         <h1 class="mt-5 text-center">WORK ON PROGRESS!</h1>
         <center>
-            <a href="/">Return Home</a>
+            <router-link to="/">Return Home</router-link>
         </center>
     </mdb-container>
 </template>
@@ -22,9 +22,16 @@
                 processing: true
             };
         },
-        mounted() {
+        created() {
             this.startLoading();
-            this.endLoading();
+        },
+        mounted() {
+            setTimeout(() => { this.endLoading(); }, 600);
+        },
+        computed: {
+            isLoading() {
+                return this.$store.state.processing;
+            }
         },
         methods: {
             startLoading() {
