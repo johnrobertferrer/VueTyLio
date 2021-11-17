@@ -22,7 +22,7 @@
         </mdb-navbar>
         <!--/.Navbar-->
 
-        <div class="h-screen">
+        <div class="h-screen" @wheel="scrollDown">
             <div class="view intro-2">
                 <img ref="background_header" src="../../assets/background.svg" class="view">
                 <div class="full-bg-img">
@@ -502,6 +502,14 @@
                     VueScrollTo.scrollTo('#current-projects', 1200, { easing: [0.9, .40, .70, 2.0] });
                     that.refreshHard();
                 }, 200);
+            },
+
+            scrollDown(event) {
+                if (this.proceed) { return }
+
+                if (event.deltaY > 0) {
+                    this.enableProceed();
+                }
             }
         },
         watch: {
